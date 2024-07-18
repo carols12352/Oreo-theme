@@ -721,5 +721,5 @@ body {
   --titlebar-text-color: #ffffff; /* 暗模式下的标题栏文字颜色 */
   --titlebar-text-color-focused: #dddddd; /* 暗模式下聚焦窗口时的标题栏文字颜色 */
   --workspace-background-translucent: rgba(51, 51, 51, 0.8); /* 暗模式下半透明窗口背景颜色 */
-
+  --text-selection:#333333
 }
