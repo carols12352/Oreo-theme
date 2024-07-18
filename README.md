@@ -1,6 +1,11 @@
 # Oreo Obsidian Theme
 
+<img src="https://github.com/carols12352/Oreo-theme/blob/master/images/light-dark-Oreo.jpg" alt="Cover Image" style="width:100%;"/>
+
+
 Welcome to the Oreo Obsidian Theme! This theme brings the classic and delicious colors of Oreo cookies to your Obsidian experience. With both dark and light modes available, you can enjoy a visually pleasing interface whether you're a fan of the dark chocolate cookie or the creamy filling.
+
+The author creates this theme to memorize the good time back in primary school and the nickname Oreo.
 
 ## Features
 
@@ -61,6 +66,6 @@ If you'd like to contribute to the Oreo theme, feel free to fork the repository 
 
 ## License
 
-This theme is licensed under the MIT License. See the `LICENSE` file for more information.
+This theme is licensed under the GNU GPL 3.0 License. See the `LICENSE` file for more information.
 
 Enjoy your new deliciously themed Obsidian experience!
