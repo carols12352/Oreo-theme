@@ -1,4 +1,4 @@
-(English|[简体中文](https://github.com/carols12352/Oreo-theme/blob/master/README_CN.md)
+(English|[简体中文](https://github.com/carols12352/Oreo-theme/blob/master/README_CN.md))
 
 # Oreo Obsidian Theme
 
