@@ -1,3 +1,5 @@
+(English|[简体中文](https://github.com/carols12352/Oreo-theme/blob/master/README_CN.md)
+
 # Oreo Obsidian Theme
 
 <img src="https://github.com/carols12352/Oreo-theme/blob/master/images/light-dark-Oreo.jpg" alt="Cover Image" style="width:100%;"/>
@@ -63,6 +65,10 @@ This theme was created by [carols12352](https://github.com/carols12352).
 ## Contributing
 
 If you'd like to contribute to the Oreo theme, feel free to fork the repository and submit a pull request on [GitHub](https://github.com/carols12352/Oreo-theme).
+
+## Bugs and reports
+
+If you experience a bug or you want to leave a feedback, feel free to contact us at ouyangsicheng577@gmail.com, we will respond to you ASAP!
 
 ## License
 
