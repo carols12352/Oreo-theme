@@ -1,6 +1,6 @@
 <p align="center">
   <a href="https://github.com/carols12352/Oreo-theme">
-    <img src="https://github.com/carols12352/Oreo-theme/blob/master/images/logo.webp" alt="Cover Image" width="300" height="300" />
+    <img src="https://github.com/carols12352/Oreo-theme/blob/master/images/logo.webp" alt="Logo" width="300" height="300" />
   </a>
 
   <h3 align="center">Oreo Obsidian Theme</h3>
@@ -102,6 +102,8 @@ The Oreo theme comes with a variety of customization options available through C
 This theme was created by [carols12352](https://github.com/carols12352).
 
 ## Screen shots
+
+<img src="https://github.com/carols12352/Oreo-theme/blob/master/images/light-dark-Oreo.png" alt="screen_shot_1" width=100% />
 
 ## Contributing
 
