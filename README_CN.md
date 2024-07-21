@@ -17,13 +17,13 @@
 
   <p align="center">
     <a href="https://github.com/carols12352/Oreo-theme/releases">
-      <img src="https://img.shields.io/github/v/release/carols12352/Oreo-theme?style=flat-square" alt="最新发布">
+      <img src="https://img.shields.io/github/v/release/carols12352/Oreo-theme?style=for-the-badge" alt="最新发布">
     </a>
     <a href="https://github.com/carols12352/Oreo-theme/issues">
-      <img src="https://img.shields.io/github/issues/carols12352/Oreo-theme?style=flat-square" alt="问题">
+      <img src="https://img.shields.io/github/issues/carols12352/Oreo-theme?style=for-the-badge" alt="问题">
     </a>
     <a href="https://github.com/carols12352/Oreo-theme/blob/master/LICENSE">
-      <img src="https://img.shields.io/github/license/carols12352/Oreo-theme?style=flat-square" alt="许可证">
+      <img src="https://img.shields.io/github/license/carols12352/Oreo-theme?style=for-the-badge" alt="许可证">
     </a>
   </p>
   
