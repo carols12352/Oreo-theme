@@ -10,7 +10,7 @@
     <br>
     The author creates this theme to memorize the good time back in primary school and the nickname Oreo.
     <br>
-    <a href="https://github.com/carols12352/Oreo-theme/issues/new?template=bug.md">Report bug</a>
+    <a href="https://github.com/carols12352/Oreo-theme/issues/new?template=bug.md&labels=bug">Report bug</a>
     ·
     <a href="https://github.com/carols12352/Oreo-theme/issues/new?template=feature.md&labels=feature">Request feature</a>
   </p>
