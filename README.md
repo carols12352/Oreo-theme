@@ -1,13 +1,51 @@
-(English|[简体中文](https://github.com/carols12352/Oreo-theme/blob/master/README_CN.md))
+<p align="center">
+  <a href="https://github.com/carols12352/Oreo-theme">
+    <img src="https://github.com/carols12352/Oreo-theme/blob/master/images/light-dark-Oreo.jpg" alt="Cover Image" style="width:100%;"/>
+  </a>
 
-# Oreo Obsidian Theme
+  <h3 align="center">Oreo Obsidian Theme</h3>
 
-<img src="https://github.com/carols12352/Oreo-theme/blob/master/images/light-dark-Oreo.jpg" alt="Cover Image" style="width:100%;"/>
+  <p align="center">
+    Welcome to the Oreo Obsidian Theme! This theme brings the classic and delicious colors of Oreo cookies to your Obsidian experience. With both dark and light modes available, you can enjoy a visually pleasing interface whether you're a fan of the dark chocolate cookie or the creamy filling.
+    <br>
+    The author creates this theme to memorize the good time back in primary school and the nickname Oreo.
+    <br>
+    <a href="https://github.com/carols12352/Oreo-theme/issues/new?template=bug.md">Report bug</a>
+    ·
+    <a href="https://github.com/carols12352/Oreo-theme/issues/new?template=feature.md&labels=feature">Request feature</a>
+  </p>
 
+  <p align="center">
+    <a href="https://github.com/carols12352/Oreo-theme/releases">
+      <img src="https://img.shields.io/github/v/release/carols12352/Oreo-theme?style=for-the-badge" alt="Latest release">
+    </a>
+    <a href="https://github.com/carols12352/Oreo-theme/issues">
+      <img src="https://img.shields.io/github/issues/carols12352/Oreo-theme?style=for-the-badge" alt="Issues">
+    </a>
+    <a href="https://github.com/carols12352/Oreo-theme/blob/master/LICENSE">
+      <img src="https://img.shields.io/github/license/carols12352/Oreo-theme?style=for-the-badge" alt="License">
+    </a>
+  </p>
+  
+  <p align="center">
+    English
+    ·
+    <a href="https://github.com/carols12352/Oreo-theme/blob/master/README_CN.md">简体中文</a>
+  </p>
+</p>
 
-Welcome to the Oreo Obsidian Theme! This theme brings the classic and delicious colors of Oreo cookies to your Obsidian experience. With both dark and light modes available, you can enjoy a visually pleasing interface whether you're a fan of the dark chocolate cookie or the creamy filling.
+## Table of contents
 
-The author creates this theme to memorize the good time back in primary school and the nickname Oreo.
+- [Features](#features)
+- [Installation](#installation)
+- [Customization](#customization)
+  - [General Variables](#general-variables)
+  - [Dark Mode Specific Variables](#dark-mode-specific-variables)
+  - [Light Mode Specific Variables](#light-mode-specific-variables)
+- [Author](#author)
+- [Contributing](#contributing)
+- [Bugs and reports](#bugs-and-reports)
+- [License](#license)
 
 ## Features
 
@@ -21,7 +59,7 @@ To install the Oreo theme in Obsidian, follow these steps:
 
 1. **Download the theme** :
 
-* Theme will be avaliable for download in obsidian app, or download the whole Oreo file and place it in themes file which is seen on [Help theme](https://help.obsidian.md/Extending+Obsidian/Themes)
+* Theme will be available for download in Obsidian app, or download the whole Oreo file and place it in themes file which is seen on [Help theme](https://help.obsidian.md/Extending+Obsidian/Themes).
 
 1. **Copy files to Obsidian themes folder** :
 
@@ -68,10 +106,11 @@ If you'd like to contribute to the Oreo theme, feel free to fork the repository 
 
 ## Bugs and reports
 
-If you experience a bug or you want to leave a feedback, feel free to contact us at ouyangsicheng577@gmail.com, we will respond to you ASAP!
+If you experience a bug or you want to leave feedback, feel free to contact us at ouyangsicheng577@gmail.com, we will respond to you ASAP!
 
 ## License
 
 This theme is licensed under the GNU GPL 3.0 License. See the `LICENSE` file for more information.
 
 Enjoy your new deliciously themed Obsidian experience!
+
