@@ -1,6 +1,6 @@
 <p align="center">
   <a href="https://github.com/carols12352/Oreo-theme">
-    <img src="https://github.com/carols12352/Oreo-theme/blob/master/images/light-dark-Oreo.jpg" alt="Cover Image" style="width:100%;"/>
+    <img src="https://github.com/carols12352/Oreo-theme/blob/master/images/logo.webp" alt="Logo" width="300" height="300" />
   </a>
 
   <h3 align="center">Oreo Obsidian 主题</h3>
@@ -43,6 +43,7 @@
   - [深色模式专用变量](#深色模式专用变量)
   - [浅色模式专用变量](#浅色模式专用变量)
 - [作者](#作者)
+- [屏幕截图](#屏幕截图)
 - [贡献](#贡献)
 - [问题和反馈](#问题和反馈)
 - [许可证](#许可证)
@@ -99,6 +100,10 @@ Oreo主题通过`theme.css`文件中定义的CSS变量提供各种自定义选�
 ## 作者
 
 这个主题由[carols12352](https://github.com/carols12352)创建。
+
+## 屏幕截图
+
+<img src="https://github.com/carols12352/Oreo-theme/blob/master/images/light-dark-Oreo.png" alt="screen_shot_1" width=100% />
 
 ## 贡献
 
