@@ -1,6 +1,6 @@
 <p align="center">
   <a href="https://github.com/carols12352/Oreo-theme">
-    <img src="https://github.com/carols12352/Oreo-theme/blob/master/images/light-dark-Oreo.jpg" alt="Cover Image" style="width:100%;"/>
+    <img src="https://github.com/carols12352/Oreo-theme/blob/master/images/logo.webp" alt="Cover Image" width="300" height="300" />
   </a>
 
   <h3 align="center">Oreo Obsidian Theme</h3>
@@ -43,6 +43,7 @@
   - [Dark Mode Specific Variables](#dark-mode-specific-variables)
   - [Light Mode Specific Variables](#light-mode-specific-variables)
 - [Author](#author)
+- [Screen shots](#screen-shots)
 - [Contributing](#contributing)
 - [Bugs and reports](#bugs-and-reports)
 - [License](#license)
@@ -99,6 +100,8 @@ The Oreo theme comes with a variety of customization options available through C
 ## Author
 
 This theme was created by [carols12352](https://github.com/carols12352).
+
+## Screen shots
 
 ## Contributing
 
