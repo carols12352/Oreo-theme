@@ -25,6 +25,9 @@
     <a href="https://github.com/carols12352/Oreo-theme/blob/master/LICENSE">
       <img src="https://img.shields.io/github/license/carols12352/Oreo-theme?style=for-the-badge" alt="License">
     </a>
+	<a href="https://github.com/carols12352/Oreo-theme/stargazers">
+      <img src="https://img.shields.io/github/stars/carols12352/Oreo-theme?style=for-the-badge" alt="GitHub stars">
+	</a>
   </p>
   
   <p align="center">
