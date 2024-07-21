@@ -18,12 +18,14 @@ If applicable, add screenshots to help explain your problem.
 
 **Desktop (please complete the following information):**
 - OS: [e.g. iOS]
-- Version [e.g. 22]
+- software version [e.g. v1.6.7]
+- theme version [e.g. v1.0.1]
 
 **Smartphone (please complete the following information):**
 - Device: [e.g. iPhone6]
 - OS: [e.g. iOS8.1]
-- Version [e.g. 22]
+- software version [e.g. v1.6.7]
+- theme version [e.g. v1.0.1]
 
 **Additional context**
 Don't forget to email us to let us know!
