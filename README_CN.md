@@ -10,9 +10,9 @@
     <br>
     作者创建这个主题是为了纪念小学时的美好时光和奥利奥的昵称。
     <br>
-    <a href="https://github.com/carols12352/Oreo-theme/issues/new?template=bug.md">报告问题</a>
+    <a href="https://github.com/carols12352/Oreo-theme/issues/new?template=bug_cn.md&labels=bug">报告问题</a>
     ·
-    <a href="https://github.com/carols12352/Oreo-theme/issues/new?template=feature.md&labels=feature">请求功能</a>
+    <a href="https://github.com/carols12352/Oreo-theme/issues/new?template=feature_cn.md&labels=feature">请求功能</a>
   </p>
 
   <p align="center">
