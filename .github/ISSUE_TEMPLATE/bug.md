@@ -28,4 +28,4 @@ If applicable, add screenshots to help explain your problem.
 - theme version [e.g. v1.0.1]
 
 **Additional context**
-Don't forget to email us to let us know!
+Add any other context about the problem here.
