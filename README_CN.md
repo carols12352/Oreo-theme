@@ -1,76 +1,116 @@
-([English](https://github.com/carols12352/Oreo-theme/blob/master/README.md)|简体中文)
+<p align="center">
+  <a href="https://github.com/carols12352/Oreo-theme">
+    <img src="https://github.com/carols12352/Oreo-theme/blob/master/images/light-dark-Oreo.jpg" alt="Cover Image" style="width:100%;"/>
+  </a>
 
-# Oreo Obsidian 主题
+  <h3 align="center">Oreo Obsidian 主题</h3>
 
-<img src="https://github.com/carols12352/Oreo-theme/blob/master/images/light-dark-Oreo.jpg" alt="封面图片" style="width:100%;"/>
+  <p align="center">
+    欢迎使用Oreo Obsidian 主题！这个主题将奥利奥饼干的经典美味颜色带到了你的Obsidian体验中。提供深色和浅色模式，不论你是喜欢黑巧克力饼干还是奶油夹心，都可以享受视觉上令人愉悦的界面。
+    <br>
+    作者创建这个主题是为了纪念小学时的美好时光和奥利奥的昵称。
+    <br>
+    <a href="https://github.com/carols12352/Oreo-theme/issues/new?template=bug.md">报告问题</a>
+    ·
+    <a href="https://github.com/carols12352/Oreo-theme/issues/new?template=feature.md&labels=feature">请求功能</a>
+  </p>
 
-欢迎使用 Oreo Obsidian 主题！这个主题将经典美味的奥利奥饼干颜色带到你的 Obsidian 应用体验中。无论你是黑巧克力饼干还是奶油夹心的粉丝，都可以通过暗模式和亮模式的切换享受视觉上的愉悦界面。
+  <p align="center">
+    <a href="https://github.com/carols12352/Oreo-theme/releases">
+      <img src="https://img.shields.io/github/v/release/carols12352/Oreo-theme?style=flat-square" alt="最新发布">
+    </a>
+    <a href="https://github.com/carols12352/Oreo-theme/issues">
+      <img src="https://img.shields.io/github/issues/carols12352/Oreo-theme?style=flat-square" alt="问题">
+    </a>
+    <a href="https://github.com/carols12352/Oreo-theme/blob/master/LICENSE">
+      <img src="https://img.shields.io/github/license/carols12352/Oreo-theme?style=flat-square" alt="许可证">
+    </a>
+  </p>
+  
+  <p align="center">
+    <a href="README.md">English</a>
+    ·
+    简体中文
+  </p>
+</p>
 
-作者创建这个主题是为了纪念美好小学时光和儿时的Nickname Oreo。
+## 目录
+
+- [功能](#功能)
+- [安装](#安装)
+- [自定义](#自定义)
+  - [通用变量](#通用变量)
+  - [深色模式专用变量](#深色模式专用变量)
+  - [浅色模式专用变量](#浅色模式专用变量)
+- [作者](#作者)
+- [贡献](#贡献)
+- [问题和反馈](#问题和反馈)
+- [许可证](#许可证)
 
 ## 功能
 
-* **暗模式**：黑色和深灰色搭配白色文字，灵感来自奥利奥饼干。
-* **亮模式**：白色和浅灰色搭配黑色文字，灵感来自奥利奥奶油夹心。
-* **自定义图标和导航**：增强的图标和导航样式，呈现统一的外观。
+* **深色模式** : 采用黑色和深灰色背景及白色文字，灵感来自奥利奥饼干。
+* **浅色模式** : 采用白色和浅灰色背景及黑色文字，灵感来自奥利奥奶油夹心。
+* **自定义图标和导航** : 增强的图标和导航样式，使整体外观更一致。
 
 ## 安装
 
-要在 Obsidian 中安装 Oreo 主题，请按照以下步骤操作：
+要在Obsidian中安装Oreo主题，请按照以下步骤操作：
 
-1. **下载主题**：
+1. **下载主题** :
 
-* 主题将在 Obsidian 应用中提供下载，或下载整个 Oreo 文件并将其放置在主题文件夹中，可参考 [帮助文档](https://help.obsidian.md/Extending+Obsidian/Themes)。
+* 主题可在Obsidian应用中下载，或下载整个Oreo文件并将其放置在主题文件夹中，参考[帮助主题](https://help.obsidian.md/Extending+Obsidian/Themes)。
 
-2. **将文件复制到 Obsidian 主题文件夹**：
+1. **将文件复制到Obsidian主题文件夹** :
 
-* 将 `manifest.json` 和 `theme.css` 放入你的 Obsidian 主题目录中。该目录位于 `VaultFolder/.obsidian/themes/`。
+* 将`manifest.json`和`theme.css`放置在你的Obsidian主题目录中。目录路径为`VaultFolder/.obsidian/themes/`。
 
-3. **激活主题**：
+1. **激活主题** :
 
-* 打开 Obsidian，进入 `设置` > `外观` > `主题`。
-* 在可用主题列表中找到 “Oreo” 并激活它。
+* 打开Obsidian，转到`设置` > `外观` > `主题`。
+* 在可用主题列表中找到“Oreo”并激活它。
 
 ## 自定义
 
-Oreo 主题通过 `theme.css` 文件中定义的 CSS 变量提供多种自定义选项。以下是一些关键变量，你可以根据需要进行修改：
+Oreo主题通过`theme.css`文件中定义的CSS变量提供各种自定义选项。以下是一些关键变量，你可以进行修改：
 
-### 常规变量
+### 通用变量
 
-* `--icon-size`：图标大小。
-* `--dialog-width`：对话框默认宽度。
-* `--nav-item-size`：导航项字体大小。
-* `--modal-radius`：模态框的边框半径。
-* `--vault-name-font-size`：库名称的字体大小。
+* `--icon-size`: 图标大小。
+* `--dialog-width`: 对话框的默认宽度。
+* `--nav-item-size`: 导航项的字体大小。
+* `--modal-radius`: 模态框的边框半径。
+* `--vault-name-font-size`: 库名称的字体大小。
 
-### 暗模式特定变量
+### 深色模式专用变量
 
-* `--background-primary`：暗模式的主要背景颜色。
-* `--text-primary`：暗模式的主要文字颜色。
-* `--tab-background-active`：暗模式下活动标签的背景颜色。
-* `--blockquote-background-color`：暗模式下引用块的背景颜色。
+* `--background-primary`: 深色模式的主要背景颜色。
+* `--text-primary`: 深色模式的主要文字颜色。
+* `--tab-background-active`: 深色模式下活动标签的背景颜色。
+* `--blockquote-background-color`: 深色模式下引用块的背景颜色。
 
-### 亮模式特定变量
+### 浅色模式专用变量
 
-* `--interactive-normal`：亮模式下交互元素的正常颜色。
-* `--checkbox-marker-color`：亮模式下复选框标记颜色。
-* `--tab-background-active`：亮模式下活动标签的背景颜色。
-* `--blockquote-background-color`：亮模式下引用块的背景颜色。
+* `--interactive-normal`: 浅色模式下交互元素的正常颜色。
+* `--checkbox-marker-color`: 浅色模式下复选框标记颜色。
+* `--tab-background-active`: 浅色模式下活动标签的背景颜色。
+* `--blockquote-background-color`: 浅色模式下引用块的背景颜色。
 
 ## 作者
 
-这个主题由 [carols12352](https://github.com/carols12352) 创建。
+这个主题由[carols12352](https://github.com/carols12352)创建。
 
 ## 贡献
 
-如果你想为 Oreo 主题做出贡献，请随意 fork 这个仓库并在 [GitHub](https://github.com/carols12352/Oreo-theme) 上提交 pull request。
+如果你想为Oreo主题做出贡献，可以自由地fork这个仓库，并在[GitHub](https://github.com/carols12352/Oreo-theme)上提交一个pull请求。
 
-## 错误报告与反馈
+## 问题和反馈
 
-如果你遇到错误或想留下反馈，请随时联系我们：ouyangsicheng577@gmail.com，我们会尽快回复你！
+如果你遇到问题或想提供反馈，请随时通过ouyangsicheng577@gmail.com联系我们，我们会尽快回复你！
 
 ## 许可证
 
-这个主题是根据 GNU GPL 3.0 许可证授权的。更多信息请参见 `LICENSE` 文件。
+这个主题在GNU GPL 3.0许可证下发布。有关更多信息，请参阅`LICENSE`文件。
 
-享受你全新美味主题的 Obsidian 体验吧！
+享受你的新奥利奥主题Obsidian体验吧！
+
