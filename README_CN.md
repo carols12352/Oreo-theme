@@ -76,29 +76,14 @@
 
 ## 自定义
 
-Oreo主题通过`theme.css`文件中定义的CSS变量提供各种自定义选项。以下是一些关键变量，你可以进行修改：
+Oreo 主题通过插件 [style settings](https://github.com/mgmeyers/obsidian-style-settings) 提供多种自定义选项，我们提供了许多自定义选项，用户可以通过上传个人配置文件来贡献自己的配置。
 
-### 通用变量
+### 如何上传自定义配置
 
-* `--icon-size`: 图标大小。
-* `--dialog-width`: 对话框的默认宽度。
-* `--nav-item-size`: 导航项的字体大小。
-* `--modal-radius`: 模态框的边框半径。
-* `--vault-name-font-size`: 库名称的字体大小。
-
-### 深色模式专用变量
-
-* `--background-primary`: 深色模式的主要背景颜色。
-* `--text-primary`: 深色模式的主要文字颜色。
-* `--tab-background-active`: 深色模式下活动标签的背景颜色。
-* `--blockquote-background-color`: 深色模式下引用块的背景颜色。
-
-### 浅色模式专用变量
-
-* `--interactive-normal`: 浅色模式下交互元素的正常颜色。
-* `--checkbox-marker-color`: 浅色模式下复选框标记颜色。
-* `--tab-background-active`: 浅色模式下活动标签的背景颜色。
-* `--blockquote-background-color`: 浅色模式下引用块的背景颜色。
+* Fork 这个仓库
+* 将你的文件放在 [这里](./plugins/Style-Settings)
+* 点击 <a href="https://github.com/carols12352/Oreo-theme/issues/new?template=style-settings.md&labels=style-settings">这里</a> 打开一个 pull request
+* 等待管理员测试并批准你的 json 文件
 
 ## 作者
 
