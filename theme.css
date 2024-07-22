@@ -18,1523 +18,1825 @@
 
 
  :root {
-  /* 图标相关变量 */
---icon-size: 18px; /* 图标的默认宽度和高度 */
---icon-stroke: 1.75px; /* 图标的默认描边宽度 */
-  /* 图标尺寸 */
---icon-xs: 14px;
---icon-s: 16px;
---icon-m: 18px;
---icon-l: 24px;
---icon-xl: 32px;
---icon-xs-stroke-width: 2px;
---icon-s-stroke-width: 2px;
---icon-m-stroke-width: 1.75px;
---icon-l-stroke-width: 1.75px;
---icon-xl-stroke-width: 1.25px;
-
-
---dialog-width: 600px; /* 对话框默认宽度 */
---dialog-max-width: 90%; /* 对话框最大宽度 */
---dialog-max-height: 80%; /* 对话框最大高度 */
---indentation-guide-width: 1px; /* 缩进引导线宽度 */
---indentation-guide-width-active: 2px; /* 活动状态下缩进引导线宽度 */
---indentation-guide-editing-indent: 20px; /* 编辑模式下的缩进宽度 */
---indentation-guide-reading-indent: 30px; /* 阅读模式下的缩进宽度 */
---indentation-guide-source-indent: 40px; /* 源代码模式下的缩进宽度 */
---modal-width: 600px; /* 模态默认宽度 */
---modal-height: auto; /* 模态默认高度 */
---modal-max-width: 90%; /* 模态最大宽度 */
---modal-max-height: 80%; /* 模态最大高度 */
---modal-max-width-narrow: 400px; /* 窄模态最大宽度 */
---modal-border-width: 1px; /* 模态边框厚度 */
---modal-radius: 8px; /* 模态圆角半径 */
---modal-community-sidebar-width: 250px; /* 社区插件/主题侧边栏宽度 */
---nav-item-size: 14px; /* 导航项字体大小 */
---nav-item-color: #000000; /* 导航项文字颜色 */
---nav-item-color-hover: #333333; /* 导航项悬停时文字颜色 */
---nav-item-color-active: #0000ff; /* 导航项激活时文字颜色 */
---nav-item-color-selected: #FF4444; /* 导航项选中时文字颜色 */
---nav-item-color-highlighted: #00ff00; /* 导航项高亮时文字颜色 */
---nav-item-background-hover: #f0f0f0; /* 导航项悬停时背景颜色 */
---nav-item-background-active: #d0d0d0; /* 导航项激活时背景颜色 */
---nav-item-background-selected: #c0c0c0; /* 导航项选中时背景颜色 */
---nav-item-padding: 8px; /* 导航项内边距 */
---nav-item-parent-padding: 10px; /* 父导航项内边距 */
---nav-item-children-padding-start: 16px; /* 子导航项起始内边距 */
---nav-item-children-margin-start: 16px; /* 子导航项起始外边距 */
---nav-item-weight: normal; /* 导航项字体粗细 */
---nav-item-weight-hover: bold; /* 导航项悬停时字体粗细 */
---nav-item-weight-active: bold; /* 导航项激活时字体粗细 */
---nav-item-white-space: nowrap; /* 导航项白空处理 */
---nav-indentation-guide-width: 1px; /* 缩进引导线宽度 */
---nav-indentation-guide-color: #cccccc; /* 缩进引导线颜色 */
---nav-collapse-icon-color: #000000; /* 折叠图标颜色 */
---nav-collapse-icon-color-collapsed: #555555; /* 折叠图标折叠时颜色 */
-
---nav-heading-color: #000000; /* 导航标题文字颜色 */
---nav-heading-color-hover: #333333; /* 导航标题悬停时文字颜色 */
---nav-heading-color-collapsed: #666666; /* 折叠导航标题文字颜色 */
---nav-heading-color-collapsed-hover: #999999; /* 折叠导航标题悬停时文字颜色 */
---nav-heading-weight: bold; /* 导航标题字体粗细 */
---nav-heading-weight-hover: bold; /* 导航标题悬停时字体粗细 */
-
---vault-name-font-size: 18px; /* 保险库名称字体大小 */
---vault-name-font-weight: bold; /* 保险库名称字体粗细 */
---vault-name-color: #000000; /* 保险库名称文字颜色 */
---prompt-input-height: 40px; /* 提示框输入高度 */
---prompt-width: 600px; /* 提示框宽度 */
---prompt-max-width: 90%; /* 窄窗口时提示框最大宽度 */
---prompt-max-height: 80%; /* 提示框最大高度 */
---prompt-border-width: 2px; /* 提示框边框宽度 */
---slider-thumb-border-width: 2px; /* 滑块拇指边框宽度 */
---slider-thumb-height: 20px; /* 滑块拇指高度 */
---slider-thumb-width: 20px; /* 滑块拇指宽度 */
---slider-thumb-y: 0; /* 滑块拇指Y轴位置 */
---slider-thumb-radius: 50%; /* 滑块拇指圆角半径 */
---slider-track-height: 4px; /* 滑轨高度 */
-
---tab-background-active: #ffffff; /* 活动标签的背景颜色 */
---tab-text-color: #000000; /* 标签文字颜色 */
---tab-text-color-active: #333333; /* 非聚焦窗口中活动标签的文字颜色 */
---tab-text-color-focused: #000000; /* 聚焦窗口中的标签文字颜色 */
---tab-text-color-focused-active: #ffcc00; /* 聚焦窗口中活动标签的文字颜色 */
---tab-text-color-focused-highlighted: #00ccff; /* 聚焦窗口中高亮标签的文字颜色 */
---tab-text-color-focused-active-current: #0000ff; /* 聚焦窗口中当前活动标签的文字颜色 */
---tab-font-size: 14px; /* 标签字体大小 */
---tab-font-weight: normal; /* 标签字体粗细 */
---tab-container-background: #000000; /* 标签容器背景颜色 */
---tab-divider-color: #666666; /* 标签分隔线颜色 */
---tab-outline-color: #cccccc; /* 标签轮廓颜色 */
---tab-outline-width: 2px; /* 标签轮廓宽度 */
---tab-curve: 5px; /* 标签曲线半径 */
---tab-radius: 5px; /* 标签外圆角半径 */
---tab-radius-active: 8px; /* 活动标签外圆角半径 */
---tab-width: auto; /* 标签默认宽度 */
---tab-max-width: 200px; /* 标签最大宽度 */
-
-/* 堆叠标签 */
---tab-stacked-pane-width: 200px; /* 堆叠窗格宽度 */
---tab-stacked-header-width: 50px; /* 堆叠标题宽度 */
---tab-stacked-font-size: 12px; /* 堆叠标签字体大小 */
---tab-stacked-font-weight: bold; /* 堆叠标签字体粗细 */
---tab-stacked-text-align: center; /* 堆叠标签文字对齐方式 */
---tab-stacked-text-transform: uppercase; /* 堆叠标签文字转换 */
---tab-stacked-text-writing-mode: vertical-rl; /* 堆叠标签文字书写模式 */
---tab-stacked-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* 堆叠标签阴影 */
---input-height: 40px; /* 输入框高度 */
---input-radius: 5px; /* 输入框圆角半径 */
---input-font-weight: normal; /* 输入框字体粗细 */
---input-border-width: 2px; /* 输入框边框宽度 */
---toggle-border-width: 2px; /* Toggle 边框宽度 */
---toggle-width: 40px; /* Toggle 宽度 */
---toggle-radius: 20px; /* Toggle 圆角半径 */
---toggle-thumb-color: #ffffff; /* Toggle 拇指背景颜色 */
---toggle-thumb-radius: 50%; /* Toggle 拇指圆角半径 */
---toggle-thumb-height: 20px; /* Toggle 拇指高度 */
---toggle-thumb-width: 20px; /* Toggle 拇指宽度 */
---toggle-s-border-width: 1px; /* 小 Toggle 边框宽度 */
---toggle-s-width: 20px; /* 小 Toggle 宽度 */
---toggle-s-thumb-height: 10px; /* 小 Toggle 拇指高度 */
---toggle-s-thumb-width: 10px; /* 小 Toggle 拇指宽度 */
---embed-block-shadow-hover: 0 4px 8px rgba(0, 0, 0, 0.2); /* Live Preview中渲染的嵌入块悬停时的阴影 */
---blockquote-border-thickness: 4px; /* 引用块左侧边框厚度 */
---blockquote-font-style: italic; /* 引用块字体样式（如：正常、斜体） */
---callout-border-width: 2px; /* Callout 边框宽度 */
---callout-border-opacity: 1; /* Callout 边框透明度 */
---callout-padding: 16px; /* Callout 内边距 */
---callout-radius: 8px; /* Callout 圆角半径 */
---callout-blend-mode: normal; /* Callout 混合模式，允许嵌套 callout 进行颜色混合 */
---callout-title-color: #000000; /* Callout 标题文字颜色 */
---callout-title-padding: 8px; /* Callout 标题内边距 */
---callout-title-size: 1.2em; /* Callout 标题字体大小 */
---callout-title-weight: bold; /* Callout 标题字体粗细 */
---callout-content-padding: 12px; /* Callout 内容内边距 */
-
-
---callout-bug: #ff4444; /* bug 类型 callout 颜色 */
---callout-default: #d9d9d9; /* default/note 类型 callout 颜色 */
---callout-error: #ff0000; /* error/danger 类型 callout 颜色 */
---callout-example: #e6e6ff; /* example 类型 callout 颜色 */
---callout-fail: #ff6666; /* fail/failure/missing 类型 callout 颜色 */
---callout-important: #ffcc00; /* important 类型 callout 颜色 */
---callout-info: #33ccff; /* info 类型 callout 颜色 */
---callout-question: #3399ff; /* question/help/faq 类型 callout 颜色 */
---callout-success: #66cc66; /* success/check/done 类型 callout 颜色 */
---callout-summary: #cccccc; /* summary/abstract/tldr 类型 callout 颜色 */
---callout-tip: #99cc00; /* tip/hint 类型 callout 颜色 */
---callout-todo: #ffcc66; /* todo 类型 callout 颜色 */
---callout-warning: #ff9900; /* warning/caution/attention 类型 callout 颜色 */
---callout-quote: #ffcc99; /* quote/cite 类型 callout 颜色 */
---code-white-space: pre; /* 代码 white-space 属性 */
---code-size: 14px; /* 代码字体大小 */
---embed-max-height: 500px; /* 嵌入文件的最大高度 */
---embed-canvas-max-height: 400px; /* 嵌入 Canvas 元素的最大高度 */
---embed-background: #f9f9f9; /* 嵌入文件的背景颜色 */
---embed-border-end: 1px solid #cccccc; /* 嵌入文件的右边框 */
---embed-border-start: 1px solid #cccccc; /* 嵌入文件的左边框 */
---embed-border-top: 1px solid #cccccc; /* 嵌入文件的上边框 */
---embed-border-bottom: 1px solid #cccccc; /* 嵌入文件的下边框 */
---embed-padding: 10px; /* 嵌入文件的内边距 */
---embed-font-style: italic; /* 嵌入文件的字体样式 */
---file-line-width: 800px; /* 当启用可读行宽时的行宽 */
---file-folding-offset: 20px; /* 折叠指示器的行偏移宽度 */
---file-margins: 20px; /* 文件边距 */
---file-header-font-size: 1.5em; /* 文件头部字体大小 */
---file-header-font-weight: bold; /* 文件头部字体粗细 */
---file-header-border: 1px solid #cccccc; /* 文件头部的下边框属性 */
---file-header-justify: space-between; /* 文件头部文本对齐方式，使用 justify-content 属性 */
---footnote-size: 0.8em; /* 脚注字体大小 */
---list-indent: 20px; /* 嵌套项目的缩进宽度 */
---list-indent-editing: 20px; /* 实时预览模式下的缩进宽度 */
---list-indent-source: 20px; /* 源代码模式下的缩进宽度 */
---list-spacing: 10px; /* 列表项之间的垂直间距 */
---list-bullet-end-padding: 5px; /* 项目符号后的内边距 */
---list-bullet-radius: 50%; /* 项目符号的圆角半径 */
---list-bullet-size: 10px; /* 项目符号的宽度/高度 */
---list-bullet-transform: scale(1); /* 项目符号的变换属性 */
---list-numbered-style: decimal; /* 有序列表的列表样式类型 */
-  /* Properties container */
---metadata-background: #f0f0f0; /* 属性容器背景颜色 */
---metadata-display-editing: block; /* 编辑模式下显示 */
---metadata-display-reading: block; /* 阅读模式下显示 */
---metadata-max-width: 800px; /* 最大宽度 */
---metadata-padding: 10px; /* 内边距 */
---metadata-border-color: #cccccc; /* 边框颜色 */
---metadata-border-radius: 8px; /* 圆角半径 */
---metadata-border-width: 1px; /* 边框宽度 */
---metadata-gap: 10px; /* 属性之间的间距 */
-
-/* Individual properties */
---metadata-divider-color: #cccccc; /* 属性之间分隔线颜色 */
---metadata-divider-color-hover: #aaaaaa; /* 属性悬停时分隔线颜色 */
---metadata-divider-color-focus: #888888; /* 属性聚焦时分隔线颜色 */
---metadata-divider-width: 1px; /* 分隔线宽度 */
---metadata-property-padding: 5px; /* 属性内边距 */
---metadata-property-radius: 4px; /* 属性圆角半径 */
---metadata-property-radius-hover: 4px; /* 属性悬停时圆角半径 */
---metadata-property-radius-focus: 4px; /* 属性聚焦时圆角半径 */
---metadata-property-background: #ffffff; /* 属性背景颜色 */
---metadata-property-background-hover: #f9f9f9; /* 属性悬停时背景颜色 */
---metadata-property-background-active: #f0f0f0; /* 属性激活时背景颜色 */
---metadata-label-background-hover: #f0f0f0; /* 属性标签悬停时背景颜色 */
---metadata-label-background-active: #e0e0e0; /* 属性标签激活时背景颜色 */
---metadata-label-font-size: 14px; /* 属性标签字体大小 */
---metadata-label-font-weight: bold; /* 属性标签字体粗细 */
---metadata-sidebar-label-font-size: 12px; /* 侧边栏属性标签字体大小 */
---metadata-label-text-color: #333333; /* 属性标签文字颜色 */
---metadata-label-text-color-hover: #555555; /* 属性标签悬停时文字颜色 */
---metadata-label-width: 150px; /* 属性标签宽度 */
---metadata-input-height: 30px; /* 属性输入框高度 */
---metadata-input-text-color: #000000; /* 属性输入框文字颜色 */
---metadata-input-font-size: 14px; /* 属性输入框字体大小 */
---metadata-sidebar-input-font-size: 12px; /* 侧边栏属性输入框字体大小 */
---metadata-input-background: #ffffff; /* 属性输入框背景颜色 */
---metadata-input-background-hover: #f9f9f9; /* 属性输入框悬停时背景颜色 */
---metadata-input-background-active: #f0f0f0; /* 属性输入框激活时背景颜色 */
---tag-size: 12px; /* 标签字体大小 */
---tag-color: #000000; /* 标签文字颜色 */
---tag-color-hover: #333333; /* 标签悬停时文字颜色 */
---tag-decoration: none; /* 标签文字装饰 */
---tag-decoration-hover: underline; /* 标签悬停时文字装饰 */
---tag-background: #f0f0f0; /* 标签背景颜色 */
---tag-background-hover: #e0e0e0; /* 标签悬停时背景颜色 */
---tag-border-color: #cccccc; /* 标签边框颜色 */
---tag-border-color-hover: #999999; /* 标签悬停时边框颜色 */
---tag-border-width: 1px; /* 标签边框宽度 */
---tag-padding-x: 5px; /* 标签左右内边距 */
---tag-padding-y: 2px; /* 标签上下内边距 */
---tag-radius: 4px; /* 标签圆角半径 */
---tag-weight: bold; /* 标签字体粗细 */
-/* 字体设置 */
---font-interface-theme: "Arial", sans-serif; /* 用于UI元素的字体 */
---font-text-theme: "Georgia", serif; /* 用于编辑器中文本的字体 */
---font-monospace-theme: "Courier New", monospace; /* 用于等宽内容的字体，如代码块和行内代码 */
-
-/* 字体大小 */
---font-text-size: 16px; /* 编辑器字体大小，由用户在外观设置中定义 */
---font-smallest: 0.8em; /* 最小字体大小 */
---font-smaller: 0.875em; /* 较小字体大小 */
---font-small: 0.933em; /* 小字体大小 */
---font-ui-smaller: 12px; /* UI元素较小字体大小 */
---font-ui-small: 13px; /* UI元素小字体大小 */
---font-ui-medium: 15px; /* UI元素中等字体大小 */
---font-ui-larger: 20px; /* UI元素较大字体大小 */
-
-/* 字体粗细 */
---font-thin: 100; /* 极细字体粗细 */
---font-extralight: 200; /* 额外细字体粗细 */
---font-light: 300; /* 细字体粗细 */
---font-normal: 400; /* 常规字体粗细 */
---font-medium: 500; /* 中等字体粗细 */
---font-semibold: 600; /* 半粗字体粗细 */
---font-bold: 700; /* 粗字体粗细 */
---font-extrabold: 800; /* 额外粗字体粗细 */
---font-black: 900; /* 极粗字体粗细 */
-
-/* 文本格式化 */
---font-weight: var(--font-normal); /* 常规文本粗细 */
---bold-modifier: 200; /* 加粗文本的额外权重 */
---bold-weight: calc(var(--font-weight) + var(--bold-modifier)); /* 加粗文本的字体粗细 */
---bold-color: #000000; /* 加粗文本颜色 */
---italic-color: #000000; /* 斜体文本颜色 */
-
-/* 行高 */
---line-height-normal: 1.5; /* 默认行高 */
---line-height-tight: 1.3; /* 紧凑行高，用于搜索结果、树状项目、工具提示等较小空间 */
-
-/* 段落间距 */
---heading-spacing: 20px; /* 标题上方的间距 */
---p-spacing: 10px; /* 段落之间的间距 */
---divider-width: 3px; /* 分隔线边框宽度 */
---divider-width-hover: 2px; /* 分隔线悬停时边框宽度 */
---divider-vertical-height: 80%; /* 垂直分隔线高度 */
-
---ribbon-width: 50px; /* Ribbon 宽度 */
---ribbon-padding: 10px; /* Ribbon 内边距 */
---sidebar-markdown-font-size: 14px; /* 侧边栏中Markdown文件的字体大小 */
---sidebar-tab-text-display: block; /* 侧边栏中选项卡文本的display属性 */
---status-bar-border-width: 1px; /* 状态栏边框宽度 */
---status-bar-font-size: 12px; /* 状态栏字体大小 */
---status-bar-position: fixed; /* 状态栏位置属性 */
---status-bar-radius: 4px; /* 状态栏圆角半径 */
---status-bar-scroll-padding: 10px; /* 状态栏滚动内边距 */
---titlebar-border-width: 1px; /* 标题栏边框宽度 */
---titlebar-text-weight: bold; /* 标题栏字体粗细 */
---header-height: 30px; /* 框架元素的默认高度 */
-
-}
-
-
-
-
-
-
-
-
-
-body {
---checkbox-radius: 50%; /* 复选框的圆角半径 */
---checkbox-size: 16px; /* 复选框的大小 */
---checkbox-margin-inline-start: 8px; /* 复选框的起始内边距 */
---button-radius:10px;
---popover-width: 300px; /* 弹出框默认宽度 */
---popover-height: auto; /* 弹出框默认高度 */
---popover-max-height: 400px; /* 弹出框最大高度 */
---popover-font-size: 14px; /* 弹出框字体大小 */
---popover-pdf-width: 600px; /* PDF文件预览宽度 */
---popover-pdf-height: 800px; /* PDF文件预览高度 */
---heading-spacing: 20px; /* 头部上方的间距 */
-
---h1-font: "Arial", sans-serif; /* H1 字体 */
---h2-font: "Arial", sans-serif; /* H2 字体 */
---h3-font: "Arial", sans-serif; /* H3 字体 */
---h4-font: "Arial", sans-serif; /* H4 字体 */
---h5-font: "Arial", sans-serif; /* H5 字体 */
---h6-font: "Arial", sans-serif; /* H6 字体 */
-
---h1-line-height: 1.5; /* H1 行高 */
---h2-line-height: 1.5; /* H2 行高 */
---h3-line-height: 1.5; /* H3 行高 */
---h4-line-height: 1.5; /* H4 行高 */
---h5-line-height: 1.5; /* H5 行高 */
---h6-line-height: 1.5; /* H6 行高 */
-
---h1-size: 2em; /* H1 字体大小 */
---h2-size: 1.75em; /* H2 字体大小 */
---h3-size: 1.5em; /* H3 字体大小 */
---h4-size: 1.25em; /* H4 字体大小 */
---h5-size: 1em; /* H5 字体大小 */
---h6-size: 0.875em; /* H6 字体大小 */
-
---h1-style: normal; /* H1 字体样式 */
---h2-style: normal; /* H2 字体样式 */
---h3-style: normal; /* H3 字体样式 */
---h4-style: normal; /* H4 字体样式 */
---h5-style: normal; /* H5 字体样式 */
---h6-style: normal; /* H6 字体样式 */
-
---h1-variant: normal; /* H1 字体变体 */
---h2-variant: normal; /* H2 字体变体 */
---h3-variant: normal; /* H3 字体变体 */
---h4-variant: normal; /* H4 字体变体 */
---h5-variant: normal; /* H5 字体变体 */
---h6-variant: normal; /* H6 字体变体 */
-
---h1-weight: bold; /* H1 字体粗细 */
---h2-weight: bold; /* H2 字体粗细 */
---h3-weight: bold; /* H3 字体粗细 */
---h4-weight: bold; /* H4 字体粗细 */
---h5-weight: bold; /* H5 字体粗细 */
---h6-weight: bold; /* H6 字体粗细 */
---heading-formatting: #888888; /* Markdown 头部深度语法的文字颜色 */
---link-color: #1e90ff; /* 已解析链接文字颜色 */
---link-color-hover: #1c86ee; /* 已解析链接悬停时文字颜色 */
---link-decoration: underline; /* 已解析链接文字装饰 */
---link-decoration-hover: underline; /* 已解析链接悬停时文字装饰 */
---link-decoration-thickness: 1px; /* 已解析链接文字装饰厚度 */
---link-weight: normal; /* 链接字体粗细 */
-
---link-unresolved-color: #ff4500; /* 未解析链接文字颜色 */
---link-unresolved-opacity: 0.7; /* 未解析链接不透明度 */
---link-unresolved-filter: brightness(0.8); /* 未解析链接滤镜效果 */
---link-unresolved-decoration-style: dashed; /* 未解析链接文字装饰样式 */
---link-unresolved-decoration-color: #ff4500; /* 未解析链接文字装饰颜色 */
-
---link-external-color: #32cd32; /* 外部链接文字颜色 */
---link-external-color-hover: #2eb82e; /* 外部链接悬停时文字颜色 */
---link-external-decoration: underline; /* 外部链接文字装饰 */
---link-external-decoration-hover: underline; /* 外部链接悬停时文字装饰 */
---inline-title-color: #000000; /* 行内标题文字颜色 */
---inline-title-font: "Arial", sans-serif; /* 行内标题字体 */
---inline-title-line-height: 1.5; /* 行内标题行高 */
---inline-title-size: 1.2em; /* 行内标题字体大小 */
---inline-title-style: normal; /* 行内标题字体样式 */
---inline-title-variant: normal; /* 行内标题字体变体 */
---inline-title-weight: bold; /* 行内标题字体粗细 */
-
-}
-
-.theme-light {
---interactive-normal: #e6e6e6; /* 浅灰色 */
---interactive-hover: #cccccc; /* 中灰色 */
---interactive-accent: #999999; /* 中灰色 */
---interactive-accent-hsl: hsl(0, 0%, 60%); /* 中灰色的HSL表示 */
---interactive-accent-hover: #666666; /* 深灰色 */
---checkbox-marker-color: white; /* 复选框标记的颜色 */
---checkbox-color: #e6e6e6; /* 复选框的背景颜色 */
---checkbox-color-hover: #cccccc; /* 复选框的背景颜色 (hover) */
---checkbox-border-color: #999999; /* 未选中的边框颜色 */
---checkbox-border-color-hover: #666666; /* 未选中的边框颜色 (hover) */
---checklist-done-decoration: line-through; /* 已完成项的文本装饰 */
---checklist-done-color: #cccccc; /* 已完成项的文本颜色 */
---swatch-radius: 4px; /* 色样的圆角半径 */
---swatch-height: 20px; /* 色样的高度 */
---swatch-width: 20px; /* 色样的宽度 */
---swatch-shadow: 0 1px 3px rgba(0, 0, 0, 0.1); /* 色样的阴影 */
---icon-color: #000000; /* 图标颜色 */
---icon-color-hover: #555555; /* 悬停时的图标颜色 */
---icon-color-active: #333333; /* 激活时的图标颜色 */
---icon-color-focused: #777777; /* 聚焦时的图标颜色 */
---icon-opacity: 1; /* 图标透明度 */
---icon-opacity-hover: 0.8; /* 悬停时的图标透明度 */
---icon-opacity-active: 0.6; /* 激活时的图标透明度 */
---drag-ghost-background: rgba(255, 255, 255, 0.8); /* 拖动虚影背景颜色 */
---drag-ghost-text-color: #000000; /* 拖动虚影文本颜色 */
---indentation-guide-color: #cccccc; /* 亮模式下缩进引导线颜色 */
---indentation-guide-color-active: #ffcc00; /* 亮模式下活动状态缩进引导线颜色 */
---modal-background: #ffffff; /* 亮模式模态背景颜色 */
---modal-border-color: #cccccc; /* 亮模式模态边框颜色 */
---pill-color: #000000;
---pill-color-hover: #333333;
---pill-color-remove: #FF4444;
---pill-color-remove-hover: #CC4444;
---pill-decoration: none;
---pill-decoration-hover: underline;
---pill-background: #f0f0f0;
---pill-background-hover: #e0e0e0;
---pill-border-color: #cccccc;
---pill-border-color-hover: #999999;
---pill-border-width: 1px;
---pill-padding-x: 8px;
---pill-padding-y: 4px;
---pill-radius: 12px;
---pill-weight: bold;
---nav-item-color: #000000;
---nav-item-color-hover: #333333;
---nav-item-color-active: #7c7cff;
---nav-item-color-selected: #ff4444;
---nav-item-color-highlighted: #00ff00;
---nav-item-background-hover: #f0f0f0;
---nav-item-background-active: #d0d0d0;
---nav-item-background-selected: #c0c0c0;
---nav-indentation-guide-color: #cccccc;
---nav-collapse-icon-color: #000000;
---nav-collapse-icon-color-collapsed: #555555;
-
---nav-heading-color: #000000;
---nav-heading-color-hover: #333333;
---nav-heading-color-collapsed: #666666;
---nav-heading-color-collapsed-hover: #999999;
-
---vault-name-color: #000000;
---prompt-border-color: #cccccc; /* 亮模式下提示框边框颜色 */
---slider-thumb-border-color: #cccccc; /* 亮模式下滑块拇指边框颜色 */
---slider-track-background: #e0e0e0; /* 亮模式下滑轨背景颜色 */
---tab-background-active: #ffffff;
---tab-text-color: #000000;
---tab-text-color-active: #333333;
---tab-text-color-focused: #000000;
---tab-text-color-focused-active: #ffcc00;
---tab-text-color-focused-highlighted: #00ccff;
---tab-text-color-focused-active-current: #7c7cff;
---tab-container-background: #f0f0f0;
---tab-divider-color: #666666;
---tab-outline-color: #cccccc;
---blockquote-background-color: #f9f9f9; /* 亮模式下引用块背景颜色 */
---blockquote-border-color: #cccccc; /* 亮模式下引用块左侧边框颜色 */
---blockquote-color: #333333; /* 亮模式下引用块文字颜色 */
---callout-title-color: #000000; /* 亮模式下 Callout 标题文字颜色 */
---code-background: #f5f5f5; /* 亮模式下代码背景颜色 */
---code-normal: #000000; /* 亮模式下非高亮语法颜色 */
---code-comment: #6a737d; /* 亮模式下注释颜色 */
---code-function: #6f42c1; /* 亮模式下函数颜色 */
---code-important: #d73a49; /* 亮模式下重要内容, 正则表达式颜色 */
---code-keyword: #d73a49; /* 亮模式下关键词颜色 */
---code-operator: #d73a49; /* 亮模式下操作符颜色 */
---code-property: #005cc5; /* 亮模式下属性颜色 */
---code-punctuation: #24292e; /* 亮模式下标点颜色 */
---code-string: #032f62; /* 亮模式下字符串颜色 */
---code-tag: #22863a; /* 亮模式下标签, 符号, 常量颜色 */
---code-value: #b31d28; /* 亮模式下值颜色 */
---embed-background: #ffffff; /* 亮模式下嵌入文件的背景颜色 */
---embed-border-color: #cccccc; /* 亮模式下嵌入文件的边框颜色 */
---file-header-border-color: #cccccc; /* 亮模式下文件头部的边框颜色 */
---file-header-color: #000000; /* 亮模式下文件头部的文本颜色 */
---h1-color: #333333; /* 亮模式 H1 文字颜色 */
---h2-color: #444444; /* 亮模式 H2 文字颜色 */
---h3-color: #555555; /* 亮模式 H3 文字颜色 */
---h4-color: #666666; /* 亮模式 H4 文字颜色 */
---h5-color: #777777; /* 亮模式 H5 文字颜色 */
---h6-color: #888888; /* 亮模式 H6 文字颜色 */
---link-color: #1e90ff;
---link-color-hover: #1c86ee;
---link-decoration: underline;
---link-decoration-hover: underline;
---link-decoration-thickness: 1px;
---link-weight: normal;
-
---link-unresolved-color: #ff4500;
---link-unresolved-opacity: 0.7;
---link-unresolved-filter: brightness(0.8);
---link-unresolved-decoration-style: dashed;
---link-unresolved-decoration-color: #ff4500;
-
---link-external-color: #32cd32;
---link-external-color-hover: #2eb82e;
---link-external-decoration: underline;
---link-external-decoration-hover: underline;
---list-marker-color: #000000; /* 亮模式下标记颜色 */
---list-marker-color-hover: #555555; /* 亮模式下悬停时标记颜色 */
---list-marker-color-collapsed: #999999; /* 亮模式下折叠项目的标记颜色 */
---list-bullet-border: 2px solid #000000; /* 亮模式下项目符号边框 */
---hr-color: #000000; /* 亮模式下水平规则边框颜色 */
---hr-thickness: 2px; /* 亮模式下水平规则边框厚度 */
---inline-title-color: #000000; /* 亮模式下行内标题文字颜色 */
---metadata-background: #ffffff;
---metadata-border-color: #dddddd;
---metadata-divider-color: #cccccc;
---metadata-divider-color-hover: #aaaaaa;
---metadata-divider-color-focus: #888888;
---metadata-property-background: #ffffff;
---metadata-property-background-hover: #f9f9f9;
---metadata-property-background-active: #f0f0f0;
---metadata-label-text-color: #333333;
---metadata-label-text-color-hover: #555555;
---metadata-input-text-color: #000000;
---metadata-input-background: #ffffff;
---metadata-input-background-hover: #f9f9f9;
---metadata-input-background-active: #f0f0f0;
---tag-color: #000000;
---tag-color-hover: #333333;
---tag-background: #f0f0f0;
---tag-background-hover: #e0e0e0;
---tag-border-color: #cccccc;
---tag-border-color-hover: #999999;
---divider-color: #cccccc; /* 亮模式下分隔线边框颜色 */
---divider-color-hover: #999999; /* 亮模式下分隔线悬停时边框颜色 */
---ribbon-background: #f0f0f0; /* 亮模式下的 Ribbon 背景颜色 */
---ribbon-background-collapsed: #e0e0e0; /* 亮模式下折叠侧边栏时的 Ribbon 背景颜色 */
---scrollbar-bg: #f0f0f0; /* 亮模式下滚动条背景颜色 */
---scrollbar-thumb-bg: #cccccc; /* 亮模式下滚动条滑块背景颜色 */
---scrollbar-active-thumb-bg: #999999; /* 亮模式下活动状态下滚动条滑块背景颜色 */
---status-bar-background: #f0f0f0; /* 亮模式下状态栏背景颜色 */
---status-bar-border-color: #cccccc; /* 亮模式下状态栏边框颜色 */
---status-bar-text-color: #000000; /* 亮模式下状态栏文字颜色 */
---titlebar-background: #f0f0f0; /* 亮模式下的标题栏背景颜色 */
---titlebar-background-focused: #e0e0e0; /* 亮模式下聚焦窗口时的标题栏背景颜色 */
---titlebar-border-color: #cccccc; /* 亮模式下的标题栏边框颜色 */
---titlebar-text-color: #000000; /* 亮模式下的标题栏文字颜色 */
---titlebar-text-color-focused: #333333; /* 亮模式下聚焦窗口时的标题栏文字颜色 */
---workspace-background-translucent: rgba(240, 240, 240, 0.8); /* 半透明窗口背景颜色 */
-
---bold-color: #000000; /* 亮模式下加粗文字颜色 */
---italic-color: #000000;
-}
-
-
-
-
-
-
-
-
-
-
-
-
-
-.theme-dark {
---background-primary: black;
---background-secondary: #1a1a1a; /* 深灰色 */
---text-primary: white;
---text-secondary: #cccccc; /* 浅灰色 */
-
---interactive-normal: #333333; /* 深灰色 */
---interactive-hover: #4d4d4d; /* 略浅的灰色 */
---interactive-accent: #666666; /* 灰色 */
---interactive-accent-hsl: hsl(0, 0%, 40%); /* 灰色的HSL表示 */
---interactive-accent-hover: #808080; /* 更浅的灰色 */
---checkbox-marker-color: black; /* 复选框标记的颜色 */
---checkbox-color: #333333; /* 复选框的背景颜色 */
---checkbox-color-hover: #4d4d4d; /* 复选框的背景颜色 (hover) */
---checkbox-border-color: #666666; /* 未选中的边框颜色 */
---checkbox-border-color-hover: #999999; /* 未选中的边框颜色 (hover) */
---checklist-done-decoration: line-through; /* 已完成项的文本装饰 */
---checklist-done-color: #666666; /* 已完成项的文本颜色 */
---swatch-radius: 4px; /* 色样的圆角半径 */
---swatch-height: 20px; /* 色样的高度 */
---swatch-width: 20px; /* 色样的宽度 */
---swatch-shadow: 0 1px 3px rgba(0, 0, 0, 0.5); /* 色样的阴影 */
---icon-color: #ffffff; /* 图标颜色 */
---icon-color-hover: #bbbbbb; /* 悬停时的图标颜色 */
---icon-color-active: #999999; /* 激活时的图标颜色 */
---icon-color-focused: #dddddd; /* 聚焦时的图标颜色 */
---icon-opacity: 1; /* 图标透明度 */
---icon-opacity-hover: 0.8; /* 悬停时的图标透明度 */
---icon-opacity-active: 0.6; /* 激活时的图标透明度 */
---drag-ghost-background: rgba(0, 0, 0, 0.8); /* 拖动虚影背景颜色 */
---drag-ghost-text-color: #ffffff; /* 拖动虚影文本颜色 */
---indentation-guide-color: #444444; /* 暗模式下缩进引导线颜色 */
---indentation-guide-color-active: #ffcc00; /* 暗模式下活动状态缩进引导线颜色 */
---modal-background: #333333; /* 暗模式模态背景颜色 */
---modal-border-color: #444444; /* 暗模式模态边框颜色 */
---pill-color: #ffffff;
---pill-color-hover: #cccccc;
---pill-color-remove: #FF4444;
---pill-color-remove-hover: #CC4444;
---pill-decoration: none;
---pill-decoration-hover: underline;
---pill-background: #444444;
---pill-background-hover: #555555;
---pill-border-color: #666666;
---pill-border-color-hover: #888888;
---pill-border-width: 1px;
---pill-padding-x: 8px;
---pill-padding-y: 4px;
---pill-radius: 12px;
---pill-weight: bold;
---nav-item-color: #ffffff;
---nav-item-color-hover: #cccccc;
---nav-item-color-active: #00ffff;
---nav-item-color-selected: #ff00ff;
---nav-item-color-highlighted: #00ff00;
---nav-item-background-hover: #444444;
---nav-item-background-active: #666666;
---nav-item-background-selected: #555555;
---nav-indentation-guide-color: #666666;
---nav-collapse-icon-color: #ffffff;
---nav-collapse-icon-color-collapsed: #aaaaaa;
-
---nav-heading-color: #ffffff;
---nav-heading-color-hover: #cccccc;
---nav-heading-color-collapsed: #999999;
---nav-heading-color-collapsed-hover: #bbbbbb;
-
---vault-name-color: #ffffff;
---prompt-border-color: #444444; /* 暗模式下提示框边框颜色 */
---slider-thumb-border-color: #444444; /* 暗模式下滑块拇指边框颜色 */
---slider-track-background: #666666; /* 暗模式下滑轨背景颜色 */
---tab-background-active: #1a1a1a;
---tab-text-color: #ffffff;
---tab-text-color-active: #bbbbbb;
---tab-text-color-focused: #ffffff;
---tab-text-color-focused-active: #ffcc00;
---tab-text-color-focused-highlighted: #00ccff;
---tab-text-color-focused-active-current: #7c7cff;
---tab-container-background: #000000;
---tab-divider-color: #666666;
---tab-outline-color: #cccccc;
---blockquote-background-color: #1a1a1a; /* 暗模式下引用块背景颜色 */
---blockquote-border-color: #444444; /* 暗模式下引用块左侧边框颜色 */
---blockquote-color: #dddddd; /* 暗模式下引用块文字颜色 */
---callout-title-color: #ffffff; /* 暗模式下 Callout 标题文字颜色 */
---code-background: #2d2d2d; /* 暗模式下代码背景颜色 */
---code-normal: #ffffff; /* 暗模式下非高亮语法颜色 */
---code-comment: #999988; /* 暗模式下注释颜色 */
---code-function: #a6e22e; /* 暗模式下函数颜色 */
---code-important: #f92672; /* 暗模式下重要内容, 正则表达式颜色 */
---code-keyword: #f92672; /* 暗模式下关键词颜色 */
---code-operator: #f92672; /* 暗模式下操作符颜色 */
---code-property: #66d9ef; /* 暗模式下属性颜色 */
---code-punctuation: #ffffff; /* 暗模式下标点颜色 */
---code-string: #e6db74; /* 暗模式下字符串颜色 */
---code-tag: #a6e22e; /* 暗模式下标签, 符号, 常量颜色 */
---code-value: #ae81ff; /* 暗模式下值颜色 */
---embed-background: #333333; /* 暗模式下嵌入文件的背景颜色 */
---embed-border-color: #444444; /* 暗模式下嵌入文件的边框颜色 */
---file-header-border-color: #444444; /* 暗模式下文件头部的边框颜色 */
---file-header-color: #ffffff; /* 暗模式下文件头部的文本颜色 */
---h1-color: #cccccc; /* 暗模式 H1 文字颜色 */
---h2-color: #bbbbbb; /* 暗模式 H2 文字颜色 */
---h3-color: #aaaaaa; /* 暗模式 H3 文字颜色 */
---h4-color: #999999; /* 暗模式 H4 文字颜色 */
---h5-color: #888888; /* 暗模式 H5 文字颜色 */
---h6-color: #777777; /* 暗模式 H6 文字颜色 */
---link-color: #87cefa;
---link-color-hover: #4682b4;
---link-decoration: underline;
---link-decoration-hover: underline;
---link-decoration-thickness: 1px;
---link-weight: normal;
-
---link-unresolved-color: #ff6347;
---link-unresolved-opacity: 0.7;
---link-unresolved-filter: brightness(0.8);
---link-unresolved-decoration-style: dashed;
---link-unresolved-decoration-color: #ff6347;
-
---link-external-color: #98fb98;
---link-external-color-hover: #32cd32;
---link-external-decoration: underline;
---link-external-decoration-hover: underline;
---list-marker-color: #ffffff; /* 暗模式下标记颜色 */
---list-marker-color-hover: #bbbbbb; /* 暗模式下悬停时标记颜色 */
---list-marker-color-collapsed: #777777; /* 暗模式下折叠项目的标记颜色 */
---list-bullet-border: 2px solid #ffffff; /* 暗模式下项目符号边框 */
---hr-color: #ffffff; /* 暗模式下水平规则边框颜色 */
---hr-thickness: 2px; /* 暗模式下水平规则边框厚度 */
---inline-title-color: #ffffff; /* 暗模式下行内标题文字颜色 */
---metadata-background: #333333;
---metadata-border-color: #555555;
---metadata-divider-color: #444444;
---metadata-divider-color-hover: #666666;
---metadata-divider-color-focus: #888888;
---metadata-property-background: #444444;
---metadata-property-background-hover: #555555;
---metadata-property-background-active: #666666;
---metadata-label-text-color: #cccccc;
---metadata-label-text-color-hover: #ffffff;
---metadata-input-text-color: #ffffff;
---metadata-input-background: #555555;
---metadata-input-background-hover: #666666;
---metadata-input-background-active: #777777;
---tag-color: #ffffff;
---tag-color-hover: #cccccc;
---tag-background: #444444;
---tag-background-hover: #555555;
---tag-border-color: #666666;
---tag-border-color-hover: #888888;
---divider-color: #555555; /* 暗模式下分隔线边框颜色 */
---divider-color-hover: #888888; /* 暗模式下分隔线悬停时边框颜色 */
---ribbon-background: #333333; /* 暗模式下的 Ribbon 背景颜色 */
---ribbon-background-collapsed: #444444; /* 暗模式下折叠侧边栏时的 Ribbon 背景颜色 */
---scrollbar-bg: #333333; /* 暗模式下滚动条背景颜色 */
---scrollbar-thumb-bg: #555555; /* 暗模式下滚动条滑块背景颜色 */
---scrollbar-active-thumb-bg: #888888; /* 暗模式下活动状态下滚动条滑块背景颜色 */
---status-bar-background: #333333; /* 暗模式下状态栏背景颜色 */
---status-bar-border-color: #555555; /* 暗模式下状态栏边框颜色 */
---status-bar-text-color: #ffffff; /* 暗模式下状态栏文字颜色 */
---titlebar-background: #333333; /* 暗模式下的标题栏背景颜色 */
---titlebar-background-focused: #444444; /* 暗模式下聚焦窗口时的标题栏背景颜色 */
---titlebar-border-color: #555555; /* 暗模式下的标题栏边框颜色 */
---titlebar-text-color: #ffffff; /* 暗模式下的标题栏文字颜色 */
---titlebar-text-color-focused: #dddddd; /* 暗模式下聚焦窗口时的标题栏文字颜色 */
---workspace-background-translucent: rgba(51, 51, 51, 0.8); /* 暗模式下半透明窗口背景颜色 */
---text-selection:#333333;
-
---bold-color:#cccccc;
---italic-color:#cccccc;
-}
-
-/* @settings
-name: Oreo Theme 🍪
-id: oreo-theme
-settings:
-    - 
-        id: general-settings
-        title: General Settings ⚙
-        title.zh: 常规设置 ⚙
-        type: heading
-        level: 2
-        collapsed: true
-    - 
-        id: button-radius
-        title: Button Radius
-        title.zh: 按钮圆角半径
-        type: variable-number
-        default: 10
-        format: px
-    -
-        id: checkbox-radius
-        title: Checkbox Radius
-        title.zh: 复选框圆角半径
-        type: variable-number
-        default: 50
-        format: "%"
-    -
-        id: checkbox-size
-        title: Checkbox Size
-        title.zh: 复选框大小
-        type: variable-number
-        default: 16
-        format: px
-    -
-        id: checkbox-margin-inline-start
-        title: Checkbox Margin Inline Start
-        title.zh: 复选框起始内边距
-        type: variable-number
-        default: 8
-        format: px
-    -
-        id: popover-width
-        title: Popover Width
-        title.zh: 弹出框宽度
-        type: variable-number
-        default: 300
-        format: px
-    -
-        id: popover-height
-        title: Popover Height
-        title.zh: 弹出框高度
-        type: variable-text
-        default: auto
-    -
-        id: popover-max-height
-        title: Popover Max Height
-        title.zh: 弹出框最大高度
-        type: variable-number
-        default: 400
-        format: px
-    -
-        id: popover-font-size
-        title: Popover Font Size
-        title.zh: 弹出框字体大小
-        type: variable-number
-        default: 14
-        format: px
-    -
-        id: popover-pdf-width
-        title: Popover PDF Width
-        title.zh: PDF 文件预览宽度
-        type: variable-number
-        default: 600
-        format: px
-    -
-        id: popover-pdf-height
-        title: Popover PDF Height
-        title.zh: PDF 文件预览高度
-        type: variable-number
-        default: 800
-        format: px
-    -
-        id: heading-spacing
-        title: Heading Spacing
-        title.zh: 头部间距
-        type: variable-number
-        default: 20
-        format: px
-    -
-        id: heading-font-settings
-        title: Heading Font Settings 🖋️
-        title.zh: 标题字体设置 🖋️
-        type: heading
-        level: 2
-        collapsed: true
-    -
-        id: h1-font
-        title: H1 Font
-        title.zh: H1 字体
-        type: variable-text
-        default: "Arial, sans-serif"
-    -
-        id: h2-font
-        title: H2 Font
-        title.zh: H2 字体
-        type: variable-text
-        default: "Arial, sans-serif"
-    -
-        id: h3-font
-        title: H3 Font
-        title.zh: H3 字体
-        type: variable-text
-        default: "Arial, sans-serif"
-    -
-        id: h4-font
-        title: H4 Font
-        title.zh: H4 字体
-        type: variable-text
-        default: "Arial, sans-serif"
-    -
-        id: h5-font
-        title: H5 Font
-        title.zh: H5 字体
-        type: variable-text
-        default: "Arial, sans-serif"
-    -
-        id: h6-font
-        title: H6 Font
-        title.zh: H6 字体
-        type: variable-text
-        default: "Arial, sans-serif"
-    -
-        id: heading-line-height-settings
-        title: Heading Line Height Settings 📏
-        title.zh: 标题行高设置 📏
-        type: heading
-        level: 2
-        collapsed: true
-    -
-        id: h1-line-height
-        title: H1 Line Height
-        title.zh: H1 行高
-        type: variable-number
-        default: 1.5
-    -
-        id: h2-line-height
-        title: H2 Line Height
-        title.zh: H2 行高
-        type: variable-number
-        default: 1.5
-    -
-        id: h3-line-height
-        title: H3 Line Height
-        title.zh: H3 行高
-        type: variable-number
-        default: 1.5
-    -
-        id: h4-line-height
-        title: H4 Line Height
-        title.zh: H4 行高
-        type: variable-number
-        default: 1.5
-    -
-        id: h5-line-height
-        title: H5 Line Height
-        title.zh: H5 行高
-        type: variable-number
-        default: 1.5
-    -
-        id: h6-line-height
-        title: H6 Line Height
-        title.zh: H6 行高
-        type: variable-number
-        default: 1.5
-    -
-        id: heading-size-settings
-        title: Heading Size Settings 🔠
-        title.zh: 标题大小设置 🔠
-        type: heading
-        level: 2
-        collapsed: true
-    -
-        id: h1-size
-        title: H1 Size
-        title.zh: H1 大小
-        type: variable-number
-        default: 2
-        format: em
-    -
-        id: h2-size
-        title: H2 Size
-        title.zh: H2 大小
-        type: variable-number
-        default: 1.75
-        format: em
-    -
-        id: h3-size
-        title: H3 Size
-        title.zh: H3 大小
-        type: variable-number
-        default: 1.5
-        format: em
-    -
-        id: h4-size
-        title: H4 Size
-        title.zh: H4 大小
-        type: variable-number
-        default: 1.25
-        format: em
-    -
-        id: h5-size
-        title: H5 Size
-        title.zh: H5 大小
-        type: variable-number
-        default: 1
-        format: em
-    -
-        id: h6-size
-        title: H6 Size
-        title.zh: H6 大小
-        type: variable-number
-        default: 0.875
-        format: em
-    -
-        id: heading-style-settings
-        title: Heading Style Settings 🖌️
-        title.zh: 标题样式设置 🖌️
-        type: heading
-        level: 2
-        collapsed: true
-    -
-        id: h1-style
-        title: H1 Style
-        title.zh: H1 样式
-        type: variable-select
-        default: normal
-        options:
-            - normal
-            - italic
-    -
-        id: h2-style
-        title: H2 Style
-        title.zh: H2 样式
-        type: variable-select
-        default: normal
-        options:
-            - normal
-            - italic
-    -
-        id: h3-style
-        title: H3 Style
-        title.zh: H3 样式
-        type: variable-select
-        default: normal
-        options:
-            - normal
-            - italic
-    -
-        id: h4-style
-        title: H4 Style
-        title.zh: H4 样式
-        type: variable-select
-        default: normal
-        options:
-            - normal
-            - italic
-    -
-        id: h5-style
-        title: H5 Style
-        title.zh: H5 样式
-        type: variable-select
-        default: normal
-        options:
-            - normal
-            - italic
-    -
-        id: h6-style
-        title: H6 Style
-        title.zh: H6 样式
-        type: variable-select
-        default: normal
-        options:
-            - normal
-            - italic
-    -
-        id: heading-variant-settings
-        title: Heading Variant Settings 🏷️
-        title.zh: 标题变体设置 🏷️
-        type: heading
-        level: 2
-        collapsed: true
-    -
-        id: h1-variant
-        title: H1 Variant
-        title.zh: H1 变体
-        type: variable-select
-        default: normal
-        options:
-            - normal
-            - small-caps
-    -
-        id: h2-variant
-        title: H2 Variant
-        title.zh: H2 变体
-        type: variable-select
-        default: normal
-        options:
-            - normal
-            - small-caps
-    -
-        id: h3-variant
-        title: H3 Variant
-        title.zh: H3 变体
-        type: variable-select
-        default: normal
-        options:
-            - normal
-            - small-caps
-    -
-        id: h4-variant
-        title: H4 Variant
-        title.zh: H4 变体
-        type: variable-select
-        default: normal
-        options:
-            - normal
-            - small-caps
-    -
-        id: h5-variant
-        title: H5 Variant
-        title.zh: H5 变体
-        type: variable-select
-        default: normal
-        options:
-            - normal
-            - small-caps
-    -
-        id: h6-variant
-        title: H6 Variant
-        title.zh: H6 变体
-        type: variable-select
-        default: normal
-        options:
-            - normal
-            - small-caps
-    -
-        id: heading-weight-settings
-        title: Heading Weight Settings 🏋️
-        title.zh: 标题粗细设置 🏋️
-        type: heading
-        level: 2
-        collapsed: true
-    -
-        id: h1-weight
-        title: H1 Weight
-        title.zh: H1 粗细
-        type: variable-select
-        default: bold
-        options:
-            - normal
-            - bold
-    -
-        id: h2-weight
-        title: H2 Weight
-        title.zh: H2 粗细
-        type: variable-select
-        default: bold
-        options:
-            - normal
-            - bold
-    -
-        id: h3-weight
-        title: H3 Weight
-        title.zh: H3 粗细
-        type: variable-select
-        default: bold
-        options:
-            - normal
-            - bold
-    -
-        id: h4-weight
-        title: H4 Weight
-        title.zh: H4 粗细
-        type: variable-select
-        default: bold
-        options:
-            - normal
-            - bold
-    -
-        id: h5-weight
-        title: H5 Weight
-        title.zh: H5 粗细
-        type: variable-select
-        default: bold
-        options:
-            - normal
-            - bold
-    -
-        id: h6-weight
-        title: H6 Weight
-        title.zh: H6 粗细
-        type: variable-select
-        default: bold
-        options:
-            - normal
-            - bold
-    -
-        id: heading-formatting
-        title: Heading Formatting
-        title.zh: 标题格式
-        type: variable-color
-        default: '#888888'
-    -
-        id: link-settings
-        title: Link Settings 🔗
-        title.zh: 链接设置 🔗
-        type: heading
-        level: 2
-        collapsed: true
-    -
-        id: link-color
-        title: Link Color
-        title.zh: 链接颜色
-        type: variable-color
-        default: '#1e90ff'
-    -
-        id: link-color-hover
-        title: Link Hover Color
-        title.zh: 链接悬停颜色
-        type: variable-color
-        default: '#1c86ee'
-    -
-        id: link-decoration
-        title: Link Decoration
-        title.zh: 链接装饰
-        type: variable-select
-        default: underline
-        options:
-            - none
-            - underline
-    -
-        id: link-decoration-hover
-        title: Link Hover Decoration
-        title.zh: 链接悬停装饰
-        type: variable-select
-        default: underline
-        options:
-            - none
-            - underline
-    -
-        id: link-decoration-thickness
-        title: Link Decoration Thickness
-        title.zh: 链接装饰厚度
-        type: variable-number
-        default: 1
-        format: px
-    -
-        id: link-weight
-        title: Link Weight
-        title.zh: 链接粗细
-        type: variable-select
-        default: normal
-        options:
-            - normal
-            - bold
-    -
-        id: link-unresolved-color
-        title: Unresolved Link Color
-        title.zh: 未解析链接颜色
-        type: variable-color
-        default: '#ff4500'
-    -
-        id: link-unresolved-opacity
-        title: Unresolved Link Opacity
-        title.zh: 未解析链接不透明度
-        type: variable-number
-        default: 0.7
-    -
-        id: link-unresolved-filter
-        title: Unresolved Link Filter
-        title.zh: 未解析链接滤镜
-        type: variable-text
-        default: brightness(0.8)
-    -
-        id: link-unresolved-decoration-style
-        title: Unresolved Link Decoration Style
-        title.zh: 未解析链接装饰样式
-        type: variable-select
-        default: dashed
-        options:
-            - none
-            - underline
-            - dashed
-            - dotted
-    -
-        id: link-unresolved-decoration-color
-        title: Unresolved Link Decoration Color
-        title.zh: 未解析链接装饰颜色
-        type: variable-color
-        default: '#ff4500'
-    -
-        id: link-external-color
-        title: External Link Color
-        title.zh: 外部链接颜色
-        type: variable-color
-        default: '#32cd32'
-    -
-        id: link-external-color-hover
-        title: External Link Hover Color
-        title.zh: 外部链接悬停颜色
-        type: variable-color
-        default: '#2eb82e'
-    -
-        id: link-external-decoration
-        title: External Link Decoration
-        title.zh: 外部链接装饰
-        type: variable-select
-        default: underline
-        options:
-            - none
-            - underline
-    -
-        id: link-external-decoration-hover
-        title: External Link Hover Decoration
-        title.zh: 外部链接悬停装饰
-        type: variable-select
-        default: underline
-        options:
-            - none
-            - underline
-    -
-        id: inline-title-settings
-        title: Inline Title Settings 🖋️
-        title.zh: 行内标题设置 🖋️
-        type: heading
-        level: 2
-        collapsed: true
-    -
-        id: inline-title-color
-        title: Inline Title Color
-        title.zh: 行内标题颜色
-        type: variable-color
-        default: '#000000'
-    -
-        id: inline-title-font
-        title: Inline Title Font
-        title.zh: 行内标题字体
-        type: variable-text
-        default: "Arial, sans-serif"
-    -
-        id: inline-title-line-height
-        title: Inline Title Line Height
-        title.zh: 行内标题行高
-        type: variable-number
-        default: 1.5
-    -
-        id: inline-title-size
-        title: Inline Title Size
-        title.zh: 行内标题大小
-        type: variable-number
-        default: 1.2
-        format: em
-    -
-        id: inline-title-style
-        title: Inline Title Style
-        title.zh: 行内标题样式
-        type: variable-select
-        default: normal
-        options:
-            - normal
-            - italic
-    -
-        id: inline-title-variant
-        title: Inline Title Variant
-        title.zh: 行内标题变体
-        type: variable-select
-        default: normal
-        options:
-            - normal
-            - small-caps
-    -
-        id: inline-title-weight
-        title: Inline Title Weight
-        title.zh: 行内标题粗细
-        type: variable-select
-        default: bold
-        options:
-            - normal
-            - bold
-    - 
-        id: code-settings
-        title: Code Block Settings 💻
-        title.zh: 代码块设置 💻
-        type: heading
-        level: 2
-        collapsed: true
-    - 
-        id: code-background-dark
-        title: Dark Mode Code Background
-        title.zh: 暗模式下代码背景颜色
-        type: variable-color
-        default: '#2d2d2d'
-    - 
-        id: code-normal-dark
-        title: Dark Mode Code Normal Color
-        title.zh: 暗模式下非高亮语法颜色
-        type: variable-color
-        default: '#ffffff'
-    - 
-        id: code-comment-dark
-        title: Dark Mode Code Comment Color
-        title.zh: 暗模式下注释颜色
-        type: variable-color
-        default: '#999988'
-    - 
-        id: code-function-dark
-        title: Dark Mode Code Function Color
-        title.zh: 暗模式下函数颜色
-        type: variable-color
-        default: '#a6e22e'
-    - 
-        id: code-important-dark
-        title: Dark Mode Code Important Color
-        title.zh: 暗模式下重要内容, 正则表达式颜色
-        type: variable-color
-        default: '#f92672'
-    - 
-        id: code-keyword-dark
-        title: Dark Mode Code Keyword Color
-        title.zh: 暗模式下关键词颜色
-        type: variable-color
-        default: '#f92672'
-    - 
-        id: code-operator-dark
-        title: Dark Mode Code Operator Color
-        title.zh: 暗模式下操作符颜色
-        type: variable-color
-        default: '#f92672'
-    - 
-        id: code-property-dark
-        title: Dark Mode Code Property Color
-        title.zh: 暗模式下属性颜色
-        type: variable-color
-        default: '#66d9ef'
-    - 
-        id: code-punctuation-dark
-        title: Dark Mode Code Punctuation Color
-        title.zh: 暗模式下标点颜色
-        type: variable-color
-        default: '#ffffff'
-    - 
-        id: code-string-dark
-        title: Dark Mode Code String Color
-        title.zh: 暗模式下字符串颜色
-        type: variable-color
-        default: '#e6db74'
-    - 
-        id: code-tag-dark
-        title: Dark Mode Code Tag Color
-        title.zh: 暗模式下标签, 符号, 常量颜色
-        type: variable-color
-        default: '#a6e22e'
-    - 
-        id: code-value-dark
-        title: Dark Mode Code Value Color
-        title.zh: 暗模式下值颜色
-        type: variable-color
-        default: '#ae81ff'
-    - 
-        id: code-background-light
-        title: Light Mode Code Background
-        title.zh: 亮模式下代码背景颜色
-        type: variable-color
-        default: '#f5f5f5'
-    - 
-        id: code-normal-light
-        title: Light Mode Code Normal Color
-        title.zh: 亮模式下非高亮语法颜色
-        type: variable-color
-        default: '#000000'
-    - 
-        id: code-comment-light
-        title: Light Mode Code Comment Color
-        title.zh: 亮模式下注释颜色
-        type: variable-color
-        default: '#6a737d'
-    - 
-        id: code-function-light
-        title: Light Mode Code Function Color
-        title.zh: 亮模式下函数颜色
-        type: variable-color
-        default: '#6f42c1'
-    - 
-        id: code-important-light
-        title: Light Mode Code Important Color
-        title.zh: 亮模式下重要内容, 正则表达式颜色
-        type: variable-color
-        default: '#d73a49'
-    - 
-        id: code-keyword-light
-        title: Light Mode Code Keyword Color
-        title.zh: 亮模式下关键词颜色
-        type: variable-color
-        default: '#d73a49'
-    - 
-        id: code-operator-light
-        title: Light Mode Code Operator Color
-        title.zh: 亮模式下操作符颜色
-        type: variable-color
-        default: '#d73a49'
-    - 
-        id: code-property-light
-        title: Light Mode Code Property Color
-        title.zh: 亮模式下属性颜色
-        type: variable-color
-        default: '#005cc5'
-    - 
-        id: code-punctuation-light
-        title: Light Mode Code Punctuation Color
-        title.zh: 亮模式下标点颜色
-        type: variable-color
-        default: '#24292e'
-    - 
-        id: code-string-light
-        title: Light Mode Code String Color
-        title.zh: 亮模式下字符串颜色
-        type: variable-color
-        default: '#032f62'
-    - 
-        id: code-tag-light
-        title: Light Mode Code Tag Color
-        title.zh: 亮模式下标签, 符号, 常量颜色
-        type: variable-color
-        default: '#22863a'
-    - 
-        id: code-value-light
-        title: Light Mode Code Value Color
-        title.zh: 亮模式下值颜色
-        type: variable-color
-        default: '#b31d28'
-    - 
-        id: author-info
-        title: Author Information ℹ
-        title.zh: 作者信息 ℹ
-        type: heading
-        level: 2
-        collapsed: false
-    - 
-        id: author
-        title: Author
-        title.zh: 作者
-        type: info-text
-        description: "Oreo Theme created with ❤︎ by carols12352. Support at: BuyMeACoffee/(QAQ due to regional differences you cannot buy me a coffee, just enjoy the theme and provide feed back!)"
-        description.zh: "Oreo 主题由carlos12352创建。支持请访问: BuyMeACoffee/(QAQ 因为地区政策原因你还不能给我买一杯咖啡，请享受主题并且及时给出反馈就好！)"
-        markdown: false
-*/
-
-/* @plugins
-name: Oreo Theme
-id: oreo-theme
-plugins:
-    - 
-        name: Style Settings
-        id: style-settings
-        description: Allows customization of CSS variables through a user-friendly interface.
-        description.zh: 通过用户友好的界面允许自定义 CSS 变量。
-    - 
-        name: Kanban
-        id: kanban
-        description: Provides minimalist styling for the Kanban plugin.
-        description.zh: 为 Kanban 插件提供简约的样式。
-    - 
-        name: Calendar
-        id: calendar
-        description: Integrates calendar views and customizations.
-        description.zh: 集成日历视图和自定义功能。
-    - 
-        name: CodeMirror Options
-        id: codemirror-options
-        description: Enhances code block appearance and syntax highlighting.
-        description.zh: 增强代码块外观和语法高亮。
-    - 
-        name: Sliding Panes
-        id: sliding-panes
-        description: Adds horizontal sliding panes functionality.
-        description.zh: 添加水平滑动窗格功能。
-    - 
-        name: Obsidian Tabs
-        id: obsidian-tabs
-        description: Customizes tab appearance and behavior.
-        description.zh: 自定义标签的外观和行为。
-*/
+    /* 图标相关变量 */
+  --icon-size: 18px; /* 图标的默认宽度和高度 */
+  --icon-stroke: 1.75px; /* 图标的默认描边宽度 */
+    /* 图标尺寸 */
+  --icon-xs: 14px;
+  --icon-s: 16px;
+  --icon-m: 18px;
+  --icon-l: 24px;
+  --icon-xl: 32px;
+  --icon-xs-stroke-width: 2px;
+  --icon-s-stroke-width: 2px;
+  --icon-m-stroke-width: 1.75px;
+  --icon-l-stroke-width: 1.75px;
+  --icon-xl-stroke-width: 1.25px;
+  
+  
+  --dialog-width: 600px; /* 对话框默认宽度 */
+  --dialog-max-width: 90%; /* 对话框最大宽度 */
+  --dialog-max-height: 80%; /* 对话框最大高度 */
+  --indentation-guide-width: 1px; /* 缩进引导线宽度 */
+  --indentation-guide-width-active: 2px; /* 活动状态下缩进引导线宽度 */
+  --indentation-guide-editing-indent: 20px; /* 编辑模式下的缩进宽度 */
+  --indentation-guide-reading-indent: 30px; /* 阅读模式下的缩进宽度 */
+  --indentation-guide-source-indent: 40px; /* 源代码模式下的缩进宽度 */
+  --modal-width: 600px; /* 模态默认宽度 */
+  --modal-height: auto; /* 模态默认高度 */
+  --modal-max-width: 90%; /* 模态最大宽度 */
+  --modal-max-height: 80%; /* 模态最大高度 */
+  --modal-max-width-narrow: 400px; /* 窄模态最大宽度 */
+  --modal-border-width: 1px; /* 模态边框厚度 */
+  --modal-radius: 8px; /* 模态圆角半径 */
+  --modal-community-sidebar-width: 250px; /* 社区插件/主题侧边栏宽度 */
+  --nav-item-size: 14px; /* 导航项字体大小 */
+  --nav-item-color: #000000; /* 导航项文字颜色 */
+  --nav-item-color-hover: #333333; /* 导航项悬停时文字颜色 */
+  --nav-item-color-active: #0000ff; /* 导航项激活时文字颜色 */
+  --nav-item-color-selected: #FF4444; /* 导航项选中时文字颜色 */
+  --nav-item-color-highlighted: #00ff00; /* 导航项高亮时文字颜色 */
+  --nav-item-background-hover: #f0f0f0; /* 导航项悬停时背景颜色 */
+  --nav-item-background-active: #d0d0d0; /* 导航项激活时背景颜色 */
+  --nav-item-background-selected: #c0c0c0; /* 导航项选中时背景颜色 */
+  --nav-item-padding: 8px; /* 导航项内边距 */
+  --nav-item-parent-padding: 10px; /* 父导航项内边距 */
+  --nav-item-children-padding-start: 16px; /* 子导航项起始内边距 */
+  --nav-item-children-margin-start: 16px; /* 子导航项起始外边距 */
+  --nav-item-weight: normal; /* 导航项字体粗细 */
+  --nav-item-weight-hover: bold; /* 导航项悬停时字体粗细 */
+  --nav-item-weight-active: bold; /* 导航项激活时字体粗细 */
+  --nav-item-white-space: nowrap; /* 导航项白空处理 */
+  --nav-indentation-guide-width: 1px; /* 缩进引导线宽度 */
+  --nav-indentation-guide-color: #cccccc; /* 缩进引导线颜色 */
+  --nav-collapse-icon-color: #000000; /* 折叠图标颜色 */
+  --nav-collapse-icon-color-collapsed: #555555; /* 折叠图标折叠时颜色 */
+  
+  --nav-heading-color: #000000; /* 导航标题文字颜色 */
+  --nav-heading-color-hover: #333333; /* 导航标题悬停时文字颜色 */
+  --nav-heading-color-collapsed: #666666; /* 折叠导航标题文字颜色 */
+  --nav-heading-color-collapsed-hover: #999999; /* 折叠导航标题悬停时文字颜色 */
+  --nav-heading-weight: bold; /* 导航标题字体粗细 */
+  --nav-heading-weight-hover: bold; /* 导航标题悬停时字体粗细 */
+  
+  --vault-name-font-size: 18px; /* 保险库名称字体大小 */
+  --vault-name-font-weight: bold; /* 保险库名称字体粗细 */
+  --vault-name-color: #000000; /* 保险库名称文字颜色 */
+  --prompt-input-height: 40px; /* 提示框输入高度 */
+  --prompt-width: 600px; /* 提示框宽度 */
+  --prompt-max-width: 90%; /* 窄窗口时提示框最大宽度 */
+  --prompt-max-height: 80%; /* 提示框最大高度 */
+  --prompt-border-width: 2px; /* 提示框边框宽度 */
+  --slider-thumb-border-width: 2px; /* 滑块拇指边框宽度 */
+  --slider-thumb-height: 20px; /* 滑块拇指高度 */
+  --slider-thumb-width: 20px; /* 滑块拇指宽度 */
+  --slider-thumb-y: 0; /* 滑块拇指Y轴位置 */
+  --slider-thumb-radius: 50%; /* 滑块拇指圆角半径 */
+  --slider-track-height: 4px; /* 滑轨高度 */
+  
+  --tab-background-active: #ffffff; /* 活动标签的背景颜色 */
+  --tab-text-color: #000000; /* 标签文字颜色 */
+  --tab-text-color-active: #333333; /* 非聚焦窗口中活动标签的文字颜色 */
+  --tab-text-color-focused: #000000; /* 聚焦窗口中的标签文字颜色 */
+  --tab-text-color-focused-active: #ffcc00; /* 聚焦窗口中活动标签的文字颜色 */
+  --tab-text-color-focused-highlighted: #00ccff; /* 聚焦窗口中高亮标签的文字颜色 */
+  --tab-text-color-focused-active-current: #0000ff; /* 聚焦窗口中当前活动标签的文字颜色 */
+  --tab-font-size: 14px; /* 标签字体大小 */
+  --tab-font-weight: normal; /* 标签字体粗细 */
+  --tab-container-background: #000000; /* 标签容器背景颜色 */
+  --tab-divider-color: #666666; /* 标签分隔线颜色 */
+  --tab-outline-color: #cccccc; /* 标签轮廓颜色 */
+  --tab-outline-width: 2px; /* 标签轮廓宽度 */
+  --tab-curve: 5px; /* 标签曲线半径 */
+  --tab-radius: 5px; /* 标签外圆角半径 */
+  --tab-radius-active: 8px; /* 活动标签外圆角半径 */
+  --tab-width: auto; /* 标签默认宽度 */
+  --tab-max-width: 200px; /* 标签最大宽度 */
+  
+  /* 堆叠标签 */
+  --tab-stacked-pane-width: 200px; /* 堆叠窗格宽度 */
+  --tab-stacked-header-width: 50px; /* 堆叠标题宽度 */
+  --tab-stacked-font-size: 12px; /* 堆叠标签字体大小 */
+  --tab-stacked-font-weight: bold; /* 堆叠标签字体粗细 */
+  --tab-stacked-text-align: center; /* 堆叠标签文字对齐方式 */
+  --tab-stacked-text-transform: uppercase; /* 堆叠标签文字转换 */
+  --tab-stacked-text-writing-mode: vertical-rl; /* 堆叠标签文字书写模式 */
+  --tab-stacked-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* 堆叠标签阴影 */
+  --input-height: 40px; /* 输入框高度 */
+  --input-radius: 5px; /* 输入框圆角半径 */
+  --input-font-weight: normal; /* 输入框字体粗细 */
+  --input-border-width: 2px; /* 输入框边框宽度 */
+  --toggle-border-width: 2px; /* Toggle 边框宽度 */
+  --toggle-width: 40px; /* Toggle 宽度 */
+  --toggle-radius: 20px; /* Toggle 圆角半径 */
+  --toggle-thumb-color: #ffffff; /* Toggle 拇指背景颜色 */
+  --toggle-thumb-radius: 50%; /* Toggle 拇指圆角半径 */
+  --toggle-thumb-height: 20px; /* Toggle 拇指高度 */
+  --toggle-thumb-width: 20px; /* Toggle 拇指宽度 */
+  --toggle-s-border-width: 1px; /* 小 Toggle 边框宽度 */
+  --toggle-s-width: 20px; /* 小 Toggle 宽度 */
+  --toggle-s-thumb-height: 10px; /* 小 Toggle 拇指高度 */
+  --toggle-s-thumb-width: 10px; /* 小 Toggle 拇指宽度 */
+  --embed-block-shadow-hover: 0 4px 8px rgba(0, 0, 0, 0.2); /* Live Preview中渲染的嵌入块悬停时的阴影 */
+  --blockquote-border-thickness: 4px; /* 引用块左侧边框厚度 */
+  --blockquote-font-style: italic; /* 引用块字体样式（如：正常、斜体） */
+  --callout-border-width: 2px; /* Callout 边框宽度 */
+  --callout-border-opacity: 1; /* Callout 边框透明度 */
+  --callout-padding: 16px; /* Callout 内边距 */
+  --callout-radius: 8px; /* Callout 圆角半径 */
+  --callout-blend-mode: normal; /* Callout 混合模式，允许嵌套 callout 进行颜色混合 */
+  --callout-title-color: #000000; /* Callout 标题文字颜色 */
+  --callout-title-padding: 8px; /* Callout 标题内边距 */
+  --callout-title-size: 1.2em; /* Callout 标题字体大小 */
+  --callout-title-weight: bold; /* Callout 标题字体粗细 */
+  --callout-content-padding: 12px; /* Callout 内容内边距 */
+  
+  
+  --callout-bug: #ff4444; /* bug 类型 callout 颜色 */
+  --callout-default: #d9d9d9; /* default/note 类型 callout 颜色 */
+  --callout-error: #ff0000; /* error/danger 类型 callout 颜色 */
+  --callout-example: #e6e6ff; /* example 类型 callout 颜色 */
+  --callout-fail: #ff6666; /* fail/failure/missing 类型 callout 颜色 */
+  --callout-important: #ffcc00; /* important 类型 callout 颜色 */
+  --callout-info: #33ccff; /* info 类型 callout 颜色 */
+  --callout-question: #3399ff; /* question/help/faq 类型 callout 颜色 */
+  --callout-success: #66cc66; /* success/check/done 类型 callout 颜色 */
+  --callout-summary: #cccccc; /* summary/abstract/tldr 类型 callout 颜色 */
+  --callout-tip: #99cc00; /* tip/hint 类型 callout 颜色 */
+  --callout-todo: #ffcc66; /* todo 类型 callout 颜色 */
+  --callout-warning: #ff9900; /* warning/caution/attention 类型 callout 颜色 */
+  --callout-quote: #ffcc99; /* quote/cite 类型 callout 颜色 */
+  --code-white-space: pre; /* 代码 white-space 属性 */
+  --code-size: 14px; /* 代码字体大小 */
+  --embed-max-height: 500px; /* 嵌入文件的最大高度 */
+  --embed-canvas-max-height: 400px; /* 嵌入 Canvas 元素的最大高度 */
+  --embed-background: #f9f9f9; /* 嵌入文件的背景颜色 */
+  --embed-border-end: 1px solid #cccccc; /* 嵌入文件的右边框 */
+  --embed-border-start: 1px solid #cccccc; /* 嵌入文件的左边框 */
+  --embed-border-top: 1px solid #cccccc; /* 嵌入文件的上边框 */
+  --embed-border-bottom: 1px solid #cccccc; /* 嵌入文件的下边框 */
+  --embed-padding: 10px; /* 嵌入文件的内边距 */
+  --embed-font-style: italic; /* 嵌入文件的字体样式 */
+  --file-line-width: 800px; /* 当启用可读行宽时的行宽 */
+  --file-folding-offset: 20px; /* 折叠指示器的行偏移宽度 */
+  --file-margins: 20px; /* 文件边距 */
+  --file-header-font-size: 1.5em; /* 文件头部字体大小 */
+  --file-header-font-weight: bold; /* 文件头部字体粗细 */
+  --file-header-border: 1px solid #cccccc; /* 文件头部的下边框属性 */
+  --file-header-justify: space-between; /* 文件头部文本对齐方式，使用 justify-content 属性 */
+  --footnote-size: 0.8em; /* 脚注字体大小 */
+  --list-indent: 20px; /* 嵌套项目的缩进宽度 */
+  --list-indent-editing: 20px; /* 实时预览模式下的缩进宽度 */
+  --list-indent-source: 20px; /* 源代码模式下的缩进宽度 */
+  --list-spacing: 10px; /* 列表项之间的垂直间距 */
+  --list-bullet-end-padding: 5px; /* 项目符号后的内边距 */
+  --list-bullet-radius: 50%; /* 项目符号的圆角半径 */
+  --list-bullet-size: 10px; /* 项目符号的宽度/高度 */
+  --list-bullet-transform: scale(1); /* 项目符号的变换属性 */
+  --list-numbered-style: decimal; /* 有序列表的列表样式类型 */
+    /* Properties container */
+  --metadata-background: #f0f0f0; /* 属性容器背景颜色 */
+  --metadata-display-editing: block; /* 编辑模式下显示 */
+  --metadata-display-reading: block; /* 阅读模式下显示 */
+  --metadata-max-width: 800px; /* 最大宽度 */
+  --metadata-padding: 10px; /* 内边距 */
+  --metadata-border-color: #cccccc; /* 边框颜色 */
+  --metadata-border-radius: 8px; /* 圆角半径 */
+  --metadata-border-width: 1px; /* 边框宽度 */
+  --metadata-gap: 10px; /* 属性之间的间距 */
+  
+  /* Individual properties */
+  --metadata-divider-color: #cccccc; /* 属性之间分隔线颜色 */
+  --metadata-divider-color-hover: #aaaaaa; /* 属性悬停时分隔线颜色 */
+  --metadata-divider-color-focus: #888888; /* 属性聚焦时分隔线颜色 */
+  --metadata-divider-width: 1px; /* 分隔线宽度 */
+  --metadata-property-padding: 5px; /* 属性内边距 */
+  --metadata-property-radius: 4px; /* 属性圆角半径 */
+  --metadata-property-radius-hover: 4px; /* 属性悬停时圆角半径 */
+  --metadata-property-radius-focus: 4px; /* 属性聚焦时圆角半径 */
+  --metadata-property-background: #ffffff; /* 属性背景颜色 */
+  --metadata-property-background-hover: #f9f9f9; /* 属性悬停时背景颜色 */
+  --metadata-property-background-active: #f0f0f0; /* 属性激活时背景颜色 */
+  --metadata-label-background-hover: #f0f0f0; /* 属性标签悬停时背景颜色 */
+  --metadata-label-background-active: #e0e0e0; /* 属性标签激活时背景颜色 */
+  --metadata-label-font-size: 14px; /* 属性标签字体大小 */
+  --metadata-label-font-weight: bold; /* 属性标签字体粗细 */
+  --metadata-sidebar-label-font-size: 12px; /* 侧边栏属性标签字体大小 */
+  --metadata-label-text-color: #333333; /* 属性标签文字颜色 */
+  --metadata-label-text-color-hover: #555555; /* 属性标签悬停时文字颜色 */
+  --metadata-label-width: 150px; /* 属性标签宽度 */
+  --metadata-input-height: 30px; /* 属性输入框高度 */
+  --metadata-input-text-color: #000000; /* 属性输入框文字颜色 */
+  --metadata-input-font-size: 14px; /* 属性输入框字体大小 */
+  --metadata-sidebar-input-font-size: 12px; /* 侧边栏属性输入框字体大小 */
+  --metadata-input-background: #ffffff; /* 属性输入框背景颜色 */
+  --metadata-input-background-hover: #f9f9f9; /* 属性输入框悬停时背景颜色 */
+  --metadata-input-background-active: #f0f0f0; /* 属性输入框激活时背景颜色 */
+  --tag-size: 12px; /* 标签字体大小 */
+  --tag-color: #000000; /* 标签文字颜色 */
+  --tag-color-hover: #333333; /* 标签悬停时文字颜色 */
+  --tag-decoration: none; /* 标签文字装饰 */
+  --tag-decoration-hover: underline; /* 标签悬停时文字装饰 */
+  --tag-background: #f0f0f0; /* 标签背景颜色 */
+  --tag-background-hover: #e0e0e0; /* 标签悬停时背景颜色 */
+  --tag-border-color: #cccccc; /* 标签边框颜色 */
+  --tag-border-color-hover: #999999; /* 标签悬停时边框颜色 */
+  --tag-border-width: 1px; /* 标签边框宽度 */
+  --tag-padding-x: 5px; /* 标签左右内边距 */
+  --tag-padding-y: 2px; /* 标签上下内边距 */
+  --tag-radius: 4px; /* 标签圆角半径 */
+  --tag-weight: bold; /* 标签字体粗细 */
+  /* 字体设置 */
+  --font-interface-theme: "Arial", sans-serif; /* 用于UI元素的字体 */
+  --font-text-theme: "Georgia", serif; /* 用于编辑器中文本的字体 */
+  --font-monospace-theme: "Courier New", monospace; /* 用于等宽内容的字体，如代码块和行内代码 */
+  
+  /* 字体大小 */
+  --font-text-size: 16px; /* 编辑器字体大小，由用户在外观设置中定义 */
+  --font-smallest: 0.8em; /* 最小字体大小 */
+  --font-smaller: 0.875em; /* 较小字体大小 */
+  --font-small: 0.933em; /* 小字体大小 */
+  --font-ui-smaller: 12px; /* UI元素较小字体大小 */
+  --font-ui-small: 13px; /* UI元素小字体大小 */
+  --font-ui-medium: 15px; /* UI元素中等字体大小 */
+  --font-ui-larger: 20px; /* UI元素较大字体大小 */
+  
+  /* 字体粗细 */
+  --font-thin: 100; /* 极细字体粗细 */
+  --font-extralight: 200; /* 额外细字体粗细 */
+  --font-light: 300; /* 细字体粗细 */
+  --font-normal: 400; /* 常规字体粗细 */
+  --font-medium: 500; /* 中等字体粗细 */
+  --font-semibold: 600; /* 半粗字体粗细 */
+  --font-bold: 700; /* 粗字体粗细 */
+  --font-extrabold: 800; /* 额外粗字体粗细 */
+  --font-black: 900; /* 极粗字体粗细 */
+  
+  /* 文本格式化 */
+  --font-weight: var(--font-normal); /* 常规文本粗细 */
+  --bold-modifier: 200; /* 加粗文本的额外权重 */
+  --bold-weight: calc(var(--font-weight) + var(--bold-modifier)); /* 加粗文本的字体粗细 */
+  --bold-color: #000000; /* 加粗文本颜色 */
+  --italic-color: #000000; /* 斜体文本颜色 */
+  
+  /* 行高 */
+  --line-height-normal: 1.5; /* 默认行高 */
+  --line-height-tight: 1.3; /* 紧凑行高，用于搜索结果、树状项目、工具提示等较小空间 */
+  
+  /* 段落间距 */
+  --heading-spacing: 20px; /* 标题上方的间距 */
+  --p-spacing: 10px; /* 段落之间的间距 */
+  --divider-width: 3px; /* 分隔线边框宽度 */
+  --divider-width-hover: 2px; /* 分隔线悬停时边框宽度 */
+  --divider-vertical-height: 80%; /* 垂直分隔线高度 */
+  
+  --ribbon-width: 50px; /* Ribbon 宽度 */
+  --ribbon-padding: 10px; /* Ribbon 内边距 */
+  --sidebar-markdown-font-size: 14px; /* 侧边栏中Markdown文件的字体大小 */
+  --sidebar-tab-text-display: block; /* 侧边栏中选项卡文本的display属性 */
+  --status-bar-border-width: 1px; /* 状态栏边框宽度 */
+  --status-bar-font-size: 12px; /* 状态栏字体大小 */
+  --status-bar-position: fixed; /* 状态栏位置属性 */
+  --status-bar-radius: 4px; /* 状态栏圆角半径 */
+  --status-bar-scroll-padding: 10px; /* 状态栏滚动内边距 */
+  --titlebar-border-width: 1px; /* 标题栏边框宽度 */
+  --titlebar-text-weight: bold; /* 标题栏字体粗细 */
+  --header-height: 30px; /* 框架元素的默认高度 */
+  
+  }
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  body {
+  --checkbox-radius: 50%; /* 复选框的圆角半径 */
+  --checkbox-size: 16px; /* 复选框的大小 */
+  --checkbox-margin-inline-start: 8px; /* 复选框的起始内边距 */
+  --button-radius:10px;
+  --popover-width: 300px; /* 弹出框默认宽度 */
+  --popover-height: auto; /* 弹出框默认高度 */
+  --popover-max-height: 400px; /* 弹出框最大高度 */
+  --popover-font-size: 14px; /* 弹出框字体大小 */
+  --popover-pdf-width: 600px; /* PDF文件预览宽度 */
+  --popover-pdf-height: 800px; /* PDF文件预览高度 */
+  --heading-spacing: 20px; /* 头部上方的间距 */
+  
+  --h1-font: "Arial", sans-serif; /* H1 字体 */
+  --h2-font: "Arial", sans-serif; /* H2 字体 */
+  --h3-font: "Arial", sans-serif; /* H3 字体 */
+  --h4-font: "Arial", sans-serif; /* H4 字体 */
+  --h5-font: "Arial", sans-serif; /* H5 字体 */
+  --h6-font: "Arial", sans-serif; /* H6 字体 */
+  
+  --h1-line-height: 1.5; /* H1 行高 */
+  --h2-line-height: 1.5; /* H2 行高 */
+  --h3-line-height: 1.5; /* H3 行高 */
+  --h4-line-height: 1.5; /* H4 行高 */
+  --h5-line-height: 1.5; /* H5 行高 */
+  --h6-line-height: 1.5; /* H6 行高 */
+  
+  --h1-size: 2em; /* H1 字体大小 */
+  --h2-size: 1.75em; /* H2 字体大小 */
+  --h3-size: 1.5em; /* H3 字体大小 */
+  --h4-size: 1.25em; /* H4 字体大小 */
+  --h5-size: 1em; /* H5 字体大小 */
+  --h6-size: 0.875em; /* H6 字体大小 */
+  
+  --h1-style: normal; /* H1 字体样式 */
+  --h2-style: normal; /* H2 字体样式 */
+  --h3-style: normal; /* H3 字体样式 */
+  --h4-style: normal; /* H4 字体样式 */
+  --h5-style: normal; /* H5 字体样式 */
+  --h6-style: normal; /* H6 字体样式 */
+  
+  --h1-variant: normal; /* H1 字体变体 */
+  --h2-variant: normal; /* H2 字体变体 */
+  --h3-variant: normal; /* H3 字体变体 */
+  --h4-variant: normal; /* H4 字体变体 */
+  --h5-variant: normal; /* H5 字体变体 */
+  --h6-variant: normal; /* H6 字体变体 */
+  
+  --h1-weight: bold; /* H1 字体粗细 */
+  --h2-weight: bold; /* H2 字体粗细 */
+  --h3-weight: bold; /* H3 字体粗细 */
+  --h4-weight: bold; /* H4 字体粗细 */
+  --h5-weight: bold; /* H5 字体粗细 */
+  --h6-weight: bold; /* H6 字体粗细 */
+  --heading-formatting: #888888; /* Markdown 头部深度语法的文字颜色 */
+  --link-color: #1e90ff; /* 已解析链接文字颜色 */
+  --link-color-hover: #1c86ee; /* 已解析链接悬停时文字颜色 */
+  --link-decoration: underline; /* 已解析链接文字装饰 */
+  --link-decoration-hover: underline; /* 已解析链接悬停时文字装饰 */
+  --link-decoration-thickness: 1px; /* 已解析链接文字装饰厚度 */
+  --link-weight: normal; /* 链接字体粗细 */
+  
+  --link-unresolved-color: #ff4500; /* 未解析链接文字颜色 */
+  --link-unresolved-opacity: 0.7; /* 未解析链接不透明度 */
+  --link-unresolved-filter: brightness(0.8); /* 未解析链接滤镜效果 */
+  --link-unresolved-decoration-style: dashed; /* 未解析链接文字装饰样式 */
+  --link-unresolved-decoration-color: #ff4500; /* 未解析链接文字装饰颜色 */
+  
+  --link-external-color: #32cd32; /* 外部链接文字颜色 */
+  --link-external-color-hover: #2eb82e; /* 外部链接悬停时文字颜色 */
+  --link-external-decoration: underline; /* 外部链接文字装饰 */
+  --link-external-decoration-hover: underline; /* 外部链接悬停时文字装饰 */
+  --inline-title-color: #000000; /* 行内标题文字颜色 */
+  --inline-title-font: "Arial", sans-serif; /* 行内标题字体 */
+  --inline-title-line-height: 1.5; /* 行内标题行高 */
+  --inline-title-size: 1.2em; /* 行内标题字体大小 */
+  --inline-title-style: normal; /* 行内标题字体样式 */
+  --inline-title-variant: normal; /* 行内标题字体变体 */
+  --inline-title-weight: bold; /* 行内标题字体粗细 */
+  
+  }
+  
+  .theme-light {
+  --interactive-normal: #e6e6e6; /* 浅灰色 */
+  --interactive-hover: #cccccc; /* 中灰色 */
+  --interactive-accent: #999999; /* 中灰色 */
+  --interactive-accent-hsl: hsl(0, 0%, 60%); /* 中灰色的HSL表示 */
+  --interactive-accent-hover: #666666; /* 深灰色 */
+  --checkbox-marker-color: white; /* 复选框标记的颜色 */
+  --checkbox-color: #e6e6e6; /* 复选框的背景颜色 */
+  --checkbox-color-hover: #cccccc; /* 复选框的背景颜色 (hover) */
+  --checkbox-border-color: #999999; /* 未选中的边框颜色 */
+  --checkbox-border-color-hover: #666666; /* 未选中的边框颜色 (hover) */
+  --checklist-done-decoration: line-through; /* 已完成项的文本装饰 */
+  --checklist-done-color: #cccccc; /* 已完成项的文本颜色 */
+  --swatch-radius: 4px; /* 色样的圆角半径 */
+  --swatch-height: 20px; /* 色样的高度 */
+  --swatch-width: 20px; /* 色样的宽度 */
+  --swatch-shadow: 0 1px 3px rgba(0, 0, 0, 0.1); /* 色样的阴影 */
+  --icon-color: #000000; /* 图标颜色 */
+  --icon-color-hover: #555555; /* 悬停时的图标颜色 */
+  --icon-color-active: #333333; /* 激活时的图标颜色 */
+  --icon-color-focused: #777777; /* 聚焦时的图标颜色 */
+  --icon-opacity: 1; /* 图标透明度 */
+  --icon-opacity-hover: 0.8; /* 悬停时的图标透明度 */
+  --icon-opacity-active: 0.6; /* 激活时的图标透明度 */
+  --drag-ghost-background: rgba(255, 255, 255, 0.8); /* 拖动虚影背景颜色 */
+  --drag-ghost-text-color: #000000; /* 拖动虚影文本颜色 */
+  --indentation-guide-color: #cccccc; /* 亮模式下缩进引导线颜色 */
+  --indentation-guide-color-active: #ffcc00; /* 亮模式下活动状态缩进引导线颜色 */
+  --modal-background: #ffffff; /* 亮模式模态背景颜色 */
+  --modal-border-color: #cccccc; /* 亮模式模态边框颜色 */
+  --pill-color: #000000;
+  --pill-color-hover: #333333;
+  --pill-color-remove: #FF4444;
+  --pill-color-remove-hover: #CC4444;
+  --pill-decoration: none;
+  --pill-decoration-hover: underline;
+  --pill-background: #f0f0f0;
+  --pill-background-hover: #e0e0e0;
+  --pill-border-color: #cccccc;
+  --pill-border-color-hover: #999999;
+  --pill-border-width: 1px;
+  --pill-padding-x: 8px;
+  --pill-padding-y: 4px;
+  --pill-radius: 12px;
+  --pill-weight: bold;
+  --nav-item-color: #000000;
+  --nav-item-color-hover: #333333;
+  --nav-item-color-active: #7c7cff;
+  --nav-item-color-selected: #ff4444;
+  --nav-item-color-highlighted: #00ff00;
+  --nav-item-background-hover: #f0f0f0;
+  --nav-item-background-active: #d0d0d0;
+  --nav-item-background-selected: #c0c0c0;
+  --nav-indentation-guide-color: #cccccc;
+  --nav-collapse-icon-color: #000000;
+  --nav-collapse-icon-color-collapsed: #555555;
+  
+  --nav-heading-color: #000000;
+  --nav-heading-color-hover: #333333;
+  --nav-heading-color-collapsed: #666666;
+  --nav-heading-color-collapsed-hover: #999999;
+  
+  --vault-name-color: #000000;
+  --prompt-border-color: #cccccc; /* 亮模式下提示框边框颜色 */
+  --slider-thumb-border-color: #cccccc; /* 亮模式下滑块拇指边框颜色 */
+  --slider-track-background: #e0e0e0; /* 亮模式下滑轨背景颜色 */
+  --tab-background-active: #ffffff;
+  --tab-text-color: #000000;
+  --tab-text-color-active: #333333;
+  --tab-text-color-focused: #000000;
+  --tab-text-color-focused-active: #ffcc00;
+  --tab-text-color-focused-highlighted: #00ccff;
+  --tab-text-color-focused-active-current: #7c7cff;
+  --tab-container-background: #f0f0f0;
+  --tab-divider-color: #666666;
+  --tab-outline-color: #cccccc;
+  --blockquote-background-color: #f9f9f9; /* 亮模式下引用块背景颜色 */
+  --blockquote-border-color: #cccccc; /* 亮模式下引用块左侧边框颜色 */
+  --blockquote-color: #333333; /* 亮模式下引用块文字颜色 */
+  --callout-title-color: #000000; /* 亮模式下 Callout 标题文字颜色 */
+  --code-background: #f5f5f5; /* 亮模式下代码背景颜色 */
+  --code-normal: #000000; /* 亮模式下非高亮语法颜色 */
+  --code-comment: #6a737d; /* 亮模式下注释颜色 */
+  --code-function: #6f42c1; /* 亮模式下函数颜色 */
+  --code-important: #d73a49; /* 亮模式下重要内容, 正则表达式颜色 */
+  --code-keyword: #d73a49; /* 亮模式下关键词颜色 */
+  --code-operator: #d73a49; /* 亮模式下操作符颜色 */
+  --code-property: #005cc5; /* 亮模式下属性颜色 */
+  --code-punctuation: #24292e; /* 亮模式下标点颜色 */
+  --code-string: #032f62; /* 亮模式下字符串颜色 */
+  --code-tag: #22863a; /* 亮模式下标签, 符号, 常量颜色 */
+  --code-value: #b31d28; /* 亮模式下值颜色 */
+  --embed-background: #ffffff; /* 亮模式下嵌入文件的背景颜色 */
+  --embed-border-color: #cccccc; /* 亮模式下嵌入文件的边框颜色 */
+  --file-header-border-color: #cccccc; /* 亮模式下文件头部的边框颜色 */
+  --file-header-color: #000000; /* 亮模式下文件头部的文本颜色 */
+  --h1-color: #333333; /* 亮模式 H1 文字颜色 */
+  --h2-color: #444444; /* 亮模式 H2 文字颜色 */
+  --h3-color: #555555; /* 亮模式 H3 文字颜色 */
+  --h4-color: #666666; /* 亮模式 H4 文字颜色 */
+  --h5-color: #777777; /* 亮模式 H5 文字颜色 */
+  --h6-color: #888888; /* 亮模式 H6 文字颜色 */
+  --link-color: #1e90ff;
+  --link-color-hover: #1c86ee;
+  --link-decoration: underline;
+  --link-decoration-hover: underline;
+  --link-decoration-thickness: 1px;
+  --link-weight: normal;
+  
+  --link-unresolved-color: #ff4500;
+  --link-unresolved-opacity: 0.7;
+  --link-unresolved-filter: brightness(0.8);
+  --link-unresolved-decoration-style: dashed;
+  --link-unresolved-decoration-color: #ff4500;
+  
+  --link-external-color: #32cd32;
+  --link-external-color-hover: #2eb82e;
+  --link-external-decoration: underline;
+  --link-external-decoration-hover: underline;
+  --list-marker-color: #000000; /* 亮模式下标记颜色 */
+  --list-marker-color-hover: #555555; /* 亮模式下悬停时标记颜色 */
+  --list-marker-color-collapsed: #999999; /* 亮模式下折叠项目的标记颜色 */
+  --list-bullet-border: 2px solid #000000; /* 亮模式下项目符号边框 */
+  --hr-color: #000000; /* 亮模式下水平规则边框颜色 */
+  --hr-thickness: 2px; /* 亮模式下水平规则边框厚度 */
+  --inline-title-color: #000000; /* 亮模式下行内标题文字颜色 */
+  --metadata-background: #ffffff;
+  --metadata-border-color: #dddddd;
+  --metadata-divider-color: #cccccc;
+  --metadata-divider-color-hover: #aaaaaa;
+  --metadata-divider-color-focus: #888888;
+  --metadata-property-background: #ffffff;
+  --metadata-property-background-hover: #f9f9f9;
+  --metadata-property-background-active: #f0f0f0;
+  --metadata-label-text-color: #333333;
+  --metadata-label-text-color-hover: #555555;
+  --metadata-input-text-color: #000000;
+  --metadata-input-background: #ffffff;
+  --metadata-input-background-hover: #f9f9f9;
+  --metadata-input-background-active: #f0f0f0;
+  --tag-color: #000000;
+  --tag-color-hover: #333333;
+  --tag-background: #f0f0f0;
+  --tag-background-hover: #e0e0e0;
+  --tag-border-color: #cccccc;
+  --tag-border-color-hover: #999999;
+  --divider-color: #cccccc; /* 亮模式下分隔线边框颜色 */
+  --divider-color-hover: #999999; /* 亮模式下分隔线悬停时边框颜色 */
+  --ribbon-background: #f0f0f0; /* 亮模式下的 Ribbon 背景颜色 */
+  --ribbon-background-collapsed: #e0e0e0; /* 亮模式下折叠侧边栏时的 Ribbon 背景颜色 */
+  --scrollbar-bg: #f0f0f0; /* 亮模式下滚动条背景颜色 */
+  --scrollbar-thumb-bg: #cccccc; /* 亮模式下滚动条滑块背景颜色 */
+  --scrollbar-active-thumb-bg: #999999; /* 亮模式下活动状态下滚动条滑块背景颜色 */
+  --status-bar-background: #f0f0f0; /* 亮模式下状态栏背景颜色 */
+  --status-bar-border-color: #cccccc; /* 亮模式下状态栏边框颜色 */
+  --status-bar-text-color: #000000; /* 亮模式下状态栏文字颜色 */
+  --titlebar-background: #f0f0f0; /* 亮模式下的标题栏背景颜色 */
+  --titlebar-background-focused: #e0e0e0; /* 亮模式下聚焦窗口时的标题栏背景颜色 */
+  --titlebar-border-color: #cccccc; /* 亮模式下的标题栏边框颜色 */
+  --titlebar-text-color: #000000; /* 亮模式下的标题栏文字颜色 */
+  --titlebar-text-color-focused: #333333; /* 亮模式下聚焦窗口时的标题栏文字颜色 */
+  --workspace-background-translucent: rgba(240, 240, 240, 0.8); /* 半透明窗口背景颜色 */
+  
+  --bold-color: #000000; /* 亮模式下加粗文字颜色 */
+  --italic-color: #000000;
+  }
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  .theme-dark {
+  --background-primary: black;
+  --background-secondary: #1a1a1a; /* 深灰色 */
+  --text-primary: white;
+  --text-secondary: #cccccc; /* 浅灰色 */
+  
+  --interactive-normal: #333333; /* 深灰色 */
+  --interactive-hover: #4d4d4d; /* 略浅的灰色 */
+  --interactive-accent: #666666; /* 灰色 */
+  --interactive-accent-hsl: hsl(0, 0%, 40%); /* 灰色的HSL表示 */
+  --interactive-accent-hover: #808080; /* 更浅的灰色 */
+  --checkbox-marker-color: black; /* 复选框标记的颜色 */
+  --checkbox-color: #333333; /* 复选框的背景颜色 */
+  --checkbox-color-hover: #4d4d4d; /* 复选框的背景颜色 (hover) */
+  --checkbox-border-color: #666666; /* 未选中的边框颜色 */
+  --checkbox-border-color-hover: #999999; /* 未选中的边框颜色 (hover) */
+  --checklist-done-decoration: line-through; /* 已完成项的文本装饰 */
+  --checklist-done-color: #666666; /* 已完成项的文本颜色 */
+  --swatch-radius: 4px; /* 色样的圆角半径 */
+  --swatch-height: 20px; /* 色样的高度 */
+  --swatch-width: 20px; /* 色样的宽度 */
+  --swatch-shadow: 0 1px 3px rgba(0, 0, 0, 0.5); /* 色样的阴影 */
+  --icon-color: #ffffff; /* 图标颜色 */
+  --icon-color-hover: #bbbbbb; /* 悬停时的图标颜色 */
+  --icon-color-active: #999999; /* 激活时的图标颜色 */
+  --icon-color-focused: #dddddd; /* 聚焦时的图标颜色 */
+  --icon-opacity: 1; /* 图标透明度 */
+  --icon-opacity-hover: 0.8; /* 悬停时的图标透明度 */
+  --icon-opacity-active: 0.6; /* 激活时的图标透明度 */
+  --drag-ghost-background: rgba(0, 0, 0, 0.8); /* 拖动虚影背景颜色 */
+  --drag-ghost-text-color: #ffffff; /* 拖动虚影文本颜色 */
+  --indentation-guide-color: #444444; /* 暗模式下缩进引导线颜色 */
+  --indentation-guide-color-active: #ffcc00; /* 暗模式下活动状态缩进引导线颜色 */
+  --modal-background: #333333; /* 暗模式模态背景颜色 */
+  --modal-border-color: #444444; /* 暗模式模态边框颜色 */
+  --pill-color: #ffffff;
+  --pill-color-hover: #cccccc;
+  --pill-color-remove: #FF4444;
+  --pill-color-remove-hover: #CC4444;
+  --pill-decoration: none;
+  --pill-decoration-hover: underline;
+  --pill-background: #444444;
+  --pill-background-hover: #555555;
+  --pill-border-color: #666666;
+  --pill-border-color-hover: #888888;
+  --pill-border-width: 1px;
+  --pill-padding-x: 8px;
+  --pill-padding-y: 4px;
+  --pill-radius: 12px;
+  --pill-weight: bold;
+  --nav-item-color: #ffffff;
+  --nav-item-color-hover: #cccccc;
+  --nav-item-color-active: #00ffff;
+  --nav-item-color-selected: #ff00ff;
+  --nav-item-color-highlighted: #00ff00;
+  --nav-item-background-hover: #444444;
+  --nav-item-background-active: #666666;
+  --nav-item-background-selected: #555555;
+  --nav-indentation-guide-color: #666666;
+  --nav-collapse-icon-color: #ffffff;
+  --nav-collapse-icon-color-collapsed: #aaaaaa;
+  
+  --nav-heading-color: #ffffff;
+  --nav-heading-color-hover: #cccccc;
+  --nav-heading-color-collapsed: #999999;
+  --nav-heading-color-collapsed-hover: #bbbbbb;
+  
+  --vault-name-color: #ffffff;
+  --prompt-border-color: #444444; /* 暗模式下提示框边框颜色 */
+  --slider-thumb-border-color: #444444; /* 暗模式下滑块拇指边框颜色 */
+  --slider-track-background: #666666; /* 暗模式下滑轨背景颜色 */
+  --tab-background-active: #1a1a1a;
+  --tab-text-color: #ffffff;
+  --tab-text-color-active: #bbbbbb;
+  --tab-text-color-focused: #ffffff;
+  --tab-text-color-focused-active: #ffcc00;
+  --tab-text-color-focused-highlighted: #00ccff;
+  --tab-text-color-focused-active-current: #7c7cff;
+  --tab-container-background: #000000;
+  --tab-divider-color: #666666;
+  --tab-outline-color: #cccccc;
+  --blockquote-background-color: #1a1a1a; /* 暗模式下引用块背景颜色 */
+  --blockquote-border-color: #444444; /* 暗模式下引用块左侧边框颜色 */
+  --blockquote-color: #dddddd; /* 暗模式下引用块文字颜色 */
+  --callout-title-color: #ffffff; /* 暗模式下 Callout 标题文字颜色 */
+  --code-background: #2d2d2d; /* 暗模式下代码背景颜色 */
+  --code-normal: #ffffff; /* 暗模式下非高亮语法颜色 */
+  --code-comment: #999988; /* 暗模式下注释颜色 */
+  --code-function: #a6e22e; /* 暗模式下函数颜色 */
+  --code-important: #f92672; /* 暗模式下重要内容, 正则表达式颜色 */
+  --code-keyword: #f92672; /* 暗模式下关键词颜色 */
+  --code-operator: #f92672; /* 暗模式下操作符颜色 */
+  --code-property: #66d9ef; /* 暗模式下属性颜色 */
+  --code-punctuation: #ffffff; /* 暗模式下标点颜色 */
+  --code-string: #e6db74; /* 暗模式下字符串颜色 */
+  --code-tag: #a6e22e; /* 暗模式下标签, 符号, 常量颜色 */
+  --code-value: #ae81ff; /* 暗模式下值颜色 */
+  --embed-background: #333333; /* 暗模式下嵌入文件的背景颜色 */
+  --embed-border-color: #444444; /* 暗模式下嵌入文件的边框颜色 */
+  --file-header-border-color: #444444; /* 暗模式下文件头部的边框颜色 */
+  --file-header-color: #ffffff; /* 暗模式下文件头部的文本颜色 */
+  --h1-color: #cccccc; /* 暗模式 H1 文字颜色 */
+  --h2-color: #bbbbbb; /* 暗模式 H2 文字颜色 */
+  --h3-color: #aaaaaa; /* 暗模式 H3 文字颜色 */
+  --h4-color: #999999; /* 暗模式 H4 文字颜色 */
+  --h5-color: #888888; /* 暗模式 H5 文字颜色 */
+  --h6-color: #777777; /* 暗模式 H6 文字颜色 */
+  --link-color: #87cefa;
+  --link-color-hover: #4682b4;
+  --link-decoration: underline;
+  --link-decoration-hover: underline;
+  --link-decoration-thickness: 1px;
+  --link-weight: normal;
+  
+  --link-unresolved-color: #ff6347;
+  --link-unresolved-opacity: 0.7;
+  --link-unresolved-filter: brightness(0.8);
+  --link-unresolved-decoration-style: dashed;
+  --link-unresolved-decoration-color: #ff6347;
+  
+  --link-external-color: #98fb98;
+  --link-external-color-hover: #32cd32;
+  --link-external-decoration: underline;
+  --link-external-decoration-hover: underline;
+  --list-marker-color: #ffffff; /* 暗模式下标记颜色 */
+  --list-marker-color-hover: #bbbbbb; /* 暗模式下悬停时标记颜色 */
+  --list-marker-color-collapsed: #777777; /* 暗模式下折叠项目的标记颜色 */
+  --list-bullet-border: 2px solid #ffffff; /* 暗模式下项目符号边框 */
+  --hr-color: #ffffff; /* 暗模式下水平规则边框颜色 */
+  --hr-thickness: 2px; /* 暗模式下水平规则边框厚度 */
+  --inline-title-color: #ffffff; /* 暗模式下行内标题文字颜色 */
+  --metadata-background: #333333;
+  --metadata-border-color: #555555;
+  --metadata-divider-color: #444444;
+  --metadata-divider-color-hover: #666666;
+  --metadata-divider-color-focus: #888888;
+  --metadata-property-background: #444444;
+  --metadata-property-background-hover: #555555;
+  --metadata-property-background-active: #666666;
+  --metadata-label-text-color: #cccccc;
+  --metadata-label-text-color-hover: #ffffff;
+  --metadata-input-text-color: #ffffff;
+  --metadata-input-background: #555555;
+  --metadata-input-background-hover: #666666;
+  --metadata-input-background-active: #777777;
+  --tag-color: #ffffff;
+  --tag-color-hover: #cccccc;
+  --tag-background: #444444;
+  --tag-background-hover: #555555;
+  --tag-border-color: #666666;
+  --tag-border-color-hover: #888888;
+  --divider-color: #555555; /* 暗模式下分隔线边框颜色 */
+  --divider-color-hover: #888888; /* 暗模式下分隔线悬停时边框颜色 */
+  --ribbon-background: #333333; /* 暗模式下的 Ribbon 背景颜色 */
+  --ribbon-background-collapsed: #444444; /* 暗模式下折叠侧边栏时的 Ribbon 背景颜色 */
+  --scrollbar-bg: #333333; /* 暗模式下滚动条背景颜色 */
+  --scrollbar-thumb-bg: #555555; /* 暗模式下滚动条滑块背景颜色 */
+  --scrollbar-active-thumb-bg: #888888; /* 暗模式下活动状态下滚动条滑块背景颜色 */
+  --status-bar-background: #333333; /* 暗模式下状态栏背景颜色 */
+  --status-bar-border-color: #555555; /* 暗模式下状态栏边框颜色 */
+  --status-bar-text-color: #ffffff; /* 暗模式下状态栏文字颜色 */
+  --titlebar-background: #333333; /* 暗模式下的标题栏背景颜色 */
+  --titlebar-background-focused: #444444; /* 暗模式下聚焦窗口时的标题栏背景颜色 */
+  --titlebar-border-color: #555555; /* 暗模式下的标题栏边框颜色 */
+  --titlebar-text-color: #ffffff; /* 暗模式下的标题栏文字颜色 */
+  --titlebar-text-color-focused: #dddddd; /* 暗模式下聚焦窗口时的标题栏文字颜色 */
+  --workspace-background-translucent: rgba(51, 51, 51, 0.8); /* 暗模式下半透明窗口背景颜色 */
+  --text-selection:#333333;
+  
+  --bold-color:#cccccc;
+  --italic-color:#cccccc;
+  }
+  
+  /* ------------------- */
+  /* Checkbox styling & icons. Credit Minimal theme: https://minimal.guide/Block+types/Checklists#Checkbox+styling */
+  /* Support @kepano - https://www.buymeacoffee.com/kepano */
+  /* Style of Open PR Merged PR Draft PR. credits to Things theme: https://github.com/colineckert/obsidian-things*/
+  /* ------------------- */
+  
+  input[data-task='!']:checked,
+  input[data-task='*']:checked,
+  input[data-task='-']:checked,
+  input[data-task='<']:checked,
+  input[data-task='>']:checked,
+  input[data-task='I']:checked,
+  input[data-task='b']:checked,
+  input[data-task='c']:checked,
+  input[data-task='d']:checked,
+  input[data-task='f']:checked,
+  input[data-task='k']:checked,
+  input[data-task='l']:checked,
+  input[data-task='p']:checked,
+  input[data-task='u']:checked,
+  input[data-task='w']:checked,
+  input[data-task='P']:checked, /* Open PR */
+  input[data-task='M']:checked, /* Merged PR */
+  input[data-task='D']:checked, /* Draft PR */
+  li[data-task='!'] > input:checked,
+  li[data-task='!'] > p > input:checked,
+  li[data-task='*'] > input:checked,
+  li[data-task='*'] > p > input:checked,
+  li[data-task='-'] > input:checked,
+  li[data-task='-'] > p > input:checked,
+  li[data-task='<'] > input:checked,
+  li[data-task='<'] > p > input:checked,
+  li[data-task='>'] > input:checked,
+  li[data-task='>'] > p > input:checked,
+  li[data-task='I'] > input:checked,
+  li[data-task='I'] > p > input:checked,
+  li[data-task='b'] > input:checked,
+  li[data-task='b'] > p > input:checked,
+  li[data-task='c'] > input:checked,
+  li[data-task='c'] > p > input:checked,
+  li[data-task='d'] > input:checked,
+  li[data-task='d'] > p > input:checked,
+  li[data-task='f'] > input:checked,
+  li[data-task='f'] > p > input:checked,
+  li[data-task='k'] > input:checked,
+  li[data-task='k'] > p > input:checked,
+  li[data-task='l'] > input:checked,
+  li[data-task='l'] > p > input:checked,
+  li[data-task='p'] > input:checked,
+  li[data-task='p'] > p > input:checked,
+  li[data-task='u'] > input:checked,
+  li[data-task='u'] > p > input:checked,
+  li[data-task='w'] > input:checked,
+  li[data-task='w'] > p > input:checked,
+  li[data-task='P'] > input:checked,
+  li[data-task='P'] > p > input:checked,
+  li[data-task='M'] > input:checked,
+  li[data-task='M'] > p > input:checked,
+  li[data-task='D'] > input:checked,
+  li[data-task='D'] > p > input:checked {
+    --checkbox-marker-color: transparent;
+    border: none;
+    border-radius: 0;
+    background-image: none;
+    background-color: currentColor;
+    -webkit-mask-size: var(--checkbox-icon);
+    -webkit-mask-position: 50% 50%;
+  }
+  input[data-task='>']:checked,
+  li[data-task='>'] > input:checked,
+  li[data-task='>'] > p > input:checked {
+    color: var(--text-faint);
+    transform: rotate(90deg);
+    -webkit-mask-position: 50% 100%;
+    -webkit-mask-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' class='h-5 w-5' viewBox='0 0 20 20' fill='currentColor'%3E%3Cpath d='M10.894 2.553a1 1 0 00-1.788 0l-7 14a1 1 0 001.169 1.409l5-1.429A1 1 0 009 15.571V11a1 1 0 112 0v4.571a1 1 0 00.725.962l5 1.428a1 1 0 001.17-1.408l-7-14z' /%3E%3C/svg%3E");
+  }
+  input[data-task='<']:checked,
+  li[data-task='<'] > input:checked,
+  li[data-task='<'] > p > input:checked {
+    color: var(--text-faint);
+    -webkit-mask-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' class='h-5 w-5' viewBox='0 0 20 20' fill='currentColor'%3E%3Cpath fill-rule='evenodd' d='M10 18a8 8 0 100-16 8 8 0 000 16zm1-12a1 1 0 10-2 0v4a1 1 0 00.293.707l2.828 2.829a1 1 0 101.415-1.415L11 9.586V6z' clip-rule='evenodd' /%3E%3C/svg%3E");
+  }
+  input[data-task='?']:checked,
+  li[data-task='?'] > input:checked,
+  li[data-task='?'] > p > input:checked {
+    --checkbox-marker-color: transparent;
+    background-color: var(--color-yellow);
+    border-color: var(--color-yellow);
+    background-position: 50% 50%;
+    background-size: 200% 90%;
+    background-image: url('data:image/svg+xml,%3Csvg xmlns="http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg" width="20" height="20" preserveAspectRatio="xMidYMid meet" viewBox="0 0 16 16"%3E%3Cpath fill="white" fill-rule="evenodd" d="M4.475 5.458c-.284 0-.514-.237-.47-.517C4.28 3.24 5.576 2 7.825 2c2.25 0 3.767 1.36 3.767 3.215c0 1.344-.665 2.288-1.79 2.973c-1.1.659-1.414 1.118-1.414 2.01v.03a.5.5 0 0 1-.5.5h-.77a.5.5 0 0 1-.5-.495l-.003-.2c-.043-1.221.477-2.001 1.645-2.712c1.03-.632 1.397-1.135 1.397-2.028c0-.979-.758-1.698-1.926-1.698c-1.009 0-1.71.529-1.938 1.402c-.066.254-.278.461-.54.461h-.777ZM7.496 14c.622 0 1.095-.474 1.095-1.09c0-.618-.473-1.092-1.095-1.092c-.606 0-1.087.474-1.087 1.091S6.89 14 7.496 14Z"%2F%3E%3C%2Fsvg%3E');
+  }
+  .theme-dark input[data-task='?']:checked,
+  .theme-dark li[data-task='?'] > input:checked,
+  .theme-dark li[data-task='?'] > p > input:checked {
+    background-image: url('data:image/svg+xml,%3Csvg xmlns="http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg" width="20" height="20" preserveAspectRatio="xMidYMid meet" viewBox="0 0 16 16"%3E%3Cpath fill="black" fill-opacity="0.8" fill-rule="evenodd" d="M4.475 5.458c-.284 0-.514-.237-.47-.517C4.28 3.24 5.576 2 7.825 2c2.25 0 3.767 1.36 3.767 3.215c0 1.344-.665 2.288-1.79 2.973c-1.1.659-1.414 1.118-1.414 2.01v.03a.5.5 0 0 1-.5.5h-.77a.5.5 0 0 1-.5-.495l-.003-.2c-.043-1.221.477-2.001 1.645-2.712c1.03-.632 1.397-1.135 1.397-2.028c0-.979-.758-1.698-1.926-1.698c-1.009 0-1.71.529-1.938 1.402c-.066.254-.278.461-.54.461h-.777ZM7.496 14c.622 0 1.095-.474 1.095-1.09c0-.618-.473-1.092-1.095-1.092c-.606 0-1.087.474-1.087 1.091S6.89 14 7.496 14Z"%2F%3E%3C%2Fsvg%3E');
+  }
+  input[data-task='/']:checked,
+  li[data-task='/'] > input:checked,
+  li[data-task='/'] > p > input:checked {
+    background-image: none;
+    background-color: transparent;
+    position: relative;
+    overflow: hidden;
+  }
+  input[data-task='/']:checked:after,
+  li[data-task='/'] > input:checked:after,
+  li[data-task='/'] > p > input:checked:after {
+    top: 0;
+    left: 0;
+    content: ' ';
+    display: block;
+    position: absolute;
+    background-color: var(--color-accent);
+    width: calc(50% - 0.5px);
+    height: 100%;
+    -webkit-mask-image: none;
+  }
+  input[data-task='!']:checked,
+  li[data-task='!'] > input:checked,
+  li[data-task='!'] > p > input:checked {
+    color: var(--color-orange);
+    -webkit-mask-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' class='h-5 w-5' viewBox='0 0 20 20' fill='currentColor'%3E%3Cpath fill-rule='evenodd' d='M8.257 3.099c.765-1.36 2.722-1.36 3.486 0l5.58 9.92c.75 1.334-.213 2.98-1.742 2.98H4.42c-1.53 0-2.493-1.646-1.743-2.98l5.58-9.92zM11 13a1 1 0 11-2 0 1 1 0 012 0zm-1-8a1 1 0 00-1 1v3a1 1 0 002 0V6a1 1 0 00-1-1z' clip-rule='evenodd' /%3E%3C/svg%3E");
+  }
+  input[data-task='"']:checked,
+  input[data-task='“']:checked,
+  li[data-task='"'] > input:checked,
+  li[data-task='"'] > p > input:checked,
+  li[data-task='“'] > input:checked,
+  li[data-task='“'] > p > input:checked {
+    --checkbox-marker-color: transparent;
+    background-position: 50% 50%;
+    background-color: var(--color-cyan);
+    border-color: var(--color-cyan);
+    background-size: 75%;
+    background-repeat: no-repeat;
+    background-image: url('data:image/svg+xml,%3Csvg xmlns="http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg" width="20" height="20" preserveAspectRatio="xMidYMid meet" viewBox="0 0 24 24"%3E%3Cpath fill="white" d="M6.5 10c-.223 0-.437.034-.65.065c.069-.232.14-.468.254-.68c.114-.308.292-.575.469-.844c.148-.291.409-.488.601-.737c.201-.242.475-.403.692-.604c.213-.21.492-.315.714-.463c.232-.133.434-.28.65-.35l.539-.222l.474-.197l-.485-1.938l-.597.144c-.191.048-.424.104-.689.171c-.271.05-.56.187-.882.312c-.317.143-.686.238-1.028.467c-.344.218-.741.4-1.091.692c-.339.301-.748.562-1.05.944c-.33.358-.656.734-.909 1.162c-.293.408-.492.856-.702 1.299c-.19.443-.343.896-.468 1.336c-.237.882-.343 1.72-.384 2.437c-.034.718-.014 1.315.028 1.747c.015.204.043.402.063.539l.025.168l.026-.006A4.5 4.5 0 1 0 6.5 10zm11 0c-.223 0-.437.034-.65.065c.069-.232.14-.468.254-.68c.114-.308.292-.575.469-.844c.148-.291.409-.488.601-.737c.201-.242.475-.403.692-.604c.213-.21.492-.315.714-.463c.232-.133.434-.28.65-.35l.539-.222l.474-.197l-.485-1.938l-.597.144c-.191.048-.424.104-.689.171c-.271.05-.56.187-.882.312c-.318.142-.686.238-1.028.466c-.344.218-.741.4-1.091.692c-.339.301-.748.562-1.05.945c-.33.358-.656.734-.909 1.162c-.293.408-.492.856-.702 1.299c-.19.443-.343.896-.468 1.336c-.237.882-.343 1.72-.384 2.437c-.034.718-.014 1.315.028 1.747c.015.204.043.402.063.539l.025.168l.026-.006A4.5 4.5 0 1 0 17.5 10z"%2F%3E%3C%2Fsvg%3E');
+  }
+  .theme-dark input[data-task='"']:checked,
+  .theme-dark input[data-task='“']:checked,
+  .theme-dark li[data-task='"'] > input:checked,
+  .theme-dark li[data-task='"'] > p > input:checked,
+  .theme-dark li[data-task='“'] > input:checked,
+  .theme-dark li[data-task='“'] > p > input:checked {
+    background-image: url('data:image/svg+xml,%3Csvg xmlns="http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg" width="20" height="20" preserveAspectRatio="xMidYMid meet" viewBox="0 0 24 24"%3E%3Cpath fill="black" fill-opacity="0.7" d="M6.5 10c-.223 0-.437.034-.65.065c.069-.232.14-.468.254-.68c.114-.308.292-.575.469-.844c.148-.291.409-.488.601-.737c.201-.242.475-.403.692-.604c.213-.21.492-.315.714-.463c.232-.133.434-.28.65-.35l.539-.222l.474-.197l-.485-1.938l-.597.144c-.191.048-.424.104-.689.171c-.271.05-.56.187-.882.312c-.317.143-.686.238-1.028.467c-.344.218-.741.4-1.091.692c-.339.301-.748.562-1.05.944c-.33.358-.656.734-.909 1.162c-.293.408-.492.856-.702 1.299c-.19.443-.343.896-.468 1.336c-.237.882-.343 1.72-.384 2.437c-.034.718-.014 1.315.028 1.747c.015.204.043.402.063.539l.025.168l.026-.006A4.5 4.5 0 1 0 6.5 10zm11 0c-.223 0-.437.034-.65.065c.069-.232.14-.468.254-.68c.114-.308.292-.575.469-.844c.148-.291.409-.488.601-.737c.201-.242.475-.403.692-.604c.213-.21.492-.315.714-.463c.232-.133.434-.28.65-.35l.539-.222l.474-.197l-.485-1.938l-.597.144c-.191.048-.424.104-.689.171c-.271.05-.56.187-.882.312c-.317.143-.686.238-1.028.467c-.344.218-.741.4-1.091.692c-.339.301-.748.562-1.05.944c-.33.358-.656.734-.909 1.162c-.293.408-.492.856-.702 1.299c-.19.443-.343.896-.468 1.336c-.237.882-.343 1.72-.384 2.437c-.034.718-.014 1.315.028 1.747c.015.204.043.402.063.539l.025.168l.026-.006A4.5 4.5 0 1 0 17.5 10z"%2F%3E%3C/svg%3E');
+  }
+  input[data-task='-']:checked,
+  li[data-task='-'] > input:checked,
+  li[data-task='-'] > p > input:checked {
+    color: var(--text-faint);
+    -webkit-mask-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' class='h-5 w-5' viewBox='0 0 20 20' fill='currentColor'%3E%3Cpath fill-rule='evenodd' d='M3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z' clip-rule='evenodd' /%3E%3C/svg%3E");
+  }
+  body:not(.tasks)
+    .markdown-preview-view
+    ul
+    li[data-task='-'].task-list-item.is-checked,
+  body:not(.tasks)
+    .markdown-source-view.mod-cm6
+    .HyperMD-task-line[data-task]:is([data-task='-']),
+  body:not(.tasks) li[data-task='-'].task-list-item.is-checked {
+    color: var(--text-faint);
+    text-decoration: line-through solid var(--text-faint) 1px;
+  }
+  input[data-task='*']:checked,
+  li[data-task='*'] > input:checked,
+  li[data-task='*'] > p > input:checked {
+    color: var(--color-yellow);
+    -webkit-mask-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' class='h-5 w-5' viewBox='0 0 20 20' fill='currentColor'%3E%3Cpath d='M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z' /%3E%3C/svg%3E");
+  }
+  input[data-task='l']:checked,
+  li[data-task='l'] > input:checked,
+  li[data-task='l'] > p > input:checked {
+    color: var(--color-red);
+    -webkit-mask-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' class='h-5 w-5' viewBox='0 0 20 20' fill='currentColor'%3E%3Cpath fill-rule='evenodd' d='M5.05 4.05a7 7 0 119.9 9.9L10 18.9l-4.95-4.95a7 7 0 010-9.9zM10 11a2 2 0 100-4 2 2 0 000 4z' clip-rule='evenodd' /%3E%3C/svg%3E");
+  }
+  input[data-task='i']:checked,
+  li[data-task='i'] > input:checked,
+  li[data-task='i'] > p > input:checked {
+    --checkbox-marker-color: transparent;
+    background-color: var(--color-blue);
+    border-color: var(--color-blue);
+    background-position: 50%;
+    background-size: 100%;
+    background-image: url('data:image/svg+xml,%3Csvg xmlns="http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg" width="20" height="20" preserveAspectRatio="xMidYMid meet" viewBox="0 0 512 512"%3E%3Cpath fill="none" stroke="white" stroke-linecap="round" stroke-linejoin="round" stroke-width="40" d="M196 220h64v172"%2F%3E%3Cpath fill="none" stroke="white" stroke-linecap="round" stroke-miterlimit="10" stroke-width="40" d="M187 396h138"%2F%3E%3Cpath fill="white" d="M256 160a32 32 0 1 1 32-32a32 32 0 0 1-32 32Z"%2F%3E%3C%2Fsvg%3E');
+  }
+  .theme-dark input[data-task='i']:checked,
+  .theme-dark li[data-task='i'] > input:checked,
+  .theme-dark li[data-task='i'] > p > input:checked {
+    background-image: url('data:image/svg+xml,%3Csvg xmlns="http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg" width="20" height="20" preserveAspectRatio="xMidYMid meet" viewBox="0 0 512 512"%3E%3Cpath fill="none" stroke="black" stroke-opacity="0.8" stroke-linecap="round" stroke-linejoin="round" stroke-width="40" d="M196 220h64v172"%2F%3E%3Cpath fill="none" stroke="black" stroke-opacity="0.8" stroke-linecap="round" stroke-miterlimit="10" stroke-width="40" d="M187 396h138"%2F%3E%3Cpath fill="black" fill-opacity="0.8" d="M256 160a32 32 0 1 1 32-32a32 32 0 0 1-32 32Z"%2F%3E%3C%2Fsvg%3E');
+  }
+  input[data-task='S']:checked,
+  li[data-task='S'] > input:checked,
+  li[data-task='S'] > p > input:checked {
+    --checkbox-marker-color: transparent;
+    border-color: var(--color-green);
+    background-color: var(--color-green);
+    background-size: 100%;
+    background-image: url('data:image/svg+xml,%3Csvg xmlns="http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg" width="20" height="20" preserveAspectRatio="xMidYMid meet" viewBox="0 0 48 48"%3E%3Cpath fill="white" fill-rule="evenodd" d="M26 8a2 2 0 1 0-4 0v2a8 8 0 1 0 0 16v8a4.002 4.002 0 0 1-3.773-2.666a2 2 0 0 0-3.771 1.332A8.003 8.003 0 0 0 22 38v2a2 2 0 1 0 4 0v-2a8 8 0 1 0 0-16v-8a4.002 4.002 0 0 1 3.773 2.666a2 2 0 0 0 3.771-1.332A8.003 8.003 0 0 0 26 10V8Zm-4 6a4 4 0 0 0 0 8v-8Zm4 12v8a4 4 0 0 0 0-8Z" clip-rule="evenodd"%2F%3E%3C%2Fsvg%3E');
+  }
+  .theme-dark input[data-task='S']:checked,
+  .theme-dark li[data-task='S'] > input:checked,
+  .theme-dark li[data-task='S'] > p > input:checked {
+    background-image: url('data:image/svg+xml,%3Csvg xmlns="http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg" width="20" height="20" preserveAspectRatio="xMidYMid meet" viewBox="0 0 48 48"%3E%3Cpath fill-opacity="0.8" fill="black" fill-rule="evenodd" d="M26 8a2 2 0 1 0-4 0v2a8 8 0 1 0 0 16v8a4.002 4.002 0 0 1-3.773-2.666a2 2 0 0 0-3.771 1.332A8.003 8.003 0 0 0 22 38v2a2 2 0 1 0 4 0v-2a8 8 0 1 0 0-16v-8a4.002 4.002 0 0 1 3.773 2.666a2 2 0 0 0 3.771-1.332A8.003 8.003 0 0 0 26 10V8Zm-4 6a4 4 0 0 0 0 8v-8Zm4 12v8a4 4 0 0 0 0-8Z" clip-rule="evenodd"%3E%3C/path%3E%3C/svg%3E');
+  }
+  input[data-task='I']:checked,
+  li[data-task='I'] > input:checked,
+  li[data-task='I'] > p > input:checked {
+    color: var(--color-yellow);
+    -webkit-mask-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' class='h-5 w-5' viewBox='0 0 20 20' fill='currentColor'%3E%3Cpath d='M11 3a1 1 0 10-2 0v1a1 1 0 102 0V3zM15.657 5.757a1 1 0 00-1.414-1.414l-.707.707a1 1 0 001.414 1.414l.707-.707zM18 10a1 1 0 01-1 1h-1a1 1 0 110-2h1a1 1 0 011 1zM5.05 6.464A1 1 0 106.464 5.05l-.707-.707a1 1 0 00-1.414 1.414l.707.707zM5 10a1 1 0 01-1 1H3a1 1 0 110-2h1a1 1 0 011 1zM8 16v-1h4v1a2 2 0 11-4 0zM12 14c.015-.34.208-.646.477-.859a4 4 0 10-4.954 0c.27.213.462.519.476.859h4.002z' /%3E%3C/svg%3E");
+  }
+  input[data-task='f']:checked,
+  li[data-task='f'] > input:checked,
+  li[data-task='f'] > p > input:checked {
+    color: var(--color-red);
+    -webkit-mask-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' class='h-5 w-5' viewBox='0 0 20 20' fill='currentColor'%3E%3Cpath fill-rule='evenodd' d='M12.395 2.553a1 1 0 00-1.45-.385c-.345.23-.614.558-.822.88-.214.33-.403.713-.57 1.116-.334.804-.614 1.768-.84 2.734a31.365 31.365 0 00-.613 3.58 2.64 2.64 0 01-.945-1.067c-.328-.68-.398-1.534-.398-2.654A1 1 0 005.05 6.05 6.981 6.981 0 003 11a7 7 0 1011.95-4.95c-.592-.591-.98-.985-1.348-1.467-.363-.476-.724-1.063-1.207-2.03zM12.12 15.12A3 3 0 017 13s.879.5 2.5.5c0-1 .5-4 1.25-4.5.5 1 .786 1.293 1.371 1.879A2.99 2.99 0 0113 13a2.99 2.99 0 01-.879 2.121z' clip-rule='evenodd' /%3E%3C/svg%3E");
+  }
+  input[data-task='k']:checked,
+  li[data-task='k'] > input:checked,
+  li[data-task='k'] > p > input:checked {
+    color: var(--color-yellow);
+    -webkit-mask-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' class='h-5 w-5' viewBox='0 0 20 20' fill='currentColor'%3E%3Cpath fill-rule='evenodd' d='M18 8a6 6 0 01-7.743 5.743L10 14l-1 1-1 1H6v2H2v-4l4.257-4.257A6 6 0 1118 8zm-6-4a1 1 0 100 2 2 2 0 012 2 1 1 0 102 0 4 4 0 00-4-4z' clip-rule='evenodd' /%3E%3C/svg%3E");
+  }
+  input[data-task='u']:checked,
+  li[data-task='u'] > input:checked,
+  li[data-task='u'] > p > input:checked {
+    color: var(--color-green);
+    -webkit-mask-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' class='h-5 w-5' viewBox='0 0 20 20' fill='currentColor'%3E%3Cpath fill-rule='evenodd' d='M12 7a1 1 0 110-2h5a1 1 0 011 1v5a1 1 0 11-2 0V8.414l-4.293 4.293a1 1 0 01-1.414 0L8 10.414l-4.293 4.293a1 1 0 01-1.414-1.414l5-5a1 1 0 011.414 0L11 10.586 14.586 7H12z' clip-rule='evenodd' /%3E%3C/svg%3E");
+  }
+  input[data-task='d']:checked,
+  li[data-task='d'] > input:checked,
+  li[data-task='d'] > p > input:checked {
+    color: var(--color-red);
+    -webkit-mask-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' class='h-5 w-5' viewBox='0 0 20 20' fill='currentColor'%3E%3Cpath fill-rule='evenodd' d='M12 13a1 1 0 100 2h5a1 1 0 001-1V9a1 1 0 10-2 0v2.586l-4.293-4.293a1 1 0 00-1.414 0L8 9.586 3.707 5.293a1 1 0 00-1.414 1.414l5 5a1 1 0 001.414 0L11 9.414 14.586 13H12z' clip-rule='evenodd' /%3E%3C/svg%3E");
+  }
+  input[data-task='w']:checked,
+  li[data-task='w'] > input:checked,
+  li[data-task='w'] > p > input:checked {
+    color: var(--color-purple);
+    -webkit-mask-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' class='h-5 w-5' viewBox='0 0 20 20' fill='currentColor'%3E%3Cpath fill-rule='evenodd' d='M6 3a1 1 0 011-1h.01a1 1 0 010 2H7a1 1 0 01-1-1zm2 3a1 1 0 00-2 0v1a2 2 0 00-2 2v1a2 2 0 00-2 2v.683a3.7 3.7 0 011.055.485 1.704 1.704 0 001.89 0 3.704 3.704 0 014.11 0 1.704 1.704 0 001.89 0 3.704 3.704 0 014.11 0 1.704 1.704 0 001.89 0A3.7 3.7 0 0118 12.683V12a2 2 0 00-2-2V9a2 2 0 00-2-2V6a1 1 0 10-2 0v1h-1V6a1 1 0 10-2 0v1H8V6zm10 8.868a3.704 3.704 0 01-4.055-.036 1.704 1.704 0 00-1.89 0 3.704 3.704 0 01-4.11 0 1.704 1.704 0 00-1.89 0A3.704 3.704 0 012 14.868V17a1 1 0 001 1h14a1 1 0 001-1v-2.132zM9 3a1 1 0 011-1h.01a1 1 0 110 2H10a1 1 0 01-1-1zm3 0a1 1 0 011-1h.01a1 1 0 110 2H13a1 1 0 01-1-1z' clip-rule='evenodd' /%3E%3C/svg%3E");
+  }
+  input[data-task='p']:checked,
+  li[data-task='p'] > input:checked,
+  li[data-task='p'] > p > input:checked {
+    color: var(--color-green);
+    -webkit-mask-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' class='h-5 w-5' viewBox='0 0 20 20' fill='currentColor'%3E%3Cpath d='M2 10.5a1.5 1.5 0 113 0v6a1.5 1.5 0 01-3 0v-6zM6 10.333v5.43a2 2 0 001.106 1.79l.05.025A4 4 0 008.943 18h5.416a2 2 0 001.962-1.608l1.2-6A2 2 0 0015.56 8H12V4a2 2 0 00-2-2 1 1 0 00-1 1v.667a4 4 0 01-.8 2.4L6.8 7.933a4 4 0 00-.8 2.4z' /%3E%3C/svg%3E");
+  }
+  input[data-task='c']:checked,
+  li[data-task='c'] > input:checked,
+  li[data-task='c'] > p > input:checked {
+    color: var(--color-orange);
+    -webkit-mask-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' class='h-5 w-5' viewBox='0 0 20 20' fill='currentColor'%3E%3Cpath d='M18 9.5a1.5 1.5 0 11-3 0v-6a1.5 1.5 0 013 0v6zM14 9.667v-5.43a2 2 0 00-1.105-1.79l-.05-.025A4 4 0 0011.055 2H5.64a2 2 0 00-1.962 1.608l-1.2 6A2 2 0 004.44 12H8v4a2 2 0 002 2 1 1 0 001-1v-.667a4 4 0 01.8-2.4l1.4-1.866a4 4 0 00.8-2.4z' /%3E%3C/svg%3E");
+  }
+  input[data-task='b']:checked,
+  li[data-task='b'] > input:checked,
+  li[data-task='b'] > p > input:checked {
+    color: var(--color-orange);
+    -webkit-mask-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' class='h-5 w-5' viewBox='0 0 20 20' fill='currentColor'%3E%3Cpath d='M5 4a2 2 0 012-2h6a2 2 0 012 2v14l-5-2.5L5 18V4z' /%3E%3C/svg%3E");
+  }
+  input[data-task='P']:checked,
+  li[data-task='P'] > input:checked,
+  li[data-task='P'] > p > input:checked {
+    color: var(--color-green);
+    -webkit-mask-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' width='16' height='16'%3E%3Cpath d='M1.5 3.25a2.25 2.25 0 1 1 3 2.122v5.256a2.251 2.251 0 1 1-1.5 0V5.372A2.25 2.25 0 0 1 1.5 3.25Zm5.677-.177L9.573.677A.25.25 0 0 1 10 .854V2.5h1A2.5 2.5 0 0 1 13.5 5v5.628a2.251 2.251 0 1 1-1.5 0V5a1 1 0 0 0-1-1h-1v1.646a.25.25 0 0 1-.427.177L7.177 3.427a.25.25 0 0 1 0-.354ZM3.75 2.5a.75.75 0 1 0 0 1.5.75.75 0 0 0 0-1.5Zm0 9.5a.75.75 0 1 0 0 1.5.75.75 0 0 0 0-1.5Zm8.25.75a.75.75 0 1 0 1.5 0 .75.75 0 0 0-1.5 0Z'%3E%3C/path%3E%3C/svg%3E");
+  }
+  input[data-task='M']:checked,
+  li[data-task='M'] > input:checked,
+  li[data-task='M'] > p > input:checked {
+    color: var(--color-purple);
+    -webkit-mask-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' width='16' height='16'%3E%3Cpath d='M5.45 5.154A4.25 4.25 0 0 0 9.25 7.5h1.378a2.251 2.251 0 1 1 0 1.5H9.25A5.734 5.734 0 0 1 5 7.123v3.505a2.25 2.25 0 1 1-1.5 0V5.372a2.25 2.25 0 1 1 1.95-.218ZM4.25 13.5a.75.75 0 1 0 0-1.5.75.75 0 0 0 0 1.5Zm8.5-4.5a.75.75 0 1 0 0-1.5.75.75 0 0 0 0 1.5ZM5 3.25a.75.75 0 1 0 0 .005V3.25Z'%3E%3C/path%3E%3C/svg%3E");
+  }
+  input[data-task='D']:checked,
+  li[data-task='D'] > input:checked,
+  li[data-task='D'] > p > input:checked {
+    color: var(--color-base-50);
+    -webkit-mask-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' width='16' height='16'%3E%3Cpath d='M3.25 1A2.25 2.25 0 0 1 4 5.372v5.256a2.251 2.251 0 1 1-1.5 0V5.372A2.251 2.251 0 0 1 3.25 1Zm9.5 14a2.25 2.25 0 1 1 0-4.5 2.25 2.25 0 0 1 0 4.5ZM2.5 3.25a.75.75 0 1 0 1.5 0 .75.75 0 0 0-1.5 0ZM3.25 12a.75.75 0 1 0 0 1.5.75.75 0 0 0 0-1.5Zm9.5 0a.75.75 0 1 0 0 1.5.75.75 0 0 0 0-1.5ZM14 7.5a1.25 1.25 0 1 1-2.5 0 1.25 1.25 0 0 1 2.5 0Zm0-4.25a1.25 1.25 0 1 1-2.5 0 1.25 1.25 0 0 1 2.5 0Z'%3E%3C/path%3E%3C/svg%3E");
+  }
+  
+  body:not(.tasks) li[data-task='>'].task-list-item.is-checked,
+  body:not(.tasks) li[data-task='<'].task-list-item.is-checked,
+  body:not(.tasks) li[data-task='b'].task-list-item.is-checked,
+  body:not(.tasks) li[data-task='i'].task-list-item.is-checked,
+  body:not(.tasks) li[data-task='*'].task-list-item.is-checked,
+  body:not(.tasks) li[data-task='!'].task-list-item.is-checked,
+  body:not(.tasks) li[data-task='S'].task-list-item.is-checked,
+  body:not(.tasks) li[data-task='?'].task-list-item.is-checked,
+  body:not(.tasks) li[data-task='/'].task-list-item.is-checked,
+  body:not(.tasks) li[data-task='"'].task-list-item.is-checked,
+  body:not(.tasks) li[data-task='l'].task-list-item.is-checked,
+  body:not(.tasks) li[data-task='I'].task-list-item.is-checked,
+  body:not(.tasks) li[data-task='p'].task-list-item.is-checked,
+  body:not(.tasks) li[data-task='c'].task-list-item.is-checked,
+  body:not(.tasks) li[data-task='f'].task-list-item.is-checked,
+  body:not(.tasks) li[data-task='k'].task-list-item.is-checked,
+  body:not(.tasks) li[data-task='w'].task-list-item.is-checked,
+  body:not(.tasks) li[data-task='u'].task-list-item.is-checked,
+  body:not(.tasks) li[data-task='d'].task-list-item.is-checked,
+  body:not(.tasks) li[data-task='P'].task-list-item.is-checked,
+  body:not(.tasks) li[data-task='D'].task-list-item.is-checked {
+    color: var(--text-normal);
+  }
+  
+  /* @settings
+  name: Oreo Theme 🍪
+  id: oreo-theme
+  settings:
+      - 
+          id: general-settings
+          title: General Settings ⚙
+          title.zh: 常规设置 ⚙
+          type: heading
+          level: 2
+          collapsed: true
+      - 
+          id: button-radius
+          title: Button Radius
+          title.zh: 按钮圆角半径
+          type: variable-number
+          default: 10
+          format: px
+      -
+          id: checkbox-radius
+          title: Checkbox Radius
+          title.zh: 复选框圆角半径
+          type: variable-number
+          default: 50
+          format: "%"
+      -
+          id: checkbox-size
+          title: Checkbox Size
+          title.zh: 复选框大小
+          type: variable-number
+          default: 16
+          format: px
+      -
+          id: checkbox-margin-inline-start
+          title: Checkbox Margin Inline Start
+          title.zh: 复选框起始内边距
+          type: variable-number
+          default: 8
+          format: px
+      -
+          id: popover-width
+          title: Popover Width
+          title.zh: 弹出框宽度
+          type: variable-number
+          default: 300
+          format: px
+      -
+          id: popover-height
+          title: Popover Height
+          title.zh: 弹出框高度
+          type: variable-text
+          default: auto
+      -
+          id: popover-max-height
+          title: Popover Max Height
+          title.zh: 弹出框最大高度
+          type: variable-number
+          default: 400
+          format: px
+      -
+          id: popover-font-size
+          title: Popover Font Size
+          title.zh: 弹出框字体大小
+          type: variable-number
+          default: 14
+          format: px
+      -
+          id: popover-pdf-width
+          title: Popover PDF Width
+          title.zh: PDF 文件预览宽度
+          type: variable-number
+          default: 600
+          format: px
+      -
+          id: popover-pdf-height
+          title: Popover PDF Height
+          title.zh: PDF 文件预览高度
+          type: variable-number
+          default: 800
+          format: px
+      -
+          id: heading-spacing
+          title: Heading Spacing
+          title.zh: 头部间距
+          type: variable-number
+          default: 20
+          format: px
+      -
+          id: heading-font-settings
+          title: Heading Font Settings 🖋️
+          title.zh: 标题字体设置 🖋️
+          type: heading
+          level: 2
+          collapsed: true
+      -
+          id: h1-font
+          title: H1 Font
+          title.zh: H1 字体
+          type: variable-text
+          default: "Arial, sans-serif"
+      -
+          id: h2-font
+          title: H2 Font
+          title.zh: H2 字体
+          type: variable-text
+          default: "Arial, sans-serif"
+      -
+          id: h3-font
+          title: H3 Font
+          title.zh: H3 字体
+          type: variable-text
+          default: "Arial, sans-serif"
+      -
+          id: h4-font
+          title: H4 Font
+          title.zh: H4 字体
+          type: variable-text
+          default: "Arial, sans-serif"
+      -
+          id: h5-font
+          title: H5 Font
+          title.zh: H5 字体
+          type: variable-text
+          default: "Arial, sans-serif"
+      -
+          id: h6-font
+          title: H6 Font
+          title.zh: H6 字体
+          type: variable-text
+          default: "Arial, sans-serif"
+      -
+          id: heading-line-height-settings
+          title: Heading Line Height Settings 📏
+          title.zh: 标题行高设置 📏
+          type: heading
+          level: 2
+          collapsed: true
+      -
+          id: h1-line-height
+          title: H1 Line Height
+          title.zh: H1 行高
+          type: variable-number
+          default: 1.5
+      -
+          id: h2-line-height
+          title: H2 Line Height
+          title.zh: H2 行高
+          type: variable-number
+          default: 1.5
+      -
+          id: h3-line-height
+          title: H3 Line Height
+          title.zh: H3 行高
+          type: variable-number
+          default: 1.5
+      -
+          id: h4-line-height
+          title: H4 Line Height
+          title.zh: H4 行高
+          type: variable-number
+          default: 1.5
+      -
+          id: h5-line-height
+          title: H5 Line Height
+          title.zh: H5 行高
+          type: variable-number
+          default: 1.5
+      -
+          id: h6-line-height
+          title: H6 Line Height
+          title.zh: H6 行高
+          type: variable-number
+          default: 1.5
+      -
+          id: heading-size-settings
+          title: Heading Size Settings 🔠
+          title.zh: 标题大小设置 🔠
+          type: heading
+          level: 2
+          collapsed: true
+      -
+          id: h1-size
+          title: H1 Size
+          title.zh: H1 大小
+          type: variable-number
+          default: 2
+          format: em
+      -
+          id: h2-size
+          title: H2 Size
+          title.zh: H2 大小
+          type: variable-number
+          default: 1.75
+          format: em
+      -
+          id: h3-size
+          title: H3 Size
+          title.zh: H3 大小
+          type: variable-number
+          default: 1.5
+          format: em
+      -
+          id: h4-size
+          title: H4 Size
+          title.zh: H4 大小
+          type: variable-number
+          default: 1.25
+          format: em
+      -
+          id: h5-size
+          title: H5 Size
+          title.zh: H5 大小
+          type: variable-number
+          default: 1
+          format: em
+      -
+          id: h6-size
+          title: H6 Size
+          title.zh: H6 大小
+          type: variable-number
+          default: 0.875
+          format: em
+      -
+          id: heading-style-settings
+          title: Heading Style Settings 🖌️
+          title.zh: 标题样式设置 🖌️
+          type: heading
+          level: 2
+          collapsed: true
+      -
+          id: h1-style
+          title: H1 Style
+          title.zh: H1 样式
+          type: variable-select
+          default: normal
+          options:
+              - normal
+              - italic
+      -
+          id: h2-style
+          title: H2 Style
+          title.zh: H2 样式
+          type: variable-select
+          default: normal
+          options:
+              - normal
+              - italic
+      -
+          id: h3-style
+          title: H3 Style
+          title.zh: H3 样式
+          type: variable-select
+          default: normal
+          options:
+              - normal
+              - italic
+      -
+          id: h4-style
+          title: H4 Style
+          title.zh: H4 样式
+          type: variable-select
+          default: normal
+          options:
+              - normal
+              - italic
+      -
+          id: h5-style
+          title: H5 Style
+          title.zh: H5 样式
+          type: variable-select
+          default: normal
+          options:
+              - normal
+              - italic
+      -
+          id: h6-style
+          title: H6 Style
+          title.zh: H6 样式
+          type: variable-select
+          default: normal
+          options:
+              - normal
+              - italic
+      -
+          id: heading-variant-settings
+          title: Heading Variant Settings 🏷️
+          title.zh: 标题变体设置 🏷️
+          type: heading
+          level: 2
+          collapsed: true
+      -
+          id: h1-variant
+          title: H1 Variant
+          title.zh: H1 变体
+          type: variable-select
+          default: normal
+          options:
+              - normal
+              - small-caps
+      -
+          id: h2-variant
+          title: H2 Variant
+          title.zh: H2 变体
+          type: variable-select
+          default: normal
+          options:
+              - normal
+              - small-caps
+      -
+          id: h3-variant
+          title: H3 Variant
+          title.zh: H3 变体
+          type: variable-select
+          default: normal
+          options:
+              - normal
+              - small-caps
+      -
+          id: h4-variant
+          title: H4 Variant
+          title.zh: H4 变体
+          type: variable-select
+          default: normal
+          options:
+              - normal
+              - small-caps
+      -
+          id: h5-variant
+          title: H5 Variant
+          title.zh: H5 变体
+          type: variable-select
+          default: normal
+          options:
+              - normal
+              - small-caps
+      -
+          id: h6-variant
+          title: H6 Variant
+          title.zh: H6 变体
+          type: variable-select
+          default: normal
+          options:
+              - normal
+              - small-caps
+      -
+          id: heading-weight-settings
+          title: Heading Weight Settings 🏋️
+          title.zh: 标题粗细设置 🏋️
+          type: heading
+          level: 2
+          collapsed: true
+      -
+          id: h1-weight
+          title: H1 Weight
+          title.zh: H1 粗细
+          type: variable-select
+          default: bold
+          options:
+              - normal
+              - bold
+      -
+          id: h2-weight
+          title: H2 Weight
+          title.zh: H2 粗细
+          type: variable-select
+          default: bold
+          options:
+              - normal
+              - bold
+      -
+          id: h3-weight
+          title: H3 Weight
+          title.zh: H3 粗细
+          type: variable-select
+          default: bold
+          options:
+              - normal
+              - bold
+      -
+          id: h4-weight
+          title: H4 Weight
+          title.zh: H4 粗细
+          type: variable-select
+          default: bold
+          options:
+              - normal
+              - bold
+      -
+          id: h5-weight
+          title: H5 Weight
+          title.zh: H5 粗细
+          type: variable-select
+          default: bold
+          options:
+              - normal
+              - bold
+      -
+          id: h6-weight
+          title: H6 Weight
+          title.zh: H6 粗细
+          type: variable-select
+          default: bold
+          options:
+              - normal
+              - bold
+      -
+          id: heading-formatting
+          title: Heading Formatting
+          title.zh: 标题格式
+          type: variable-color
+          default: '#888888'
+      -
+          id: link-settings
+          title: Link Settings 🔗
+          title.zh: 链接设置 🔗
+          type: heading
+          level: 2
+          collapsed: true
+      -
+          id: link-color
+          title: Link Color
+          title.zh: 链接颜色
+          type: variable-color
+          default: '#1e90ff'
+      -
+          id: link-color-hover
+          title: Link Hover Color
+          title.zh: 链接悬停颜色
+          type: variable-color
+          default: '#1c86ee'
+      -
+          id: link-decoration
+          title: Link Decoration
+          title.zh: 链接装饰
+          type: variable-select
+          default: underline
+          options:
+              - none
+              - underline
+      -
+          id: link-decoration-hover
+          title: Link Hover Decoration
+          title.zh: 链接悬停装饰
+          type: variable-select
+          default: underline
+          options:
+              - none
+              - underline
+      -
+          id: link-decoration-thickness
+          title: Link Decoration Thickness
+          title.zh: 链接装饰厚度
+          type: variable-number
+          default: 1
+          format: px
+      -
+          id: link-weight
+          title: Link Weight
+          title.zh: 链接粗细
+          type: variable-select
+          default: normal
+          options:
+              - normal
+              - bold
+      -
+          id: link-unresolved-color
+          title: Unresolved Link Color
+          title.zh: 未解析链接颜色
+          type: variable-color
+          default: '#ff4500'
+      -
+          id: link-unresolved-opacity
+          title: Unresolved Link Opacity
+          title.zh: 未解析链接不透明度
+          type: variable-number
+          default: 0.7
+      -
+          id: link-unresolved-filter
+          title: Unresolved Link Filter
+          title.zh: 未解析链接滤镜
+          type: variable-text
+          default: brightness(0.8)
+      -
+          id: link-unresolved-decoration-style
+          title: Unresolved Link Decoration Style
+          title.zh: 未解析链接装饰样式
+          type: variable-select
+          default: dashed
+          options:
+              - none
+              - underline
+              - dashed
+              - dotted
+      -
+          id: link-unresolved-decoration-color
+          title: Unresolved Link Decoration Color
+          title.zh: 未解析链接装饰颜色
+          type: variable-color
+          default: '#ff4500'
+      -
+          id: link-external-color
+          title: External Link Color
+          title.zh: 外部链接颜色
+          type: variable-color
+          default: '#32cd32'
+      -
+          id: link-external-color-hover
+          title: External Link Hover Color
+          title.zh: 外部链接悬停颜色
+          type: variable-color
+          default: '#2eb82e'
+      -
+          id: link-external-decoration
+          title: External Link Decoration
+          title.zh: 外部链接装饰
+          type: variable-select
+          default: underline
+          options:
+              - none
+              - underline
+      -
+          id: link-external-decoration-hover
+          title: External Link Hover Decoration
+          title.zh: 外部链接悬停装饰
+          type: variable-select
+          default: underline
+          options:
+              - none
+              - underline
+      -
+          id: inline-title-settings
+          title: Inline Title Settings 🖋️
+          title.zh: 行内标题设置 🖋️
+          type: heading
+          level: 2
+          collapsed: true
+      -
+          id: inline-title-color
+          title: Inline Title Color
+          title.zh: 行内标题颜色
+          type: variable-color
+          default: '#000000'
+      -
+          id: inline-title-font
+          title: Inline Title Font
+          title.zh: 行内标题字体
+          type: variable-text
+          default: "Arial, sans-serif"
+      -
+          id: inline-title-line-height
+          title: Inline Title Line Height
+          title.zh: 行内标题行高
+          type: variable-number
+          default: 1.5
+      -
+          id: inline-title-size
+          title: Inline Title Size
+          title.zh: 行内标题大小
+          type: variable-number
+          default: 1.2
+          format: em
+      -
+          id: inline-title-style
+          title: Inline Title Style
+          title.zh: 行内标题样式
+          type: variable-select
+          default: normal
+          options:
+              - normal
+              - italic
+      -
+          id: inline-title-variant
+          title: Inline Title Variant
+          title.zh: 行内标题变体
+          type: variable-select
+          default: normal
+          options:
+              - normal
+              - small-caps
+      -
+          id: inline-title-weight
+          title: Inline Title Weight
+          title.zh: 行内标题粗细
+          type: variable-select
+          default: bold
+          options:
+              - normal
+              - bold
+      - 
+          id: code-settings
+          title: Code Block Settings 💻
+          title.zh: 代码块设置 💻
+          type: heading
+          level: 2
+          collapsed: true
+      - 
+          id: code-background-dark
+          title: Dark Mode Code Background
+          title.zh: 暗模式下代码背景颜色
+          type: variable-color
+          default: '#2d2d2d'
+      - 
+          id: code-normal-dark
+          title: Dark Mode Code Normal Color
+          title.zh: 暗模式下非高亮语法颜色
+          type: variable-color
+          default: '#ffffff'
+      - 
+          id: code-comment-dark
+          title: Dark Mode Code Comment Color
+          title.zh: 暗模式下注释颜色
+          type: variable-color
+          default: '#999988'
+      - 
+          id: code-function-dark
+          title: Dark Mode Code Function Color
+          title.zh: 暗模式下函数颜色
+          type: variable-color
+          default: '#a6e22e'
+      - 
+          id: code-important-dark
+          title: Dark Mode Code Important Color
+          title.zh: 暗模式下重要内容, 正则表达式颜色
+          type: variable-color
+          default: '#f92672'
+      - 
+          id: code-keyword-dark
+          title: Dark Mode Code Keyword Color
+          title.zh: 暗模式下关键词颜色
+          type: variable-color
+          default: '#f92672'
+      - 
+          id: code-operator-dark
+          title: Dark Mode Code Operator Color
+          title.zh: 暗模式下操作符颜色
+          type: variable-color
+          default: '#f92672'
+      - 
+          id: code-property-dark
+          title: Dark Mode Code Property Color
+          title.zh: 暗模式下属性颜色
+          type: variable-color
+          default: '#66d9ef'
+      - 
+          id: code-punctuation-dark
+          title: Dark Mode Code Punctuation Color
+          title.zh: 暗模式下标点颜色
+          type: variable-color
+          default: '#ffffff'
+      - 
+          id: code-string-dark
+          title: Dark Mode Code String Color
+          title.zh: 暗模式下字符串颜色
+          type: variable-color
+          default: '#e6db74'
+      - 
+          id: code-tag-dark
+          title: Dark Mode Code Tag Color
+          title.zh: 暗模式下标签, 符号, 常量颜色
+          type: variable-color
+          default: '#a6e22e'
+      - 
+          id: code-value-dark
+          title: Dark Mode Code Value Color
+          title.zh: 暗模式下值颜色
+          type: variable-color
+          default: '#ae81ff'
+      - 
+          id: code-background-light
+          title: Light Mode Code Background
+          title.zh: 亮模式下代码背景颜色
+          type: variable-color
+          default: '#f5f5f5'
+      - 
+          id: code-normal-light
+          title: Light Mode Code Normal Color
+          title.zh: 亮模式下非高亮语法颜色
+          type: variable-color
+          default: '#000000'
+      - 
+          id: code-comment-light
+          title: Light Mode Code Comment Color
+          title.zh: 亮模式下注释颜色
+          type: variable-color
+          default: '#6a737d'
+      - 
+          id: code-function-light
+          title: Light Mode Code Function Color
+          title.zh: 亮模式下函数颜色
+          type: variable-color
+          default: '#6f42c1'
+      - 
+          id: code-important-light
+          title: Light Mode Code Important Color
+          title.zh: 亮模式下重要内容, 正则表达式颜色
+          type: variable-color
+          default: '#d73a49'
+      - 
+          id: code-keyword-light
+          title: Light Mode Code Keyword Color
+          title.zh: 亮模式下关键词颜色
+          type: variable-color
+          default: '#d73a49'
+      - 
+          id: code-operator-light
+          title: Light Mode Code Operator Color
+          title.zh: 亮模式下操作符颜色
+          type: variable-color
+          default: '#d73a49'
+      - 
+          id: code-property-light
+          title: Light Mode Code Property Color
+          title.zh: 亮模式下属性颜色
+          type: variable-color
+          default: '#005cc5'
+      - 
+          id: code-punctuation-light
+          title: Light Mode Code Punctuation Color
+          title.zh: 亮模式下标点颜色
+          type: variable-color
+          default: '#24292e'
+      - 
+          id: code-string-light
+          title: Light Mode Code String Color
+          title.zh: 亮模式下字符串颜色
+          type: variable-color
+          default: '#032f62'
+      - 
+          id: code-tag-light
+          title: Light Mode Code Tag Color
+          title.zh: 亮模式下标签, 符号, 常量颜色
+          type: variable-color
+          default: '#22863a'
+      - 
+          id: code-value-light
+          title: Light Mode Code Value Color
+          title.zh: 亮模式下值颜色
+          type: variable-color
+          default: '#b31d28'
+      - 
+          id: author-info
+          title: Author Information ℹ
+          title.zh: 作者信息 ℹ
+          type: heading
+          level: 2
+          collapsed: false
+      - 
+          id: author
+          title: Author
+          title.zh: 作者
+          type: info-text
+          description: "Oreo Theme created with ❤︎ by carols12352. Support at: BuyMeACoffee/(QAQ due to regional differences you cannot buy me a coffee, just enjoy the theme and provide feed back!)"
+          description.zh: "Oreo 主题由carlos12352创建。支持请访问: BuyMeACoffee/(QAQ 因为地区政策原因你还不能给我买一杯咖啡，请享受主题并且及时给出反馈就好！)"
+          markdown: false
+  */
+  
+  /* @plugins
+  name: Oreo Theme
+  id: oreo-theme
+  plugins:
+      - 
+          name: Style Settings
+          id: style-settings
+          description: Allows customization of CSS variables through a user-friendly interface.
+          description.zh: 通过用户友好的界面允许自定义 CSS 变量。
+      - 
+          name: Kanban
+          id: kanban
+          description: Provides minimalist styling for the Kanban plugin.
+          description.zh: 为 Kanban 插件提供简约的样式。
+      - 
+          name: Calendar
+          id: calendar
+          description: Integrates calendar views and customizations.
+          description.zh: 集成日历视图和自定义功能。
+      - 
+          name: CodeMirror Options
+          id: codemirror-options
+          description: Enhances code block appearance and syntax highlighting.
+          description.zh: 增强代码块外观和语法高亮。
+      - 
+          name: Sliding Panes
+          id: sliding-panes
+          description: Adds horizontal sliding panes functionality.
+          description.zh: 添加水平滑动窗格功能。
+      - 
+          name: Obsidian Tabs
+          id: obsidian-tabs
+          description: Customizes tab appearance and behavior.
+          description.zh: 自定义标签的外观和行为。
+  */
+  
