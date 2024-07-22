@@ -76,29 +76,14 @@ To install the Oreo theme in Obsidian, follow these steps:
 
 ## Customization
 
-The Oreo theme comes with a variety of customization options available through CSS variables defined in the `theme.css` file. Here are some key variables you can modify:
+The Oreo theme comes with a variety of customization options available through plugin [style settings](https://github.com/mgmeyers/obsidian-style-settings) and we provide a lot of customization options, users can try to make a contribution by upload your personal configuration file.
 
-### General Variables
+### How to upload a customization
 
-* `--icon-size`: Size of the icons.
-* `--dialog-width`: Default width of dialog boxes.
-* `--nav-item-size`: Font size of navigation items.
-* `--modal-radius`: Border radius of modals.
-* `--vault-name-font-size`: Font size for the vault name.
-
-### Dark Mode Specific Variables
-
-* `--background-primary`: Primary background color for dark mode.
-* `--text-primary`: Primary text color for dark mode.
-* `--tab-background-active`: Background color of active tabs in dark mode.
-* `--blockquote-background-color`: Background color for blockquotes in dark mode.
-
-### Light Mode Specific Variables
-
-* `--interactive-normal`: Normal interactive element color in light mode.
-* `--checkbox-marker-color`: Checkbox marker color in light mode.
-* `--tab-background-active`: Background color of active tabs in light mode.
-* `--blockquote-background-color`: Background color for blockquotes in light mode.
+* Fork this repo
+* Put your file [here](./plugins/Style-Settings)
+* Click <a href="https://github.com/carols12352/Oreo-theme/issues/new?template=style-settings.md&labels=style-settings">here</a> to open a pull request
+* Wait for the admin to test and approve your json file
 
 ## Author
 
