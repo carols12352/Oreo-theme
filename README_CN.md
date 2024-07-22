@@ -82,7 +82,7 @@ Oreo 主题通过插件 [style settings](https://github.com/mgmeyers/obsidian-st
 
 * Fork 这个仓库
 * 将你的文件放在 [这里](./plugins/Style-Settings)
-* 点击 <a href="https://github.com/carols12352/Oreo-theme/issues/new?template=style-settings.md&labels=style-settings">这里</a> 打开一个 pull request
+* 点击 <a href="https://github.com/carols12352/Oreo-theme/issues/new?template=style-settings_CN.md&labels=style-settings">这里</a> 打开一个 pull request
 * 等待管理员测试并批准你的 json 文件
 
 ## 作者
