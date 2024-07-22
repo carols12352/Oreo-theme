@@ -1,0 +1,14 @@
+{
+  "general-settings@@icon-size": 18,
+  "general-settings@@nav-heading-weight": "\"\"",
+  "things-style@@mobile-black-background": false,
+  "things-style@@floating-button-off": false,
+  "things-style@@active-line": false,
+  "things-style@@fancy-code": false,
+  "things-style@@fancy-highlight": false,
+  "things-style@@no-kanban-styles": false,
+  "things-style@@link-decoration": "Underline",
+  "minimal-advanced@@cursor": "default",
+  "minimal-advanced@@mobile-toolbar-off": false,
+  "minimal-advanced@@styled-scrollbars": false
+}
