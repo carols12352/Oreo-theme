@@ -93,6 +93,38 @@ Oreo 主题通过插件 [style settings](https://github.com/mgmeyers/obsidian-st
 
 <img src="https://github.com/carols12352/Oreo-theme/blob/master/images/light-dark-Oreo.png" alt="screen_shot_1" width=100% />
 
+### 复选框
+感谢 [@kepano](https://github.com/kepano/obsidian-minimal) 和 [@colineckert](https://github.com/colineckert/obsidian-things)，我们有了自定义复选框。
+<div style="display: flex; justify-content: space-between;">
+  <img src="https://github.com/carols12352/Oreo-theme/blob/master/images/checkbox-light.png" alt="checkbox-light" style="width: 48%;">
+  <img src="https://github.com/carols12352/Oreo-theme/blob/master/images/checkbox-dark.png" alt="checkbox-dark" style="width: 48%;">
+</div>
+
+`- [ ] 默认复选框`
+`- [!] 重要任务`
+`- [*] 星标任务`
+`- [-] 删除线任务`
+`- [<] 待处理任务`
+`- [>] 已完成任务`
+`- [I] 信息任务`
+`- [b] 书签任务`
+`- [c] 关键任务`
+`- [d] 拒绝任务`
+`- [f] 失败任务`
+`- [k] 关键任务`
+`- [l] 位置任务`
+`- [p] 进度任务`
+`- [u] 投票任务`
+`- [w] 关注任务`
+`- [P] 开放的拉取请求任务`
+`- [M] 合并的拉取请求任务`
+`- [D] 草稿拉取请求任务`
+`- ["] 引用任务`
+`- [“] 引用任务（双引号）`
+`- [?] 问题任务`
+`- [/] 斜杠任务`
+`- [S] 成功任务`
+
 ## 贡献
 
 如果你想为Oreo主题做出贡献，可以自由地fork这个仓库，并在[GitHub](https://github.com/carols12352/Oreo-theme)上提交一个pull请求。
