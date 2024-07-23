@@ -93,6 +93,38 @@ This theme was created by [carols12352](https://github.com/carols12352).
 
 <img src="https://github.com/carols12352/Oreo-theme/blob/master/images/light-dark-Oreo.png" alt="screen_shot_1" width=100% />
 
+### Check box
+Thanks to [@kepano](https://github.com/kepano/obsidian-minimal) and [@colineckert](https://github.com/colineckert/obsidian-things), we have custom check-boxes.
+<div style="display: flex; justify-content: space-between;">
+  <img src="https://github.com/carols12352/Oreo-theme/blob/master/images/checkbox-light.png" alt="checkbox-light" style="width: 48%;">
+  <img src="https://github.com/carols12352/Oreo-theme/blob/master/images/checkbox-dark.png" alt="checkbox-dark" style="width: 48%;">
+</div>
+
+`- [ ] Default Checkbox`
+`- [!] Important Task`
+`- [*] Star Task`
+`- [-] Strikethrough Task`
+`- [<] Pending Task`
+`- [>] Completed Task`
+`- [I] Information Task`
+`- [b] Bookmark Task`
+`- [c] Critical Task`
+`- [d] Declined Task`
+`- [f] Failed Task`
+`- [k] Key Task`
+`- [l] Location Task`
+`- [p] Progress Task`
+`- [u] Upvoted Task`
+`- [w] Watched Task`
+`- [P] Open Pull Request Task`
+`- [M] Merged Pull Request Task`
+`- [D] Draft Pull Request Task`
+`- ["] Quoted Task`
+`- [“] Quoted Task (Double Quote)`
+`- [?] Question Task`
+`- [/] Slash Task`
+`- [S] Success Task`
+
 ## Contributing
 
 If you'd like to contribute to the Oreo theme, feel free to fork the repository and submit a pull request on [GitHub](https://github.com/carols12352/Oreo-theme).
