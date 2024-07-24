@@ -47,6 +47,7 @@
   - [浅色模式专用变量](#浅色模式专用变量)
 - [作者](#作者)
 - [屏幕截图](#屏幕截图)
+- [特色功能](#特色功能)
 - [贡献](#贡献)
 - [问题和反馈](#问题和反馈)
 - [许可证](#许可证)
@@ -93,6 +94,8 @@ Oreo 主题通过插件 [style settings](https://github.com/mgmeyers/obsidian-st
 
 <img src="https://github.com/carols12352/Oreo-theme/blob/master/images/light-dark-Oreo.png" alt="screen_shot_1" width=100% />
 
+## 特色功能
+
 ### 复选框
 感谢 [@kepano](https://github.com/kepano/obsidian-minimal) 和 [@colineckert](https://github.com/colineckert/obsidian-things)，我们有了自定义复选框。
 <div style="display: flex; justify-content: space-between;">
@@ -124,6 +127,10 @@ Oreo 主题通过插件 [style settings](https://github.com/mgmeyers/obsidian-st
 `- [?] 问题任务`
 `- [/] 斜杠任务`
 `- [S] 成功任务`
+
+### 标签样式
+
+感谢 [AnubisNekhet](https://github.com/AnubisNekhet/AnuPpuccin)，我们现在可以拥有自定义tab栏（请注意，这仍然是一个实验性功能，无法保证在 Windows 和 iOS、iPadOS 以外的设备上完全正常运行）。用户可以使用 [style settings](https://github.com/mgmeyers/obsidian-style-settings) 插件，通过导航到`第三方插件` - `style settings` - `Oreo theme` - `实验性功能` - `Tab样式`来启用它，享受全新的标签样式吧！
 
 ## 贡献
 
