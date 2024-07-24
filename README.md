@@ -47,6 +47,7 @@
   - [Light Mode Specific Variables](#light-mode-specific-variables)
 - [Author](#author)
 - [Screen shots](#screen-shots)
+- [Features](#features)
 - [Contributing](#contributing)
 - [Bugs and reports](#bugs-and-reports)
 - [License](#license)
@@ -93,6 +94,8 @@ This theme was created by [carols12352](https://github.com/carols12352).
 
 <img src="https://github.com/carols12352/Oreo-theme/blob/master/images/light-dark-Oreo.png" alt="screen_shot_1" width=100% />
 
+## features
+
 ### Check box
 Thanks to [@kepano](https://github.com/kepano/obsidian-minimal) and [@colineckert](https://github.com/colineckert/obsidian-things), we have custom check-boxes.
 <div style="display: flex; justify-content: space-between;">
@@ -124,6 +127,9 @@ Thanks to [@kepano](https://github.com/kepano/obsidian-minimal) and [@colinecker
 `- [?] Question Task`
 `- [/] Slash Task`
 `- [S] Success Task`
+
+### Tab styles
+Thanks to [AnubisNekhet](https://github.com/AnubisNekhet/AnuPpuccin), we can have custom tab bars(note that this is still a experimental feature, no promise for full function on devices other than windows and IOS, IpadOS), users can enable it using [style settings](https://github.com/mgmeyers/obsidian-style-settings) plugin, by navigating to `plugin-style settings`-`oreo theme`-`experimental features`-`tab style` then you can enjoy the brand new tab styles!
 
 ## Contributing
 
