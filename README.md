@@ -129,7 +129,7 @@ Thanks to [@kepano](https://github.com/kepano/obsidian-minimal) and [@colinecker
 `- [S] Success Task`
 
 ### Tab styles
-Thanks to [AnubisNekhet](https://github.com/AnubisNekhet/AnuPpuccin), we can have custom tab bars(note that this is still a experimental feature, no promise for full function on devices other than windows and IOS, IpadOS), users can enable it using [style settings](https://github.com/mgmeyers/obsidian-style-settings) plugin, by navigating to `plugin-style settings`-`oreo theme`-`experimental features`-`tab style` then you can enjoy the brand new tab styles!
+Thanks to [AnubisNekhet](https://github.com/AnubisNekhet/AnuPpuccin), we can have custom tab bars(note that this is still a experimental feature, no promise for full function on devices other than windows and IOS, IpadOS), users can enable it using [style settings](https://github.com/mgmeyers/obsidian-style-settings) plugin, by navigating to `plugin-style settings` - `oreo theme` - `experimental features` - `tab style` then you can enjoy the brand new tab styles!
 
 ## Contributing
 
