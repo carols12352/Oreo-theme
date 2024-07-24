@@ -47,7 +47,7 @@
   - [Light Mode Specific Variables](#light-mode-specific-variables)
 - [Author](#author)
 - [Screen shots](#screen-shots)
-- [Features](#features)
+- [Unique Features](#unique-features)
 - [Contributing](#contributing)
 - [Bugs and reports](#bugs-and-reports)
 - [License](#license)
@@ -94,7 +94,7 @@ This theme was created by [carols12352](https://github.com/carols12352).
 
 <img src="https://github.com/carols12352/Oreo-theme/blob/master/images/light-dark-Oreo.png" alt="screen_shot_1" width=100% />
 
-## features
+## Unique features
 
 ### Check box
 Thanks to [@kepano](https://github.com/kepano/obsidian-minimal) and [@colineckert](https://github.com/colineckert/obsidian-things), we have custom check-boxes.
