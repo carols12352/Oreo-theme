@@ -2114,15 +2114,16 @@ settings:
     -
         id: alternative-checkboxes
         title: Alternative Checkboxes ✅
-        title.zh: 
+        title.zh: 其他复选框样式 ✅
         type: heading
         level: 2
         collapsed: true
     -
         id: enable-alternative-checkboxes
         title: Enable Alternative Checkboxes
-        title.zh:
+        title.zh: 启用其他复选框样式
         description: Disable this if you are using your own implementation via a CSS Snippet.
+        description.zh: 如果您正在使用自己的 CSS 片段实现这一功能，请禁用此功能。
         default: true
         type: class-toggle
     -
@@ -2178,6 +2179,14 @@ settings:
         title.zh: kepano 不同的复选框样式
         description: "Support link: [buy him a coffee](https://www.buymeacoffee.com/kepano)"
         description.zh: "支持链接: [给他买杯咖啡](https://www.buymeacoffee.com/kepano)"
+        type: info-text
+        markdown: true
+    -
+        id: Korcz-url-donate
+        title: Korcz for switching between checkboxes
+        title.zh: Korcz 切换复选框样式
+        description: "Support link: This kind man did not leave a support link, so here is his [Github homepage](https://github.com/damiankorcz)"
+        description.zh: "支持链接: 这位好心人并未留下赞助链接，请自行前往他的[Github主页](https://github.com/damiankorcz)"
         type: info-text
         markdown: true
     -
