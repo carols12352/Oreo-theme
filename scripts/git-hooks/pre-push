@@ -1,0 +1,66 @@
+#!/usr/bin/env bash
+# Ask whether to bump + tag the theme version before pushing to master/main.
+# GitHub Actions cannot prompt interactively; this local hook can.
+#
+# Install: ./scripts/install-git-hooks.sh
+# Skip once: SKIP_VERSION_BUMP_PROMPT=1 git push
+# Disable:   rm .git/hooks/pre-push
+
+set -euo pipefail
+
+if [[ "${SKIP_VERSION_BUMP_PROMPT:-0}" == "1" ]]; then
+  exit 0
+fi
+
+# Only prompt when stdin is a TTY (interactive push)
+if [[ ! -t 0 ]]; then
+  exit 0
+fi
+
+remote_name="${1:-origin}"
+# pre-push receives refs on stdin: local_ref local_sha remote_ref remote_sha
+pushing_main=0
+while read -r local_ref local_sha remote_ref remote_sha; do
+  case "$remote_ref" in
+    refs/heads/master|refs/heads/main)
+      pushing_main=1
+      ;;
+  esac
+done
+
+if [[ "$pushing_main" != "1" ]]; then
+  exit 0
+fi
+
+ROOT="$(git rev-parse --show-toplevel)"
+CURRENT=$(node -p "require('$ROOT/package.json').version")
+
+echo
+echo "Pushing to ${remote_name} (master/main)."
+echo "Current theme version: $CURRENT"
+echo "Bump + tag before push? [y=patch / minor / major / N]"
+read -r answer </dev/tty || true
+answer=$(printf '%s' "${answer:-}" | tr '[:upper:]' '[:lower:]')
+
+case "$answer" in
+  y|yes|p|patch) kind=patch ;;
+  minor|min) kind=minor ;;
+  major|maj) kind=major ;;
+  ""|n|no) exit 0 ;;
+  *)
+    echo "Skipping version bump."
+    exit 0
+    ;;
+esac
+
+# Commit + tag locally; abort this push so the new commit/tag are included next time.
+"$ROOT/scripts/bump-version.sh" "$kind" --tag
+
+NEXT=$(node -p "require('$ROOT/package.json').version")
+echo
+echo "Created commit + tag $NEXT."
+echo "Push was aborted so they are included — run:"
+echo "  git push && git push origin $NEXT"
+echo "Or one-shot next time:  npm run bump:patch -- --push"
+echo "(Skip prompt: SKIP_VERSION_BUMP_PROMPT=1 git push)"
+exit 1

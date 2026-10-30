@@ -5,6 +5,9 @@ on:
     tags:
       - "*"
 
+permissions:
+  contents: write
+
 jobs:
   build:
     runs-on: ubuntu-latest
@@ -18,7 +21,18 @@ jobs:
         run: |
           tag="${GITHUB_REF#refs/tags/}"
 
-          gh release create "$tag" \
-            --title="$tag" \
-            --generate-notes \
-            manifest.json theme.css
+          # Prefer an annotated tag message as the release body when present;
+          # otherwise generate notes from commits.
+          body_file="$(mktemp)"
+          if tag_body="$(git tag -l --format='%(contents)' "$tag" 2>/dev/null)" && [[ -n "${tag_body// }" ]]; then
+            printf '%s\n' "$tag_body" >"$body_file"
+            gh release create "$tag" \
+              --title="$tag" \
+              --notes-file "$body_file" \
+              manifest.json theme.css
+          else
+            gh release create "$tag" \
+              --title="$tag" \
+              --generate-notes \
+              manifest.json theme.css
+          fi
