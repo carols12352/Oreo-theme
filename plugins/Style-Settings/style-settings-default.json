@@ -1,7 +1,8 @@
 {
 	"oreo-theme@@disable-alternative-checkboxes": false,
-	"oreo-theme@@oreo-tab-style": "oreo-default-tab",
-	"oreo-theme@@oreo-safari-tab-animated": true,
+	"oreo-theme@@oreo-tab-style": "oreo-alternate-tab-toggle",
+	"oreo-theme@@oreo-safari-tab-animated": false,
+	"oreo-theme@@oreo-disable-newtab-align": false,
 	"oreo-theme@@oreo-depth-tab-text-invert": false,
 	"oreo-theme@@code-background-dark": "#1a1a1e",
 	"oreo-theme@@code-normal-dark": "#e8e4dc",

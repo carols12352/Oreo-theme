@@ -126,7 +126,13 @@ Thanks to [@kepano](https://github.com/kepano/obsidian-minimal) and [@colinecker
 `- [S] Success Task`
 
 ### Tab styles
-Thanks to [AnubisNekhet](https://github.com/AnubisNekhet/AnuPpuccin), we can have custom tab bars (still experimental; best tested on Windows, iOS, and iPadOS). Enable them with [Style Settings](https://github.com/mgmeyers/obsidian-style-settings): `Style Settings` → `Oreo Theme` → `Experimental Features` → `Tab Style`. Options: Default, Depth, Minimalistic, Alternate, and Safari-style. For Safari-style tabs, use **Animate Safari Tabs** to toggle the width animation.
+Thanks to [AnubisNekhet](https://github.com/AnubisNekhet/AnuPpuccin), we can have custom tab bars (still experimental; best tested on Windows, iOS, and iPadOS). Enable them with [Style Settings](https://github.com/mgmeyers/obsidian-style-settings): `Style Settings` → `Oreo Theme` → `Experimental Features` → `Tab Style`.
+
+Options:
+- **Default** — Obsidian stock tabs
+- **Depth** / **Minimalistic** — lighter visual variants
+- **Safari-style (Animated)** — default Oreo choice; active tab grows smoothly when you switch
+- **Safari-style (Vanilla)** — static Safari pills; turn on **Animate Safari-style (Vanilla) Tabs** if you want the grow animation there too
 
 ## Contributing
 

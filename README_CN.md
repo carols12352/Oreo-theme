@@ -127,7 +127,13 @@ Oreo 主题通过插件 [style settings](https://github.com/mgmeyers/obsidian-st
 
 ### 标签样式
 
-感谢 [AnubisNekhet](https://github.com/AnubisNekhet/AnuPpuccin)，我们现在可以拥有自定义 tab 栏（仍为实验性功能，建议在 Windows、iOS、iPadOS 上测试）。使用 [Style Settings](https://github.com/mgmeyers/obsidian-style-settings)：`Style Settings` → `Oreo Theme` → `实验性功能` → `Tab样式`。可选：Default、Depth、Minimalistic、Alternate、Safari-style。选择 Safari-style 后，可用 **Animate Safari Tabs** 开关宽度动画。
+感谢 [AnubisNekhet](https://github.com/AnubisNekhet/AnuPpuccin)，我们现在可以拥有自定义 tab 栏（仍为实验性功能，建议在 Windows、iOS、iPadOS 上测试）。使用 [Style Settings](https://github.com/mgmeyers/obsidian-style-settings)：`Style Settings` → `Oreo Theme` → `实验性功能` → `Tab样式`。
+
+可选：
+- **Default** — Obsidian 默认标签
+- **Depth** / **Minimalistic** — 更轻量的视觉变体
+- **Safari-style (Animated)** — Oreo 默认选项；切换时活动标签会平滑拉伸
+- **Safari-style (Vanilla)** — 静态 Safari 圆角标签；需要动画时再打开 **Animate Safari-style (Vanilla) Tabs**
 
 ## 贡献
 
