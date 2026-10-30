@@ -42,9 +42,6 @@
 - [功能](#功能)
 - [安装](#安装)
 - [自定义](#自定义)
-  - [通用变量](#通用变量)
-  - [深色模式专用变量](#深色模式专用变量)
-  - [浅色模式专用变量](#浅色模式专用变量)
 - [作者](#作者)
 - [屏幕截图](#屏幕截图)
 - [特色功能](#特色功能)
@@ -82,9 +79,9 @@ Oreo 主题通过插件 [style settings](https://github.com/mgmeyers/obsidian-st
 ### 如何上传自定义配置
 
 * Fork 这个仓库
-* 将你的文件放在 [这里](./plugins/Style-Settings)
-* 点击 <a href="https://github.com/carols12352/Oreo-theme/issues/new?template=style-settings_CN.md&labels=style-settings">这里</a> 打开一个 pull request
-* 等待管理员测试并批准你的 json 文件
+* 将 Style Settings 导出的 JSON 放到 [`plugins/Style-Settings`](./plugins/Style-Settings)
+* 提交 [pull request](https://github.com/carols12352/Oreo-theme/compare)（也可以先用 [style-settings issue 模板](https://github.com/carols12352/Oreo-theme/issues/new?template=style-settings_CN.md&labels=style-settings)）
+* 等待管理员测试并批准你的 JSON 文件
 
 ## 作者
 
@@ -97,7 +94,7 @@ Oreo 主题通过插件 [style settings](https://github.com/mgmeyers/obsidian-st
 ## 特色功能
 
 ### 复选框
-感谢 [@kepano](https://github.com/kepano/obsidian-minimal) 和 [@colineckert](https://github.com/colineckert/obsidian-things)，我们有了自定义复选框。
+感谢 [@kepano](https://github.com/kepano/obsidian-minimal) 和 [@colineckert](https://github.com/colineckert/obsidian-things)，我们有了自定义复选框。该功能默认启用；只有在需要关闭复选框或调整其他选项时，才需要安装 [Style Settings](https://github.com/mgmeyers/obsidian-style-settings)。
 <div style="display: flex; justify-content: space-between;">
   <img src="https://github.com/carols12352/Oreo-theme/blob/master/images/checkbox-light.png" alt="checkbox-light" style="width: 48%;">
   <img src="https://github.com/carols12352/Oreo-theme/blob/master/images/checkbox-dark.png" alt="checkbox-dark" style="width: 48%;">
@@ -130,7 +127,7 @@ Oreo 主题通过插件 [style settings](https://github.com/mgmeyers/obsidian-st
 
 ### 标签样式
 
-感谢 [AnubisNekhet](https://github.com/AnubisNekhet/AnuPpuccin)，我们现在可以拥有自定义tab栏（请注意，这仍然是一个实验性功能，无法保证在 Windows 和 iOS、iPadOS 以外的设备上完全正常运行）。用户可以使用 [style settings](https://github.com/mgmeyers/obsidian-style-settings) 插件，通过导航到`第三方插件` - `style settings` - `Oreo theme` - `实验性功能` - `Tab样式`来启用它，享受全新的标签样式吧！
+感谢 [AnubisNekhet](https://github.com/AnubisNekhet/AnuPpuccin)，我们现在可以拥有自定义 tab 栏（仍为实验性功能，建议在 Windows、iOS、iPadOS 上测试）。使用 [Style Settings](https://github.com/mgmeyers/obsidian-style-settings)：`Style Settings` → `Oreo Theme` → `实验性功能` → `Tab样式`。可选：Default、Depth、Minimalistic、Alternate、Safari-style。选择 Safari-style 后，可用 **Animate Safari Tabs** 开关宽度动画。
 
 ## 贡献
 

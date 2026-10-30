@@ -42,9 +42,6 @@
 - [Features](#features)
 - [Installation](#installation)
 - [Customization](#customization)
-  - [General Variables](#general-variables)
-  - [Dark Mode Specific Variables](#dark-mode-specific-variables)
-  - [Light Mode Specific Variables](#light-mode-specific-variables)
 - [Author](#author)
 - [Screen shots](#screen-shots)
 - [Unique Features](#unique-features)
@@ -82,9 +79,9 @@ The Oreo theme comes with a variety of customization options available through p
 ### How to upload a customization
 
 * Fork this repo
-* Put your file [here](./plugins/Style-Settings)
-* Click <a href="https://github.com/carols12352/Oreo-theme/issues/new?template=style-settings.md&labels=style-settings">here</a> to open a pull request
-* Wait for the admin to test and approve your json file
+* Put your Style Settings export JSON in [`plugins/Style-Settings`](./plugins/Style-Settings)
+* Open a [pull request](https://github.com/carols12352/Oreo-theme/compare) (you can also start from the [style-settings issue template](https://github.com/carols12352/Oreo-theme/issues/new?template=style-settings.md&labels=style-settings) if you prefer)
+* Wait for the admin to test and approve your JSON file
 
 ## Author
 
@@ -97,7 +94,7 @@ This theme was created by [carols12352](https://github.com/carols12352).
 ## Unique features
 
 ### Check box
-Thanks to [@kepano](https://github.com/kepano/obsidian-minimal) and [@colineckert](https://github.com/colineckert/obsidian-things), we have custom check-boxes.
+Thanks to [@kepano](https://github.com/kepano/obsidian-minimal) and [@colineckert](https://github.com/colineckert/obsidian-things), we have custom check-boxes. They are enabled by default; install [Style Settings](https://github.com/mgmeyers/obsidian-style-settings) only if you want to turn them off or tweak other theme options.
 <div style="display: flex; justify-content: space-between;">
   <img src="https://github.com/carols12352/Oreo-theme/blob/master/images/checkbox-light.png" alt="checkbox-light" style="width: 48%;">
   <img src="https://github.com/carols12352/Oreo-theme/blob/master/images/checkbox-dark.png" alt="checkbox-dark" style="width: 48%;">
@@ -129,7 +126,7 @@ Thanks to [@kepano](https://github.com/kepano/obsidian-minimal) and [@colinecker
 `- [S] Success Task`
 
 ### Tab styles
-Thanks to [AnubisNekhet](https://github.com/AnubisNekhet/AnuPpuccin), we can have custom tab bars(note that this is still a experimental feature, no promise for full function on devices other than windows and IOS, IpadOS), users can enable it using [style settings](https://github.com/mgmeyers/obsidian-style-settings) plugin, by navigating to `plugin-style settings` - `oreo theme` - `experimental features` - `tab style` then you can enjoy the brand new tab styles!
+Thanks to [AnubisNekhet](https://github.com/AnubisNekhet/AnuPpuccin), we can have custom tab bars (still experimental; best tested on Windows, iOS, and iPadOS). Enable them with [Style Settings](https://github.com/mgmeyers/obsidian-style-settings): `Style Settings` → `Oreo Theme` → `Experimental Features` → `Tab Style`. Options: Default, Depth, Minimalistic, Alternate, and Safari-style. For Safari-style tabs, use **Animate Safari Tabs** to toggle the width animation.
 
 ## Contributing
 
