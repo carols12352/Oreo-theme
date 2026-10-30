@@ -1,7 +1,15 @@
 {
 	"name": "Oreo",
-	"version": "1.0.0",
+	"version": "1.3.6",
 	"minAppVersion": "1.0.0",
 	"author": "carols12352",
-	"authorUrl": "https://github.com/carols12352"
+	"authorUrl": "https://github.com/carols12352",
+	"scripts": {
+		"version": "node version-bump.mjs",
+		"bump": "bash scripts/bump-version.sh",
+		"bump:patch": "bash scripts/bump-version.sh patch",
+		"bump:minor": "bash scripts/bump-version.sh minor",
+		"bump:major": "bash scripts/bump-version.sh major",
+		"hooks:install": "bash scripts/install-git-hooks.sh"
+	}
 }
